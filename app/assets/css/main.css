@@ -30,6 +30,7 @@ body {
   /* spacing */
   --spacing-sm: 0.5rem;
   --spacing-reg: 1rem;
+  --spacing-lg: 2rem;
 }
 
 /********************************************
@@ -67,6 +68,12 @@ body {
   @apply text-neutral-light text-2xl tracking-widest space-y-2;
 }
 
+/* Mobile Footer */
 .mobile-footer {
   @apply fixed bottom-0 inset-x-0 bg-brand-blue text-neutral-light py-sm;
+}
+
+/* Desktop Footer */
+.desktop-footer {
+  @apply bg-brand-blue text-neutral-light py-10 font-sans text-sm rounded-sm fixed bottom-0 inset-x-4;
 }
