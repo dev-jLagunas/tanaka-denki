@@ -1,0 +1,1 @@
+import{_ as t,c as n,o,a as r}from"./v2NEKFoJ.js";const s={};function a(c,e){return o(),n("div",null,[...e[0]||(e[0]=[r("h1",{class:"text-white text-3xl"},"Hiring Information",-1)])])}const f=t(s,[["render",a]]);export{f as default};
