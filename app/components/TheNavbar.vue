@@ -1,11 +1,15 @@
 <script setup>
+// Reactive State
+const open = ref(false);
+
+// Router
 const route = useRoute();
 </script>
 
 <template>
   <nav>
     <!-- Mobile Side Panel -->
-    <MobileSideNav class="hidden" />
+    <MobileSideNav :open="open" @close="open = false" />
 
     <!-- Mobile Header Panel -->
     <div class="flex-row-between mt-reg md:hidden">
@@ -13,11 +17,11 @@ const route = useRoute();
         <img
           src="/images/logo-text.png"
           alt="company logo"
-          class="w-auto max-w-[80%] sm:max-w-[50%]"
+          class="w-auto max-w-[80%] xs:max-w-[50%]"
         />
       </NuxtLink>
 
-      <button class="hover-animation">
+      <button class="hover-animation" @click="open = !open">
         <Icon name="mdi:menu" size="55" class="text-brand-blue" />
       </button>
     </div>
