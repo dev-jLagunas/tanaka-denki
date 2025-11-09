@@ -23,6 +23,7 @@ body {
   /* neutral colors */
   --color-neutral-light: #f5f5f0;
   --color-neutral-dark: #333333;
+  --color-lightest-blue: #6691c1;
   /* typography */
   --font-sans: "Noto Sans JP", sans-serif;
   --font-serif: "Shippori Mincho", serif;
@@ -40,6 +41,10 @@ body {
 
 @utility flex-row-evenly {
   @apply flex flex-row justify-evenly items-center;
+}
+
+@utility flex-row-around {
+  @apply flex flex-row justify-around items-center;
 }
 
 @utility flex-col-center {
@@ -60,4 +65,8 @@ body {
 
 .mobile-sidebar-copy {
   @apply text-neutral-light text-2xl tracking-widest space-y-2;
+}
+
+.mobile-footer {
+  @apply fixed bottom-0 inset-x-0 bg-brand-blue text-neutral-light py-sm;
 }

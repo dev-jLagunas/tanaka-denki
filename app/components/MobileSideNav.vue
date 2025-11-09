@@ -6,7 +6,6 @@ const emit = defineEmits(["close"]);
 // Router
 const route = useRoute();
 const router = useRouter();
-
 // Methods
 function go(path: string) {
   emit("close");

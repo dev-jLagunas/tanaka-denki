@@ -1,5 +1,8 @@
 <template>
   <div>
-    <h2>the footer here</h2>
+    <MobileFooter class="md:hidden" />
+    <footer class="hidden">
+      <p>© 2023 Tanaka Denki. All rights reserved.</p>
+    </footer>
   </div>
 </template>
