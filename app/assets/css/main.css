@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+body {
+  padding-inline: 1rem;
+  background-color: #f5f5f0;
+}
+
+@theme {
+  /* brand colors */
+  --color-brand-blue: #004898;
+  --color-brand-red: #ea5350;
+  --color-brand-green: #6cbb5a;
+  /* neutral colors */
+  --color-neutral-light: #f5f5f0;
+  --color-neutral-dark: #333333;
+}
