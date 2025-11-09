@@ -12,7 +12,7 @@ const route = useRoute();
     <MobileSideNav :open="open" @close="open = false" />
 
     <!-- Mobile Header Panel -->
-    <div class="flex-row-between mt-reg md:hidden">
+    <div class="flex-row-between mt-reg px-reg md:hidden">
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"
@@ -27,7 +27,7 @@ const route = useRoute();
     </div>
 
     <!-- Desktop Navbar -->
-    <div class="hidden md:flex md:mt-reg">
+    <div class="hidden md:flex md:px-reg md:mt-reg">
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"

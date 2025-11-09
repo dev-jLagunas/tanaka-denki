@@ -5,10 +5,10 @@
 ********************************************/
 
 body {
-  padding-inline: 1rem;
   background-color: hsl(60, 20%, 95%);
   max-width: 1400px;
   margin-inline: auto;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /********************************************
@@ -52,8 +52,16 @@ body {
   @apply flex flex-col justify-center items-center;
 }
 
+@utility flex-col-start-center {
+  @apply flex flex-col justify-start items-center;
+}
+
 @utility hover-animation {
   @apply transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:opacity-90;
+}
+
+@utility background-img-cover {
+  @apply h-full bg-cover bg-center flex items-center justify-center;
 }
 
 /********************************************

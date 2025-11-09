@@ -4,7 +4,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <footer class="mobile-footer">
+  <footer class="mobile-footer z-10">
     <ul class="flex-row-around">
       <!-- Home -->
       <li>

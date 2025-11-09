@@ -1,3 +1,6 @@
 <template>
-  <h1>Index page here / landing page</h1>
+  <main>
+    <HeroMobile class="md:hidden" />
+    <HeroDesktop class="hidden md:block" />
+  </main>
 </template>
