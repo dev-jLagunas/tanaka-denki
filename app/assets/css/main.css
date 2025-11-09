@@ -6,7 +6,9 @@
 
 body {
   padding-inline: 1rem;
-  background-color: #f5f5f0;
+  background-color: hsl(60, 20%, 95%);
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 /********************************************
@@ -21,8 +23,25 @@ body {
   /* neutral colors */
   --color-neutral-light: #f5f5f0;
   --color-neutral-dark: #333333;
+  /* typography */
+  --font-sans: "Noto Sans JP", sans-serif;
+  --font-serif: "Shippori Mincho", serif;
+  /* spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-reg: 1rem;
 }
 
 /********************************************
         Custom Tailwind Classes
 ********************************************/
+@utility flex-row-between {
+  @apply flex flex-row justify-between items-center;
+}
+
+@utility flex-row-evenly {
+  @apply flex flex-row justify-evenly items-center;
+}
+
+@utility hover-animation {
+  @apply transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:opacity-90;
+}

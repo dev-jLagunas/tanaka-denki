@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const route = useRoute();
+</script>
 
 <template>
   <nav>
@@ -6,20 +8,85 @@
     <MobileSideNav class="hidden" />
 
     <!-- Mobile Header Panel -->
-    <div class="md:hidden">
-      <p>LOGO HERE</p>
-      <p>HAMBURGER MENU</p>
-      <Icon name="mdi:menu" size="24" />
+    <div class="flex-row-between mt-reg md:hidden">
+      <NuxtLink to="/">
+        <img
+          src="/images/logo-text.png"
+          alt="company logo"
+          class="w-auto max-w-[80%] sm:max-w-[50%]"
+        />
+      </NuxtLink>
+
+      <button class="hover-animation">
+        <Icon name="mdi:menu" size="55" class="text-brand-blue" />
+      </button>
     </div>
 
     <!-- Desktop Navbar -->
-    <div class="hidden md:flex">
-      <p>LOGO HERE</p>
-      <ul>
-        <li>home</li>
-        <li>about</li>
-        <li>services</li>
-        <li>contact</li>
+    <div class="hidden md:flex md:mt-reg">
+      <NuxtLink to="/">
+        <img
+          src="/images/logo-text.png"
+          alt="company logo"
+          class="w-auto max-w-xs"
+        />
+      </NuxtLink>
+      <ul class="flex-row-evenly font-sans w-full">
+        <li>
+          <NuxtLink
+            to="/"
+            :class="
+              route.path === '/'
+                ? 'text-brand-blue font-semibold'
+                : 'text-neutral-dark'
+            "
+            >ホーム</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            to="/company-info"
+            :class="
+              route.path === '/company-info'
+                ? 'text-brand-blue font-semibold'
+                : 'text-neutral-dark'
+            "
+            >会社案内</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            to="/hiring-info"
+            :class="
+              route.path === '/hiring-info'
+                ? 'text-brand-blue font-semibold'
+                : 'text-neutral-dark'
+            "
+            >採用情報</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            to="/blog"
+            :class="
+              route.path === '/blog'
+                ? 'text-brand-blue font-semibold'
+                : 'text-neutral-dark'
+            "
+            >お知らせ</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            to="/contact"
+            :class="
+              route.path === '/contact'
+                ? 'text-brand-blue font-semibold'
+                : 'text-neutral-dark'
+            "
+            >お問合せ</NuxtLink
+          >
+        </li>
       </ul>
     </div>
   </nav>
