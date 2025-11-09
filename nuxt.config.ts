@@ -8,6 +8,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  ssr: false,
+  app: {
+    baseURL: "/tanaka-denki/",
+  },
   modules: ["@nuxt/icon", "@nuxtjs/google-fonts"],
   icon: {
     mode: "css",
