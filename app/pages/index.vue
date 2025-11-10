@@ -7,5 +7,6 @@
       icon="mdi:office-building"
       sectionId="work-info"
     />
+    <WorkInfo />
   </main>
 </template>

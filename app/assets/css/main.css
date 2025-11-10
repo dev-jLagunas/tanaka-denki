@@ -77,6 +77,10 @@ body {
   @apply bg-brand-red text-neutral-light px-4 py-1 mt-reg rounded-sm;
 }
 
+@utility long-copy-text {
+  @apply text-neutral-dark tracking-wider leading-8;
+}
+
 /********************************************
         Custom Classes
 ********************************************/
