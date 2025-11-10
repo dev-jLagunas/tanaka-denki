@@ -13,13 +13,13 @@ const route = useRoute();
 
     <!-- Mobile Header Panel -->
     <div
-      class="h-15 flex-row-between mt-lg px-reg fixed -top-4 left-0 w-full bg-neutral-light z-10 md:hidden"
+      class="h-16 flex-row-between mt-lg px-reg fixed -top-8 left-0 w-full bg-neutral-light z-10 md:hidden safe-top"
     >
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"
           alt="company logo"
-          class="w-auto h-auto max-w-[90%] xs:max-w-[50%]"
+          class="w-[95%] h-auto max-w-[325px]"
         />
       </NuxtLink>
 

@@ -139,3 +139,10 @@ body {
 .work-info-card-subheading {
   @apply text-neutral-dark font-bold tracking-widest my-4 text-2xl w-full text-center md:text-start;
 }
+
+/* Layers */
+@layer utilities {
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+}
