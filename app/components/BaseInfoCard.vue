@@ -42,7 +42,7 @@ const props = defineProps({
       </p>
     </header>
 
-    <figure class="w-full h-[350px] mt-8 rounded-sm overflow-hidden shrink-0">
+    <figure class="w-full h-[350px] mt-8 rounded-b-sm overflow-hidden shrink-0">
       <img :src="imgSrc" :alt="imgAlt" class="h-full w-full object-cover" />
     </figure>
   </article>

@@ -6,7 +6,9 @@
     <h3 class="long-copy-text text-2xl mt-sm md:text-3xl md:leading-9">
       お客様の諸課題をすべて解決いたします
     </h3>
-    <div class="md:grid md:grid-cols-2 md:gap-reg lg:grid-cols-3">
+    <div
+      class="md:grid md:grid-cols-2 md:gap-reg lg:grid-cols-3 xl:grid-cols-4"
+    >
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="1"
