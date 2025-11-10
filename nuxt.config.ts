@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: "/tanaka-denki/",
+    buildAssetsDir: "assets",
   },
   modules: ["@nuxt/icon", "@nuxtjs/google-fonts"],
   icon: {
