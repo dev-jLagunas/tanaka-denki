@@ -18,7 +18,7 @@
         number="1"
         subheading="年次・月次の点検・報告"
         longCopy="長期にわたり、安定した電力を確保するため、年次・月次点検を行います。"
-        :images="['/images/work/work-info-img-1.webp']"
+        :images="['images/work/work-info-img-1.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
@@ -27,8 +27,8 @@
         longCopy="焼損コネクタの撤去、新コネクタの取付け、配線接続により故障復旧を図ります。"
         :slideCopy="['(例)焼損コネクタの修復']"
         :images="[
-          '/images/work/work-info-img-2b.png',
-          '/images/work/work-info-img-2.png',
+          'images/work/work-info-img-2b.png',
+          'images/work/work-info-img-2.png',
         ]"
       />
       <BaseInfoCard
@@ -42,9 +42,9 @@
           'PCS画面表示故障復帰（連系運転）',
         ]"
         :images="[
-          '/images/work/work-info-img-3.webp',
-          '/images/work/work-info-img-3b.webp',
-          '/images/work/work-info-img-3c.webp',
+          'images/work/work-info-img-3.webp',
+          'images/work/work-info-img-3b.webp',
+          'images/work/work-info-img-3c.webp',
         ]"
       />
       <BaseInfoCard
@@ -53,21 +53,21 @@
         subheading="監視カメラで障害発生を検知"
         longCopy="発電所の防犯のため監視します。
         さらに、設備の障害発生をリアルタイムで監視し、物理的要因を把握して早急に対処します。"
-        :images="['/images/work/work-info-img-4.webp']"
+        :images="['images/work/work-info-img-4.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="5"
         subheading="出力抑制・デマンド管理"
         longCopy="電力会社からの出力抑制に対処します。デマンド管理により、お客様の損失を縮減(最小限に)します。"
-        :images="['/images/work/work-info-img-5.webp']"
+        :images="['images/work/work-info-img-5.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="6"
         subheading="キュービクルの保守点検"
         longCopy="外観・盤内点検、電力量積算値・デマンド検針 漏れ電流・トランス温度の測定等を行います。"
-        :images="['/images/work/work-info-img-6.webp']"
+        :images="['images/work/work-info-img-6.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
@@ -77,7 +77,7 @@
         :slideCopy="[
           '当社所有重機等①乗用草刈機×６台②自走式草刈機×７台③ラジコン操縦草刈機×２台運搬車（除雪兼用×５台',
         ]"
-        :images="['/images/work/work-info-img-7.webp']"
+        :images="['images/work/work-info-img-7.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
@@ -87,14 +87,14 @@
         :slideCopy="[
           '当社所有重機等④ロータリー式除雪車×４台⑤大型除雪機×４台⑥ホイールローダー×２台',
         ]"
-        :images="['/images/work/work-info-img-8.webp']"
+        :images="['images/work/work-info-img-8.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="9"
         subheading="ドローンによる点検"
         longCopy="使用目的機能性の高い赤外線カメラが搭載されたドローンにより、上空より肉眼で確認できない異常（ホットスポット等）を正確に感知し、発電効率の低下を早期に発見します。"
-        :images="['/images/work/work-info-img-9.webp']"
+        :images="['images/work/work-info-img-9.webp']"
       />
     </section>
     <BaseSectionHeader
@@ -108,19 +108,19 @@
         bgColor="bg-light-red"
         number="10a"
         subheading="受電設備（高圧引込柱）"
-        :images="['/images/work/work-info-img-10.webp']"
+        :images="['images/work/work-info-img-10.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-red"
         number="10b"
         subheading="負荷設備（コントロールセンター）"
-        :images="['/images/work/work-info-img-10b.webp']"
+        :images="['images/work/work-info-img-10b.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-red"
         number="10c"
         subheading="発電設備（デマンド抑制））"
-        :images="['/images/work/work-info-img-10c.webp']"
+        :images="['images/work/work-info-img-10c.webp']"
       />
     </section>
     <BaseSectionHeader
@@ -134,37 +134,37 @@
         bgColor="bg-light-green"
         number="11a"
         subheading="乗用草刈機"
-        :images="['/images/work/work-info-img-11a.webp']"
+        :images="['images/work/work-info-img-11a.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11b"
         subheading="自走式草刈機"
-        :images="['/images/work/work-info-img-11b.webp']"
+        :images="['images/work/work-info-img-11b.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11c"
         subheading="自走式草刈機"
-        :images="['/images/work/work-info-img-11c.webp']"
+        :images="['images/work/work-info-img-11c.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11d"
         subheading="自走式草刈機"
-        :images="['/images/work/work-info-img-11d.webp']"
+        :images="['images/work/work-info-img-11d.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11e"
         subheading="自走式草刈機"
-        :images="['/images/work/work-info-img-11e.webp']"
+        :images="['images/work/work-info-img-11e.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11f"
         subheading="自走式草刈機"
-        :images="['/images/work/work-info-img-11f.webp']"
+        :images="['images/work/work-info-img-11f.webp']"
       />
     </section>
   </section>
