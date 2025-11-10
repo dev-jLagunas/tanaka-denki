@@ -1,1 +1,0 @@
-import{_ as t,c as a,o as c,a as o}from"./DP_uSOnl.js";const n={};function s(r,e){return c(),a("div",null,[...e[0]||(e[0]=[o("h1",{class:"text-white text-3xl"},"Contact Page View",-1)])])}const _=t(n,[["render",s]]);export{_ as default};
