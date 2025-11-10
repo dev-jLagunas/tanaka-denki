@@ -6,7 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 </script>
 
 <template>
-  <header>
+  <header class="mt-25">
     <Swiper
       :modules="[Autoplay, Pagination]"
       :loop="true"

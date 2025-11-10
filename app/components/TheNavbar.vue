@@ -12,12 +12,14 @@ const route = useRoute();
     <MobileSideNav :open="open" @close="open = false" />
 
     <!-- Mobile Header Panel -->
-    <div class="flex-row-between mt-reg px-reg md:hidden">
+    <div
+      class="h-15 flex-row-between mt-lg px-reg fixed -top-4 left-0 w-full bg-neutral-light z-10 md:hidden"
+    >
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"
           alt="company logo"
-          class="w-auto max-w-[80%] xs:max-w-[50%]"
+          class="w-auto h-auto max-w-[90%] xs:max-w-[50%]"
         />
       </NuxtLink>
 
