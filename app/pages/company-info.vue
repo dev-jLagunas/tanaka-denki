@@ -1,5 +1,13 @@
 <template>
-  <div>
-    <h1 class="text-white text-3xl">Company Information</h1>
-  </div>
+  <main>
+    <BaseSectionHeader
+      bgColor="bg-brand-blue"
+      title="会社案内"
+      icon="mdi:office-building"
+      sectionId="work-info"
+    />
+    <MobileCompany />
+    <MobileHiring />
+    <DesktopCompany />
+  </main>
 </template>

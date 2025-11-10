@@ -2,8 +2,8 @@
   <section>
     <BaseSectionHeader
       bgColor="bg-brand-blue"
-      title="会社案内"
-      icon="mdi:office-building"
+      title="事業案内"
+      icon="mdi:company"
       sectionId="work-info"
     />
     <h3
@@ -14,7 +14,7 @@
     <h3 class="long-copy-text px-reg text-2xl mt-sm md:text-3xl md:leading-9">
       お客様の諸課題をすべて解決いたします
     </h3>
-    <section class="md:grid md:grid-cols-2 md:gap-lg md:px-reg lg:grid-cols-3">
+    <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="1"

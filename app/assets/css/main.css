@@ -133,7 +133,7 @@ body {
 
 /* Work Info Component */
 .work-info-card {
-  @apply pt-lg  mt-10 h-fit flex flex-col w-[90%] mx-auto rounded-sm shadow-sm;
+  @apply pt-lg  mt-10 h-fit flex flex-col w-[90%] mx-auto rounded-sm shadow-sm md:w-full;
 }
 
 .work-info-card-heading {
