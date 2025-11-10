@@ -27,7 +27,7 @@ const route = useRoute();
     </div>
 
     <!-- Desktop Navbar -->
-    <div class="hidden md:flex md:px-reg md:mt-reg">
+    <div class="hidden md:flex md:px-reg md:mt-lg">
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"

@@ -8,6 +8,7 @@ body {
   background-color: hsl(60, 20%, 95%);
   max-width: 1400px;
   margin-inline: auto;
+  margin-bottom: 50rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -38,6 +39,10 @@ body {
 ********************************************/
 @utility flex-row-between {
   @apply flex flex-row justify-between items-center;
+}
+
+@utility flex-row-center {
+  @apply flex flex-row justify-center items-center;
 }
 
 @utility flex-row-evenly {
