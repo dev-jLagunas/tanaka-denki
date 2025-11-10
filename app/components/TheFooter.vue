@@ -6,7 +6,7 @@ const route = useRoute();
 <template>
   <div>
     <MobileFooter class="md:hidden" />
-    <footer class="hidden desktop-footer mx-auto md:hidden">
+    <footer class="hidden desktop-footer mx-auto">
       <div>
         <div class="flex-row-between w-full px-reg">
           <div class="space-y-1">

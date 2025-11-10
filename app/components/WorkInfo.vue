@@ -103,7 +103,7 @@
       bgColor="bg-brand-red"
       title="需要設備の保守点検"
       icon="mdi:gear"
-      sectionId="work-info"
+      sectionId="system-info"
     />
     <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
       <BaseInfoCard
@@ -129,7 +129,7 @@
       bgColor="bg-brand-green"
       title="重機等一覧"
       icon="mdi:tractor"
-      sectionId="work-info"
+      sectionId="tool-info"
     />
     <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
       <BaseInfoCard
