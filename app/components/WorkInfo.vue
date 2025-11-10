@@ -14,14 +14,17 @@
         number="1"
         subheading="年次・月次の点検・報告"
         longCopy="長期にわたり、安定した電力を確保するため、年次・月次点検を行います。"
-        imgSrc="/images/hero/hero-slide-1.webp"
+        :images="['/images/hero/hero-slide-1.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="2"
         subheading="パネル・パワーコンディショナー等の修復"
         longCopy="焼損コネクタの撤去、新コネクタの取付け、配線接続により故障復旧を図ります。"
-        imgSrc="/images/hero/hero-slide-1.webp"
+        :images="[
+          '/images/hero/hero-slide-1.webp',
+          '/images/hero/hero-slide-2.webp',
+        ]"
       />
     </div>
   </section>
