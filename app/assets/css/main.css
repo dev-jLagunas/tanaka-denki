@@ -124,3 +124,16 @@ body {
 .hero-two-grid {
   @apply grid grid-cols-2 h-full;
 }
+
+/* Work Info Component */
+.work-info-card {
+  @apply pt-lg rounded-sm mt-10 h-fit flex flex-col md:h-[700px];
+}
+
+.work-info-card-heading {
+  @apply h-10 w-1/4 rounded-sm bg-neutral-light/85 flex-row-center;
+}
+
+.work-info-card-subheading {
+  @apply text-neutral-dark font-bold tracking-widest my-4 text-2xl w-full text-center md:text-start;
+}
