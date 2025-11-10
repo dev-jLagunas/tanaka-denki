@@ -6,7 +6,9 @@
       icon="mdi:office-building"
       sectionId="work-info"
     />
-    <h3 class="long-copy-text px-reg md:leading-9 text-2xl md:text-3xl">
+    <h3
+      class="long-copy-text px-reg md:leading-9 text-2xl md:text-3xl md:w-4/5"
+    >
       自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください
     </h3>
     <h3 class="long-copy-text px-reg text-2xl mt-sm md:text-3xl md:leading-9">

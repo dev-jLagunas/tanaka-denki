@@ -49,7 +49,7 @@ const props = defineProps({
         {{ subheading }}
       </h3>
 
-      <p v-if="longCopy" class="long-copy-text text-2xl my-sm">
+      <p v-if="longCopy" class="long-copy-text text-2xl my-sm md:text-lg">
         {{ longCopy }}
       </p>
     </header>
