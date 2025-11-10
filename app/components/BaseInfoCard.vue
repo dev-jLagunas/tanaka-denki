@@ -23,6 +23,10 @@ const props = defineProps({
     type: String,
     default: "", // optional text
   },
+  slideCopy: {
+    type: Array,
+    default: () => [],
+  },
   images: {
     type: Array,
     required: true, // ['/img1.jpg', '/img2.jpg', ...]
@@ -58,13 +62,23 @@ const props = defineProps({
       <Swiper
         :modules="[Autoplay, Pagination, Navigation]"
         :loop="true"
-        :autoplay="{ delay: 3000 }"
+        :autoplay="{ delay: 5000 }"
         :pagination="true"
         :navigation="true"
         class="h-full w-full"
       >
-        <SwiperSlide v-for="(src, i) in images" :key="i" class="h-full w-full">
+        <SwiperSlide
+          v-for="(src, i) in images"
+          :key="i"
+          class="h-full w-full relative"
+        >
           <img :src="src" class="h-full w-full object-cover" />
+          <p
+            v-if="slideCopy[i]"
+            class="absolute bottom-0 w-full text-neutral-dark text-center bg-neutral-light/90 py-1"
+          >
+            {{ slideCopy[i] }}
+          </p>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -72,9 +86,15 @@ const props = defineProps({
     <!-- If only one image → normal figure -->
     <figure
       v-else
-      class="w-full h-[350px] mt-8 rounded-b-sm overflow-hidden shrink-0"
+      class="w-full h-[350px] mt-8 rounded-b-sm overflow-hidden shrink-0 relative"
     >
       <img :src="images[0]" class="h-full w-full object-cover" />
+      <p
+        v-if="slideCopy[0]"
+        class="absolute bottom-0 w-full text-neutral-dark text-center bg-neutral-light/90 py-1 px-reg"
+      >
+        {{ slideCopy[0] }}
+      </p>
     </figure>
   </article>
 </template>

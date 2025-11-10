@@ -1,31 +1,171 @@
 <template>
-  <section class="px-reg">
-    <h3 class="long-copy-text md:leading-9 text-2xl md:text-3xl">
+  <section>
+    <BaseSectionHeader
+      bgColor="bg-brand-blue"
+      title="会社案内"
+      icon="mdi:office-building"
+      sectionId="work-info"
+    />
+    <h3 class="long-copy-text px-reg md:leading-9 text-2xl md:text-3xl">
       自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください
     </h3>
-    <h3 class="long-copy-text text-2xl mt-sm md:text-3xl md:leading-9">
+    <h3 class="long-copy-text px-reg text-2xl mt-sm md:text-3xl md:leading-9">
       お客様の諸課題をすべて解決いたします
     </h3>
-    <div
-      class="md:grid md:grid-cols-2 md:gap-reg lg:grid-cols-3 xl:grid-cols-4"
-    >
+    <section class="md:grid md:grid-cols-2 md:gap-lg md:px-reg lg:grid-cols-3">
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="1"
         subheading="年次・月次の点検・報告"
         longCopy="長期にわたり、安定した電力を確保するため、年次・月次点検を行います。"
-        :images="['/images/hero/hero-slide-1.webp']"
+        :images="['/images/work/work-info-img-1.webp']"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="2"
         subheading="パネル・パワーコンディショナー等の修復"
         longCopy="焼損コネクタの撤去、新コネクタの取付け、配線接続により故障復旧を図ります。"
+        :slideCopy="['(例)焼損コネクタの修復']"
         :images="[
-          '/images/hero/hero-slide-1.webp',
-          '/images/hero/hero-slide-2.webp',
+          '/images/work/work-info-img-2b.png',
+          '/images/work/work-info-img-2.png',
         ]"
       />
-    </div>
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="3"
+        subheading="モニタリングによる不具合の早期発見"
+        longCopy="(例)パワーコンディショナーの直流地絡（重故障)。 モニタリングにより、早期の原因把握と故障復旧を図ります"
+        :slideCopy="[
+          '系統・PC監視画面表示警報・状態リスト',
+          'PCS画面表示故障停止',
+          'PCS画面表示故障復帰（連系運転）',
+        ]"
+        :images="[
+          '/images/work/work-info-img-3.webp',
+          '/images/work/work-info-img-3b.webp',
+          '/images/work/work-info-img-3c.webp',
+        ]"
+      />
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="4"
+        subheading="監視カメラで障害発生を検知"
+        longCopy="発電所の防犯のため監視します。
+        さらに、設備の障害発生をリアルタイムで監視し、物理的要因を把握して早急に対処します。"
+        :images="['/images/work/work-info-img-4.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="5"
+        subheading="出力抑制・デマンド管理"
+        longCopy="電力会社からの出力抑制に対処します。デマンド管理により、お客様の損失を縮減(最小限に)します。"
+        :images="['/images/work/work-info-img-5.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="6"
+        subheading="キュービクルの保守点検"
+        longCopy="外観・盤内点検、電力量積算値・デマンド検針 漏れ電流・トランス温度の測定等を行います。"
+        :images="['/images/work/work-info-img-6.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="7"
+        subheading="除草作業"
+        longCopy="作業目的成長した雑草の影による発電量の低下を防止すると共に、つる植物の巻付きによるケーブルの損傷を防止するため除草します。"
+        :slideCopy="[
+          '当社所有重機等①乗用草刈機×６台②自走式草刈機×７台③ラジコン操縦草刈機×２台運搬車（除雪兼用×５台',
+        ]"
+        :images="['/images/work/work-info-img-7.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="8"
+        subheading="除雪作業"
+        longCopy="作業目的積雪荷重によるパネル倒壊を防止すると共に、パネル上の積雪を落下させて発電可能にするため除雪します。 "
+        :slideCopy="[
+          '当社所有重機等④ロータリー式除雪車×４台⑤大型除雪機×４台⑥ホイールローダー×２台',
+        ]"
+        :images="['/images/work/work-info-img-8.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-lightest-blue"
+        number="9"
+        subheading="ドローンによる点検"
+        longCopy="使用目的機能性の高い赤外線カメラが搭載されたドローンにより、上空より肉眼で確認できない異常（ホットスポット等）を正確に感知し、発電効率の低下を早期に発見します。"
+        :images="['/images/work/work-info-img-9.webp']"
+      />
+    </section>
+    <BaseSectionHeader
+      bgColor="bg-brand-red"
+      title="需要設備の保守点検"
+      icon="mdi:gear"
+      sectionId="work-info"
+    />
+    <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
+      <BaseInfoCard
+        bgColor="bg-light-red"
+        number="10a"
+        subheading="受電設備（高圧引込柱）"
+        :images="['/images/work/work-info-img-10.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-red"
+        number="10b"
+        subheading="負荷設備（コントロールセンター）"
+        :images="['/images/work/work-info-img-10b.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-red"
+        number="10c"
+        subheading="発電設備（デマンド抑制））"
+        :images="['/images/work/work-info-img-10c.webp']"
+      />
+    </section>
+    <BaseSectionHeader
+      bgColor="bg-brand-green"
+      title="重機等一覧"
+      icon="mdi:tractor"
+      sectionId="work-info"
+    />
+    <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
+      <BaseInfoCard
+        bgColor="bg-light-green"
+        number="11a"
+        subheading="乗用草刈機"
+        :images="['/images/work/work-info-img-11a.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-green"
+        number="11b"
+        subheading="自走式草刈機"
+        :images="['/images/work/work-info-img-11b.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-green"
+        number="11c"
+        subheading="自走式草刈機"
+        :images="['/images/work/work-info-img-11c.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-green"
+        number="11d"
+        subheading="自走式草刈機"
+        :images="['/images/work/work-info-img-11d.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-green"
+        number="11e"
+        subheading="自走式草刈機"
+        :images="['/images/work/work-info-img-11e.webp']"
+      />
+      <BaseInfoCard
+        bgColor="bg-light-green"
+        number="11f"
+        subheading="自走式草刈機"
+        :images="['/images/work/work-info-img-11f.webp']"
+      />
+    </section>
   </section>
 </template>
