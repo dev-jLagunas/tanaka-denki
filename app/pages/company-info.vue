@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="mt-12">
     <BaseSectionHeader
       bgColor="bg-brand-blue"
       title="会社案内"
@@ -7,7 +7,7 @@
       sectionId="work-info"
       topMargin="mt-18"
     />
-    <MobileCompany class="md:hidden" />
-    <DesktopCompany class="hidden md:grid" />
+    <MobileCompany class="lg:hidden" />
+    <DesktopCompany class="hidden lg:grid" />
   </main>
 </template>

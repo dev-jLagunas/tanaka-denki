@@ -4,10 +4,22 @@
       bgColor="bg-lightest-blue"
       title="沿革"
       icon="mdi:timeline"
-      sectionId="work-info"
+      sectionId="timeline"
+      class="lg:hidden"
     />
-    <img src="/images/logo-only.png" alt="company logo" class="h-20 mb-8" />
-    <ul class="relative border-l-2 border-brand-blue pl-6 space-y-12 ml-reg">
+    <img
+      src="/images/timeline-img.jpg"
+      alt=""
+      class="-mt-reg w-[90%] mx-auto rounded-sm h-[300px] object-cover object-top lg:w-full lg:pr-8"
+    />
+    <ScrollNextBtn
+      nextId="certifications"
+      label="資格へスクロール"
+      class="mt-reg lg:hidden"
+    />
+    <ul
+      class="relative border-l-2 border-brand-blue pl-6 space-y-12 ml-reg mt-lg"
+    >
       <!-- Item -->
       <li class="relative">
         <!-- Dot -->
