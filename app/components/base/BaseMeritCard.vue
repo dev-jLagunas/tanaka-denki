@@ -23,7 +23,7 @@ const props = defineProps({
       <Icon name="mdi:check" size="60" class="text-brand-green" />
     </div>
     <p
-      class="font-bold text-primary-dark tracking-wider mt-reg text-2xl md:text-4xl lg:text-6xl"
+      class="font-bold text-primary-dark tracking-wider mt-reg text-2xl md:text-4xl lg:text-5xl"
     >
       {{ text }}
     </p>

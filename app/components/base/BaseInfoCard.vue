@@ -64,7 +64,7 @@ const props = defineProps({
         :navigation="true"
       >
         <SwiperSlide v-for="(src, i) in images" :key="i" class="relative">
-          <figure class="md:h-[350px]">
+          <figure class="md:h-[350px] lg:h-[300px]">
             <img :src="src" class="h-full w-full object-cover rounded-sm" />
           </figure>
           <p

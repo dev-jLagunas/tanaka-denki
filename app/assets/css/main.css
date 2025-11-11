@@ -84,7 +84,7 @@ body {
 }
 
 @utility long-copy-text {
-  @apply text-primary-dark tracking-wider leading-6 text-lg lg:text-xl;
+  @apply text-primary-dark tracking-wider leading-6;
 }
 
 @utility card-heading-text {
