@@ -64,7 +64,7 @@ const props = defineProps({
         :navigation="true"
       >
         <SwiperSlide v-for="(src, i) in images" :key="i" class="relative">
-          <figure class="md:h-[300px]">
+          <figure class="md:h-[350px]">
             <img :src="src" class="h-full w-full object-cover rounded-sm" />
           </figure>
           <p
@@ -78,8 +78,11 @@ const props = defineProps({
     </div>
 
     <!-- If only one image → normal figure -->
-    <figure v-else class="sm:h-[350px] lg:h-[300px]">
-      <img :src="images[0]" class="h-full w-full object-cover rounded-sm" />
+    <figure v-else class="w-auto sm:h-[350px] lg:h-[300px]">
+      <img
+        :src="images[0]"
+        class="h-full w-full object-cover object-center rounded-sm"
+      />
     </figure>
   </article>
 </template>
