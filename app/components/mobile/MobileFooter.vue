@@ -11,7 +11,7 @@ const route = useRoute();
         <NuxtLink to="/" class="flex-col-center hover-animation">
           <Icon
             name="mdi:home"
-            size="40"
+            size="30"
             :class="
               route.path === '/' ? 'text-lightest-blue' : 'text-primary-white'
             "
@@ -28,7 +28,7 @@ const route = useRoute();
           rel="noopener noreferrer"
           class="flex-col-center hover-animation"
         >
-          <Icon name="mdi:map-marker" size="40" />
+          <Icon name="mdi:map-marker" size="30" />
           <span class="text-sm mt-1">アクセス</span>
         </a>
       </li>
@@ -38,7 +38,7 @@ const route = useRoute();
         <NuxtLink to="/contact" class="flex-col-center hover-animation">
           <Icon
             name="mdi:email-outline"
-            size="40"
+            size="30"
             :class="
               route.path === '/contact'
                 ? 'text-lightest-blue'
@@ -52,7 +52,7 @@ const route = useRoute();
       <!-- Phone -->
       <li>
         <a href="tel:0000000000" class="flex-col-center hover-animation">
-          <Icon name="mdi:phone" size="40" />
+          <Icon name="mdi:phone" size="30" />
           <span class="text-sm mt-1">電話</span>
         </a>
       </li>

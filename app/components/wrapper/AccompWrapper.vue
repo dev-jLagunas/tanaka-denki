@@ -14,7 +14,7 @@
     <h3 class="long-copy-text px-reg mt-reg :w-4/5">
       計画、設計、事業計画認定申請(経済産業省)、接続検討申込(電力会社)、補助金申請(経済産業省、環境省)、施工、発電管理、パネル・PCS等の保守管理、除草、除雪等をワンストップサービスで行います。
     </h3>
-    <div class="mt-lg space-y-reg md:grid md:grid-cols-3">
+    <div class="mt-lg space-y-reg md:grid md:grid-cols-3 md:gap-reg md:px-reg">
       <BaseAchieveCard
         location="石川県かほく市"
         name="松浜太陽光発電所"

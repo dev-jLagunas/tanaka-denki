@@ -6,10 +6,10 @@
       icon="mdi:company"
       sectionId="work-info"
     />
-    <h3 class="long-copy-text px-reg md:w-4/5 md:text-2xl">
+    <h3 class="long-copy-text px-reg md:text-xl">
       自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください
     </h3>
-    <h3 class="long-copy-text px-reg mt-sm md:leading-9 md:text-2xl">
+    <h3 class="long-copy-text px-reg mt-sm md:leading-9 md:text-xl">
       お客様の諸課題をすべて解決いたします
     </h3>
     <section class="space-y-8 mt-lg md:grid md:grid-cols-2">
