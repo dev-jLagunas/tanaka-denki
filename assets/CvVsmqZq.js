@@ -1,1 +1,0 @@
-import{_ as t,c as o,o as n,a}from"./Bd2pCQl7.js";const r={};function s(c,e){return n(),o("div",null,[...e[0]||(e[0]=[a("h1",{class:"text-white text-3xl"},"Company Information",-1)])])}const l=t(r,[["render",s]]);export{l as default};
