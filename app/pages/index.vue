@@ -1,7 +1,7 @@
 <template>
   <main>
     <HeroMobile class="md:hidden" />
-    <HeroDesktop class="hidden md:block" />
+    <HeroDesktop />
     <WorkInfo />
     <BaseSectionHeader
       bgColor="bg-brand-blue"
