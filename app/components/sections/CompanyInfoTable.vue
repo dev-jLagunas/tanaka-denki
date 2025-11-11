@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-lg">
+  <div class="mt-lg px-sm">
     <img src="" alt="" class="hidden md:flex" />
     <ul class="space-y-4">
       <li class="md:flex md:justify-start md:items-center md:gap-2">
