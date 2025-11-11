@@ -7,6 +7,6 @@
       sectionId="work-info"
     />
     <MobileCompany class="md:hidden" />
-    <DesktopCompany class="hidden md:block" />
+    <DesktopCompany class="hidden md:grid" />
   </main>
 </template>
