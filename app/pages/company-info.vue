@@ -6,8 +6,7 @@
       icon="mdi:office-building"
       sectionId="work-info"
     />
-    <MobileCompany />
-    <MobileHiring />
-    <DesktopCompany />
+    <MobileCompany class="md:hidden" />
+    <DesktopCompany class="hidden md:block" />
   </main>
 </template>
