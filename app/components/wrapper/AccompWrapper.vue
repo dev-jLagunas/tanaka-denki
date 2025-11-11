@@ -6,9 +6,11 @@
       bgColor="bg-brand-blue"
       title="施工実績"
       icon="mdi:achievement"
-      sectionId="work-info"
+      sectionId="achievements"
     />
-    <h3 class="long-copy-text px-reg -mt-4 md:w-4/5">
+    <ScrollNextBtn nextId="blog-section" label="お知らせへスクロール" />
+
+    <h3 class="long-copy-text px-reg md:w-4/5">
       当社は、高圧10か所及び低圧18か所の太陽光発電所を建設し、その発電出力の合計は約５ＭＷです。
     </h3>
     <h3 class="long-copy-text px-reg mt-reg :w-4/5">

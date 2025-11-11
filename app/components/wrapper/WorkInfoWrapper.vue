@@ -6,6 +6,11 @@
       icon="mdi:company"
       sectionId="work-info"
     />
+    <ScrollNextBtn
+      nextId="system-info"
+      label="需要設備の保守点検へスクロール"
+    />
+
     <h3 class="long-copy-text px-reg md:text-xl">
       自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください
     </h3>
@@ -103,6 +108,7 @@
       icon="mdi:gear"
       sectionId="system-info"
     />
+    <ScrollNextBtn nextId="tool-info" label="重機等一覧へスクロール" />
     <section class="space-y-4 mt-lg md:grid md:grid-cols-2">
       <BaseInfoCard
         bgColor="bg-light-red"
@@ -129,6 +135,8 @@
       icon="mdi:tractor"
       sectionId="tool-info"
     />
+    <ScrollNextBtn nextId="customer-merits" label="特記事項へスクロール" />
+
     <section class="space-y-4 mt-lg md:grid md:grid-cols-2">
       <BaseInfoCard
         bgColor="bg-light-green"
