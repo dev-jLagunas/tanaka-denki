@@ -12,9 +12,7 @@ const route = useRoute();
     <MobileSideNav :open="open" @close="open = false" />
 
     <!-- Mobile Header Panel -->
-    <div
-      class="h-16 flex-row-between mt-lg px-reg fixed -top-8 left-0 w-full bg-neutral-light z-10 md:hidden safe-top"
-    >
+    <div class="mobile-navbar-header">
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"
@@ -44,7 +42,7 @@ const route = useRoute();
             :class="
               route.path === '/'
                 ? 'text-brand-blue font-semibold'
-                : 'text-neutral-dark'
+                : 'text-primary-dark'
             "
             >ホーム</NuxtLink
           >
@@ -55,7 +53,7 @@ const route = useRoute();
             :class="
               route.path === '/company-info'
                 ? 'text-brand-blue font-semibold'
-                : 'text-neutral-dark'
+                : 'text-primary-dark'
             "
             >会社案内</NuxtLink
           >
@@ -66,7 +64,7 @@ const route = useRoute();
             :class="
               route.path === '/hiring-info'
                 ? 'text-brand-blue font-semibold'
-                : 'text-neutral-dark'
+                : 'text-primary-dark'
             "
             >採用情報</NuxtLink
           >
@@ -77,7 +75,7 @@ const route = useRoute();
             :class="
               route.path === '/blog'
                 ? 'text-brand-blue font-semibold'
-                : 'text-neutral-dark'
+                : 'text-primary-dark'
             "
             >お知らせ</NuxtLink
           >
@@ -88,7 +86,7 @@ const route = useRoute();
             :class="
               route.path === '/contact'
                 ? 'text-brand-blue font-semibold'
-                : 'text-neutral-dark'
+                : 'text-primary-dark'
             "
             >お問合せ</NuxtLink
           >

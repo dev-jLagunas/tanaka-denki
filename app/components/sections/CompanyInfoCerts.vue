@@ -6,7 +6,7 @@
       icon="mdi:timeline"
       sectionId="work-info"
     />
-    <ul class="space-y-6 font-sans text-neutral-dark px-sm">
+    <ul class="space-y-6 font-sans text-primary-dark px-sm">
       <!-- Item -->
       <li class="flex items-center justify-between">
         <span class="flex items-center gap-3">
@@ -17,7 +17,7 @@
           </span>
           <span class="font-bold">第１種電気主任技術者</span>
         </span>
-        <span class="font-bold text-neutral-dark">1名</span>
+        <span class="font-bold text-primary-dark">1名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red ml-9"></div>
 
@@ -31,7 +31,7 @@
           </span>
           <span class="font-bold">第２種電気主任技術者</span>
         </span>
-        <span class="font-bold text-neutral-dark">1名</span>
+        <span class="font-bold text-primary-dark">1名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red ml-9"></div>
 
@@ -45,7 +45,7 @@
           </span>
           <span class="font-bold">第３種電気主任技術者</span>
         </span>
-        <span class="font-bold text-neutral-dark">3名</span>
+        <span class="font-bold text-primary-dark">3名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red ml-9"></div>
 
@@ -59,7 +59,7 @@
           </span>
           <span class="font-bold">エネルギー管理士</span>
         </span>
-        <span class="font-bold text-neutral-dark">1名</span>
+        <span class="font-bold text-primary-dark">1名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red ml-9"></div>
 
@@ -73,7 +73,7 @@
           </span>
           <span class="font-bold">第一種電気工事士</span>
         </span>
-        <span class="font-bold text-neutral-dark">4名</span>
+        <span class="font-bold text-primary-dark">4名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red ml-9"></div>
 
@@ -87,7 +87,7 @@
           </span>
           <span class="font-bold">第二種電気工事士</span>
         </span>
-        <span class="font-bold text-neutral-dark">6名</span>
+        <span class="font-bold text-primary-dark">6名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red ml-9"></div>
     </ul>

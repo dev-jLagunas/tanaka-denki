@@ -28,7 +28,7 @@ function go(path: string) {
             @click="go('/')"
             to="/"
             :class="
-              route.path === '/' ? 'text-brand-red' : 'text-neutral-light'
+              route.path === '/' ? 'text-brand-red' : 'text-primary-white'
             "
           >
             ホーム
@@ -54,7 +54,7 @@ function go(path: string) {
             :class="
               route.path === '/company-info'
                 ? 'text-brand-red'
-                : 'text-neutral-light'
+                : 'text-primary-white'
             "
           >
             会社案内
@@ -80,7 +80,7 @@ function go(path: string) {
             :class="
               route.path === '/hiring-info'
                 ? 'text-brand-red'
-                : 'text-neutral-light'
+                : 'text-primary-white'
             "
           >
             採用情報
@@ -91,7 +91,7 @@ function go(path: string) {
             class="hover-animation"
             @click="go('/blog')"
             :class="
-              route.path === '/blog' ? 'text-brand-red' : 'text-neutral-light'
+              route.path === '/blog' ? 'text-brand-red' : 'text-primary-white'
             "
           >
             お知らせ
@@ -104,7 +104,7 @@ function go(path: string) {
             :class="
               route.path === '/contact'
                 ? 'text-brand-red'
-                : 'text-neutral-light'
+                : 'text-primary-white'
             "
           >
             お問合せ

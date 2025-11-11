@@ -22,7 +22,7 @@ const route = useRoute();
                 :class="
                   route.path === '/'
                     ? 'text-lightest-blue'
-                    : 'text-neutral-light'
+                    : 'text-primary-white'
                 "
                 >ホーム</NuxtLink
               >
@@ -33,7 +33,7 @@ const route = useRoute();
                 :class="
                   route.path === '/company-info'
                     ? 'text-lightest-blue'
-                    : 'text-neutral-light'
+                    : 'text-primary-white'
                 "
                 >会社案内</NuxtLink
               >
@@ -44,7 +44,7 @@ const route = useRoute();
                 :class="
                   route.path === '/hiring-info'
                     ? 'text-lightest-blue'
-                    : 'text-neutral-light'
+                    : 'text-primary-white'
                 "
                 >採用情報</NuxtLink
               >
@@ -55,7 +55,7 @@ const route = useRoute();
                 :class="
                   route.path === '/blog'
                     ? 'text-lightest-blue'
-                    : 'text-neutral-light'
+                    : 'text-primary-white'
                 "
                 >お知らせ</NuxtLink
               >
@@ -66,7 +66,7 @@ const route = useRoute();
                 :class="
                   route.path === '/contact'
                     ? 'text-lightest-blue'
-                    : 'text-neutral-light'
+                    : 'text-primary-white'
                 "
                 >お問合せ</NuxtLink
               >

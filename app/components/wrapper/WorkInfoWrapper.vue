@@ -6,15 +6,13 @@
       icon="mdi:company"
       sectionId="work-info"
     />
-    <h3
-      class="long-copy-text px-reg md:leading-9 text-2xl md:text-3xl md:w-4/5"
-    >
+    <h3 class="long-copy-text px-reg md:w-4/5">
       自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください
     </h3>
-    <h3 class="long-copy-text px-reg text-2xl mt-sm md:text-3xl md:leading-9">
+    <h3 class="long-copy-text px-reg mt-sm md:leading-9">
       お客様の諸課題をすべて解決いたします
     </h3>
-    <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
+    <section class="space-y-4 mt-lg md:grid md:grid-cols-2">
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="1"
@@ -105,7 +103,7 @@
       icon="mdi:gear"
       sectionId="system-info"
     />
-    <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
+    <section class="space-y-4 mt-lg md:grid md:grid-cols-2">
       <BaseInfoCard
         bgColor="bg-light-red"
         number="10a"
@@ -131,7 +129,7 @@
       icon="mdi:tractor"
       sectionId="tool-info"
     />
-    <section class="md:grid md:grid-cols-2 md:gap-reg md:px-reg lg:grid-cols-3">
+    <section class="space-y-4 mt-lg md:grid md:grid-cols-2">
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11a"

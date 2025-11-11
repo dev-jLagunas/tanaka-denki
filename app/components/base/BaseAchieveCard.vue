@@ -14,19 +14,19 @@ const props = defineProps({
   >
     <div class="space-y-1">
       <p class="blue-bg-wrapper">所在地</p>
-      <h4 class="font-bold text-neutral-dark tracking-wider text-2xl">
+      <h4 class="font-bold text-primary-dark tracking-wider text-2xl">
         {{ location }}
       </h4>
     </div>
     <div class="space-y-1">
       <p class="blue-bg-wrapper">発電所名</p>
-      <h4 class="font-bold text-neutral-dark tracking-wider text-2xl">
+      <h4 class="font-bold text-primary-dark tracking-wider text-2xl">
         {{ name }}
       </h4>
     </div>
     <div class="space-y-1">
       <p class="blue-bg-wrapper">発電容量</p>
-      <h4 class="font-bold text-neutral-dark tracking-wider text-2xl">
+      <h4 class="font-bold text-primary-dark tracking-wider text-2xl">
         {{ watts }}kW
       </h4>
     </div>

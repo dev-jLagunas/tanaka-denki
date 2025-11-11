@@ -13,7 +13,7 @@ const route = useRoute();
             name="mdi:home"
             size="40"
             :class="
-              route.path === '/' ? 'text-lightest-blue' : 'text-neutral-light'
+              route.path === '/' ? 'text-lightest-blue' : 'text-primary-white'
             "
           />
           <span class="text-sm mt-1">ホーム</span>
@@ -42,7 +42,7 @@ const route = useRoute();
             :class="
               route.path === '/contact'
                 ? 'text-lightest-blue'
-                : 'text-neutral-light'
+                : 'text-primary-white'
             "
           />
           <span class="text-sm mt-1">お問合せ</span>

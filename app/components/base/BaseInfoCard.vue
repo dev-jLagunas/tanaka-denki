@@ -39,43 +39,37 @@ const props = defineProps({
 </script>
 
 <template>
-  <article :class="`work-info-card ${bgColor} flex flex-col`">
-    <header class="space-y-sm px-sm grow">
-      <div class="work-info-card-heading">
-        <p class="font-bold text-brand-blue text-3xl">{{ number }}</p>
-      </div>
-
-      <h3 class="work-info-card-subheading">
-        {{ subheading }}
-      </h3>
-
-      <p v-if="longCopy" class="long-copy-text text-2xl my-sm md:text-lg">
+  <article
+    :class="`${bgColor}`"
+    class="w-[90%] mx-auto rounded-sm md:h-[350px] md:grid md:grid-cols-2 lg:h-[300px]"
+  >
+    <div class="py-reg content-center">
+      <header class="flex-row-center gap-reg px-sm">
+        <p class="work-info-card-number">{{ number }}</p>
+        <h3 class="card-heading-text text-balance">
+          {{ subheading }}
+        </h3>
+      </header>
+      <p class="long-copy-text px-sm py-reg">
         {{ longCopy }}
       </p>
-    </header>
-
+    </div>
     <!-- If more than one image → Swiper -->
-    <div
-      v-if="images.length > 1"
-      class="w-full h-[350px] mt-8 rounded-b-sm overflow-hidden shrink-0 relative"
-    >
+    <div v-if="images.length > 1" class="">
       <Swiper
         :modules="[Autoplay, Pagination, Navigation]"
         :loop="true"
         :autoplay="{ delay: 5000 }"
         :pagination="true"
         :navigation="true"
-        class="h-full w-full"
       >
-        <SwiperSlide
-          v-for="(src, i) in images"
-          :key="i"
-          class="h-full w-full relative"
-        >
-          <img :src="src" class="h-full w-full object-cover" />
+        <SwiperSlide v-for="(src, i) in images" :key="i" class="relative">
+          <figure class="md:h-[300px]">
+            <img :src="src" class="h-full w-full object-cover rounded-sm" />
+          </figure>
           <p
             v-if="slideCopy[i]"
-            class="absolute bottom-0 w-full text-neutral-dark text-center bg-neutral-light/90 py-1"
+            class="absolute bg-brand-blue/90 text-primary-white py-2 bottom-0 z-10 w-full text-center text-sm"
           >
             {{ slideCopy[i] }}
           </p>
@@ -84,31 +78,10 @@ const props = defineProps({
     </div>
 
     <!-- If only one image → normal figure -->
-    <figure
-      v-else
-      class="w-full h-[350px] mt-8 rounded-b-sm overflow-hidden shrink-0 relative"
-    >
-      <img :src="images[0]" class="h-full w-full object-cover" />
-      <p
-        v-if="slideCopy[0]"
-        class="absolute bottom-0 w-full text-neutral-dark text-center bg-neutral-light/90 py-1 px-reg"
-      >
-        {{ slideCopy[0] }}
-      </p>
+    <figure v-else class="sm:h-[350px] lg:h-[300px]">
+      <img :src="images[0]" class="h-full w-full object-cover rounded-sm" />
     </figure>
   </article>
 </template>
 
-<style scoped>
-.swiper-button-next,
-.swiper-button-prev {
-  color: white;
-  width: 10px;
-  height: 40px;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 10px;
-}
-</style>
+<style scoped></style>

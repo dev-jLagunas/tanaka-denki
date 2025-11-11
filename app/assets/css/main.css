@@ -22,8 +22,8 @@ body {
   --color-brand-red: #ea5350;
   --color-brand-green: #6cbb5a;
   /* neutral colors */
-  --color-neutral-light: #f5f5f0;
-  --color-neutral-dark: #333333;
+  --color-primary-white: #f5f5f0;
+  --color-primary-dark: #333333;
   --color-lightest-blue: #6691c1;
   --color-light-red: #f5a9a8;
   --color-light-green: #c4e4bd;
@@ -51,6 +51,10 @@ body {
   @apply flex flex-row justify-evenly items-center;
 }
 
+@utility flex-row-start-center {
+  @apply flex flex-row justify-start items-center;
+}
+
 @utility flex-row-around {
   @apply flex flex-row justify-around items-center;
 }
@@ -76,15 +80,19 @@ body {
 }
 
 @utility red-cta-btn {
-  @apply bg-brand-red text-neutral-light px-4 py-1 mt-reg rounded-sm;
+  @apply bg-brand-red text-primary-white px-4 py-1 mt-reg rounded-sm;
 }
 
 @utility long-copy-text {
-  @apply text-neutral-dark tracking-wider leading-6;
+  @apply text-primary-dark tracking-wider leading-6 text-lg lg:text-xl;
+}
+
+@utility card-heading-text {
+  @apply text-primary-dark font-bold text-lg;
 }
 
 @utility blue-bg-wrapper {
-  @apply bg-brand-blue text-neutral-light w-fit px-6 py-1 rounded-sm;
+  @apply bg-brand-blue text-primary-white w-fit px-6 py-1 rounded-sm;
 }
 
 /********************************************
@@ -96,22 +104,27 @@ body {
 }
 
 .mobile-sidebar-copy {
-  @apply text-neutral-light text-2xl tracking-widest space-y-2;
+  @apply text-primary-white text-2xl tracking-widest space-y-2;
+}
+
+/* Mobile Navbar Header */
+.mobile-navbar-header {
+  @apply h-20 flex-row-between mt-lg px-reg fixed -top-8 left-0 w-full bg-primary-white z-10 md:hidden;
 }
 
 /* Mobile Footer */
 .mobile-footer {
-  @apply fixed bottom-0 inset-x-0 bg-brand-blue text-neutral-light py-sm;
+  @apply fixed bottom-0 inset-x-0 bg-brand-blue text-primary-white py-sm;
 }
 
 /* Desktop Footer */
 .desktop-footer {
-  @apply bg-brand-blue text-neutral-light py-10 font-sans text-sm rounded-sm fixed bottom-0 inset-x-4;
+  @apply bg-brand-blue text-primary-white py-10 font-sans text-sm rounded-sm fixed bottom-0 inset-x-4;
 }
 
 /* Mobile Hero Component */
 .hero-mobile-slide {
-  @apply bg-brand-blue/80 mt-lg rounded-sm mx-reg px-reg h-fit py-15 w-[90%] max-w-[450px] text-start space-y-2;
+  @apply bg-brand-blue/80 mt-20 rounded-sm mx-reg px-reg h-fit py-15 w-[90%] max-w-[450px] text-start space-y-2;
 }
 
 .hero-mobile-slide-heading {
@@ -132,21 +145,11 @@ body {
 }
 
 /* Work Info Component */
-.work-info-card {
-  @apply pt-lg  mt-10 h-fit flex flex-col w-[90%] mx-auto rounded-sm shadow-sm md:w-full;
-}
 
-.work-info-card-heading {
-  @apply h-10 w-1/4 rounded-sm bg-neutral-light/85 flex-row-center;
+.work-info-card-number {
+  @apply h-8 w-8 rounded-sm bg-primary-white/85 flex-row-center text-brand-blue font-bold;
 }
 
 .work-info-card-subheading {
-  @apply text-neutral-dark font-bold tracking-widest my-4 text-2xl w-full text-center md:text-start;
-}
-
-/* Layers */
-@layer utilities {
-  .safe-top {
-    padding-top: env(safe-area-inset-top);
-  }
+  @apply text-primary-dark font-bold tracking-widest my-4 text-xl w-full text-center md:text-start;
 }
