@@ -8,6 +8,7 @@
       title="特記事項"
       icon="mdi:thumbs-up"
       sectionId="customer-merits"
+      class="mt-20"
     />
     <ScrollNextBtn nextId="achievements" label="施工実績へスクロール" />
     <h3 class="long-copy-text px-reg md:leading-9 text-xl">お客様のメリット</h3>

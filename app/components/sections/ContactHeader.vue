@@ -23,7 +23,7 @@
       >
         <Icon name="mdi:phone" size="40" class="text-brand-blue -mb-1 mt-lg" />
 
-        <p class="lg:text-balance">
+        <p class="lg:text-balance lg:leading-8">
           お電話からのお問合せは営業時間内でしたらいつでもご連絡いただけます。
         </p>
 

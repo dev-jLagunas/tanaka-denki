@@ -7,6 +7,7 @@
       title="施工実績"
       icon="mdi:achievement"
       sectionId="achievements"
+      class="mt-20"
     />
     <ScrollNextBtn nextId="blog-section" label="お知らせへスクロール" />
 

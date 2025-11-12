@@ -5,7 +5,7 @@
     action="/send"
     method="POST"
     novalidate
-    class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-sm md:w-[80%] max-w-[1200px]"
+    class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
     <!-- Name -->
     <section class="md:grid md:grid-cols-2 md:gap-lg">
