@@ -8,7 +8,6 @@ body {
   background-color: hsl(60, 20%, 95%);
   max-width: 1500px;
   margin-inline: auto;
-  margin-bottom: 50rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -121,7 +120,7 @@ body {
 
 /* Desktop Footer */
 .desktop-footer {
-  @apply bg-brand-blue text-primary-white py-10 font-sans text-sm rounded-sm fixed bottom-0 inset-x-4;
+  @apply bg-brand-blue text-primary-white py-10 font-sans text-sm rounded-sm;
 }
 
 /* Mobile Hero Component */

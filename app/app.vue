@@ -21,9 +21,11 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col">
     <TheNavbar />
-    <NuxtPage />
+    <main class="grow">
+      <NuxtPage />
+    </main>
     <TheFooter />
     <button
       v-show="showBtn"
