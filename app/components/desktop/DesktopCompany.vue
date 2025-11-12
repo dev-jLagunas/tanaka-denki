@@ -10,7 +10,7 @@
           />
         </figure>
         <div class="absolute bottom-0 right-5">
-          <button class="red-cta-btn mb-reg">お問い合わせ</button>
+          <button class="red-cta-btn mb-reg hover-shadow">お問い合わせ</button>
           <ScrollNextBtn nextId="timeline" label="沿革へスクロール" />
         </div>
       </aside>
@@ -75,6 +75,30 @@
       </aside>
       <section>
         <CompanyInfoCerts />
+      </section>
+    </section>
+    <BaseSectionHeader
+      bgColor="bg-lightest-blue"
+      title="地図"
+      icon="mdi:map"
+      sectionId="google-maps"
+    />
+    <section class="grid grid-cols-[25%_75%] mt-lg">
+      <aside class="relative border-r-2 border-brand-red/50 mr-8">
+        <figure>
+          <img
+            src="/images/logo-only.png"
+            alt="company logo"
+            class="h-20 mx-auto"
+          />
+        </figure>
+        <div class="absolute bottom-0 right-5">
+          <button class="red-cta-btn mb-reg">お問い合わせ</button>
+          <ScrollNextBtn nextId="certifications" label="資格へスクロール" />
+        </div>
+      </aside>
+      <section>
+        <CompanyInfoMap />
       </section>
     </section>
   </div>

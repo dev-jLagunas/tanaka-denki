@@ -4,7 +4,7 @@
       bgColor="bg-brand-blue"
       title="会社案内"
       icon="mdi:office-building"
-      sectionId="work-info"
+      sectionId="company-information"
       topMargin="mt-18"
     />
     <MobileCompany class="lg:hidden" />
