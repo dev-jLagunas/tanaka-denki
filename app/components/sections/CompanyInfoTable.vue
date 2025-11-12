@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-lg px-sm border-2 border-brand-blue py-reg mx-sm rounded-sm lg:border-0"
+    class="mt-lg long-copy-text px-sm border-2 border-brand-blue py-reg mx-sm rounded-sm lg:border-0"
   >
     <img src="" alt="" class="hidden md:flex" />
     <ul class="space-y-4">

@@ -62,7 +62,9 @@ body {
 @utility flex-col-center {
   @apply flex flex-col justify-center items-center;
 }
-
+@utility flex-col-start-start {
+  @apply flex flex-col justify-start items-start;
+}
 @utility flex-col-start-center {
   @apply flex flex-col justify-start items-center;
 }
