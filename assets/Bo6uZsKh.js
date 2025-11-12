@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as s,a}from"./DylvYvZq.js";const r={};function c(n,e){return s(),o("div",null,[...e[0]||(e[0]=[a("h1",{class:"text-white text-3xl"},"Blogs page",-1)])])}const _=t(r,[["render",c]]);export{_ as default};
