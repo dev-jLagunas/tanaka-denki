@@ -31,7 +31,7 @@
           職種
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           技術職（電気主任技術者）
         </p>
@@ -43,7 +43,7 @@
           詳細
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           認定校を卒業の方は、第3種電気主任技術者の取得が可能です。
         </p>
@@ -55,7 +55,7 @@
           応募資格
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           第二種電気工事士、普通自動車免許必須第3種電気主任技術者優遇
         </p>
@@ -67,7 +67,7 @@
           勤務時間
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           8：30～17：00（休憩1時間）
         </p>
@@ -79,7 +79,7 @@
           加入保険
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           雇用保険、労災保険、健康保険、厚生年金
         </p>
@@ -91,7 +91,7 @@
           休日
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           週休2日制土曜日、日曜日、祝日、年末年始
         </p>
@@ -103,7 +103,7 @@
           年次休暇
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           6か月経過後の年次有給休暇日数：10日
         </p>
@@ -115,7 +115,7 @@
           勤務地
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           石川県白山市
         </p>
@@ -127,7 +127,7 @@
           雇用形態
         </p>
         <p
-          class="text-primary-dark tracking-wide text-base border-b pb-2 border-lightest-blue/20 mt-1"
+          class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
           正社員
         </p>
@@ -139,7 +139,7 @@
           仕事内容
         </p>
         <div>
-          <p class="text-primary-dark tracking-wide text-base">
+          <p class="text-primary-dark tracking-wide text-lg">
             補助作業からスタートします。
           </p>
           <p>現場での軽工事、測定、試験の実施を補助</p>
