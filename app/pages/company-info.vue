@@ -1,5 +1,5 @@
 <template>
-  <main class="mt-12">
+  <main class="mt-20">
     <BaseSectionHeader
       bgColor="bg-brand-blue"
       title="会社案内"

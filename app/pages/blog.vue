@@ -1,5 +1,11 @@
 <template>
-  <div>
-    <h1 class="text-white text-3xl">Blogs page</h1>
-  </div>
+  <main class="mt-20">
+    <BaseSectionHeader
+      bgColor="bg-brand-blue"
+      title="お知らせ"
+      icon="mdi:info"
+      sectionId="company-information"
+      topMargin="mt-18"
+    />
+  </main>
 </template>
