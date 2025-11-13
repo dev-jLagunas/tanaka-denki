@@ -37,7 +37,7 @@ const route = useRoute();
           class="w-auto max-w-xs"
         />
       </NuxtLink>
-      <ul class="flex-row-evenly font-sans w-full">
+      <ul class="flex-row-evenly w-full">
         <li class="group relative">
           <NuxtLink
             to="/"
@@ -52,9 +52,7 @@ const route = useRoute();
           </NuxtLink>
 
           <!-- Hover Dropdown -->
-          <div
-            class="nav-dropdown absolute -left-2 mt-1 top-full hidden group-hover:block bg-brand-blue shadow-lg text-primary-white rounded-md w-40 py-reg z-50"
-          >
+          <div class="nav-dropdown hidden group-hover:block hover-dropdown">
             <NuxtLink
               to="/#main-work-info"
               class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
@@ -84,18 +82,16 @@ const route = useRoute();
           </NuxtLink>
 
           <!-- Hover Dropdown -->
-          <div
-            class="nav-dropdown absolute -left-2 top-full mt-1 hidden group-hover:block bg-brand-blue text-primary-white shadow-lg rounded-md w-40 py-2 z-50"
-          >
+          <div class="nav-dropdown hidden group-hover:block hover-dropdown">
             <NuxtLink
               to="/company-info#timeline-nav"
-              class="block px-4 py-2 text-sm hover:bg-primary-white hover:text-brand-blue"
+              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
             >
               沿革
             </NuxtLink>
             <NuxtLink
               to="/company-info#certifications-nav"
-              class="block px-4 py-2 text-sm hover:bg-primary-white hover:text-brand-blue"
+              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
             >
               資格
             </NuxtLink>
@@ -176,6 +172,7 @@ const route = useRoute();
   position: absolute;
 }
 
+/* Caret up pointer */
 .nav-dropdown::before {
   content: "";
   position: absolute;
@@ -185,6 +182,6 @@ const route = useRoute();
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 6px solid #004898; /* your brand-blue HEX */
+  border-bottom: 6px solid #004898;
 }
 </style>

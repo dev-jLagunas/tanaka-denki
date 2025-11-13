@@ -75,13 +75,26 @@ body {
   @apply grid grid-cols-2 items-center;
 }
 
+@utility two-grid-upsize {
+  @apply grid grid-cols-2 items-center md:gap-reg md:mx-reg 2xl:grid-cols-3 2xl:gap-lg;
+}
+
 /* Hover */
-@utility hover-animation {
-  @apply transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:opacity-90;
+@utility hover-blue {
+  @apply hover:text-lightest-blue duration-500;
 }
 
 @utility hover-shadow {
   @apply hover:shadow-lg hover:tracking-wide hover:cursor-pointer duration-300;
+}
+
+/* Lines */
+@utility red-underline {
+  @apply h-0.5 w-1/3 bg-brand-red/50 mx-auto mt-sm;
+}
+
+@utility light-underline {
+  @apply border-b border-b-brand-blue/20 pb-sm;
 }
 
 @utility background-img-cover {
@@ -113,6 +126,24 @@ body {
   @apply fixed bottom-20 right-6 z-40 bg-brand-blue/75 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-brand-blue hover:cursor-pointer md:bottom-10 lg:right-10;
 }
 
+/* Scroll To Next Btn */
+.scroll-next-btn {
+  @apply flex items-center gap-2 text-brand-blue/75 hover:text-brand-blue hover:cursor-pointer transition ml-auto mb-4 text-sm pr-8;
+}
+
+/* Policy Modal */
+.modal-wrapper {
+  @apply fixed inset-0 bg-black/80 flex items-center justify-center z-50;
+}
+
+.modal-bg {
+  @apply bg-primary-white w-[90%] h-[90%] p-reg rounded-lg shadow-lg relative md:px-lg;
+}
+
+.policy-close-btn {
+  @apply absolute top-sm right-reg text-brand-red font-bold text-2xl hover-shadow hover:cursor-pointer md:top-12 md:right-lg;
+}
+
 /* Mobile Side Bar */
 .mobile-sidebar {
   @apply fixed inset-0 z-50 bg-brand-blue w-[80%];
@@ -127,6 +158,15 @@ body {
   @apply h-20 flex-row-between mt-lg px-reg fixed -top-8 left-0 w-full bg-primary-white z-10 md:hidden;
 }
 
+/* Navabar */
+.hover-dropdown {
+  @apply absolute -left-2 mt-1 top-full bg-brand-blue shadow-lg text-primary-white rounded-md w-40 py-reg z-50;
+}
+
+.hover-dropdown-link {
+  @apply px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue;
+}
+
 /* Mobile Footer */
 .mobile-footer {
   @apply fixed bottom-0 inset-x-0 bg-brand-blue text-primary-white py-sm;
@@ -134,7 +174,11 @@ body {
 
 /* Desktop Footer */
 .desktop-footer {
-  @apply bg-brand-blue text-primary-white py-10 font-sans text-sm 2xl:rounded-sm;
+  @apply bg-brand-blue text-primary-white  2xl:rounded-sm mt-30 py-10;
+}
+
+.footer-divider {
+  @apply border-t border-white/20 mt-lg pt-reg text-center text-xs tracking-wide opacity-80;
 }
 
 /* Mobile Hero Component */

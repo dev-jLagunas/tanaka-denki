@@ -25,10 +25,7 @@ const scrollToNext = () => {
 </script>
 
 <template>
-  <button
-    @click="scrollToNext"
-    class="flex items-center gap-2 text-brand-blue/75 hover:text-brand-blue hover:cursor-pointer transition ml-auto mb-4 text-sm pr-8"
-  >
+  <button @click="scrollToNext" class="scroll-next-btn">
     <Icon name="mdi:chevron-down" size="16" />
     <span>{{ label }}</span>
   </button>

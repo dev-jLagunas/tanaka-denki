@@ -6,19 +6,19 @@ const route = useRoute();
 <template>
   <div>
     <MobileFooter class="md:hidden" />
-    <footer
-      class="desktop-footer hidden md:block mt-20 bg-brand-blue text-primary-white py-10 text-sm"
-    >
+    <!-- Desktop Footer -->
+    <footer class="desktop-footer hidden md:block">
       <div>
         <div class="flex-row-between w-full px-reg">
-          <div class="space-y-1">
+          <address class="not-italic space-y-1">
             <p>〒 924-0031　石川県白山市村井東 2-4-3</p>
             <p>TEL：076-272-8492</p>
             <p>FAX：076-272-8493</p>
             <p>営業時間／8：30〜17：00</p>
-          </div>
+          </address>
+
           <ul class="flex-row-evenly w-full">
-            <li class="hover-animation">
+            <li>
               <NuxtLink
                 to="/"
                 :class="
@@ -26,10 +26,11 @@ const route = useRoute();
                     ? 'text-lightest-blue'
                     : 'text-primary-white'
                 "
+                class="hover-blue"
                 >ホーム</NuxtLink
               >
             </li>
-            <li class="hover-animation">
+            <li>
               <NuxtLink
                 to="/company-info"
                 :class="
@@ -37,10 +38,11 @@ const route = useRoute();
                     ? 'text-lightest-blue'
                     : 'text-primary-white'
                 "
+                class="hover-blue"
                 >会社案内</NuxtLink
               >
             </li>
-            <li class="hover-animation">
+            <li>
               <NuxtLink
                 to="/hiring-info"
                 :class="
@@ -48,10 +50,11 @@ const route = useRoute();
                     ? 'text-lightest-blue'
                     : 'text-primary-white'
                 "
+                class="hover-blue"
                 >採用情報</NuxtLink
               >
             </li>
-            <li class="hover-animation">
+            <li>
               <NuxtLink
                 to="/blog"
                 :class="
@@ -59,10 +62,11 @@ const route = useRoute();
                     ? 'text-lightest-blue'
                     : 'text-primary-white'
                 "
+                class="hover-blue"
                 >お知らせ</NuxtLink
               >
             </li>
-            <li class="hover-animation">
+            <li>
               <NuxtLink
                 to="/contact"
                 :class="
@@ -70,6 +74,7 @@ const route = useRoute();
                     ? 'text-lightest-blue'
                     : 'text-primary-white'
                 "
+                class="hover-blue"
                 >お問合せ</NuxtLink
               >
             </li>
@@ -77,9 +82,7 @@ const route = useRoute();
         </div>
 
         <!-- Divider -->
-        <div
-          class="border-t border-white/20 mt-lg pt-reg text-center text-xs tracking-wide opacity-80"
-        >
+        <div class="footer-divider">
           Copyright © 株式会社田中電気システムサービス All Rights Reserved.
         </div>
       </div>

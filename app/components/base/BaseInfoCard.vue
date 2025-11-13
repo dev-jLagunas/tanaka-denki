@@ -41,7 +41,7 @@ const props = defineProps({
 <template>
   <article
     :class="`${bgColor}`"
-    class="w-[90%] mx-auto rounded-sm md:h-[350px] md:grid md:grid-cols-2 lg:h-[300px]"
+    class="w-[90%] mx-auto rounded-sm md:h-[350px] md:grid md:grid-cols-2 lg:h-[300px] md:w-full"
   >
     <div class="py-reg content-center">
       <header class="flex-row-center gap-reg px-sm">
