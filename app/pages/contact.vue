@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <main class="mt-20">
     <BaseSectionHeader
@@ -7,7 +9,9 @@
       sectionId="company-information"
       topMargin="mt-18"
     />
+
     <ContactMobile class="lg:hidden" />
+
     <ContactDesktop class="hidden lg:block" />
   </main>
 </template>

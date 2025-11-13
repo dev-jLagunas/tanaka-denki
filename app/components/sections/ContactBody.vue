@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const showPolicy = ref(false);
+
+// watch the modal state and toggle body scroll
+watch(showPolicy, (isOpen) => {
+  if (process.client) {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  }
+});
+</script>
 
 <template>
   <main>
@@ -10,8 +21,16 @@
       topMargin="mt-18"
       color="text-primary-dark"
     />
+    <div class="text-center">
+      <button
+        @click="showPolicy = true"
+        class="text-brand-blue underline hover:opacity-80 -mb-lg text-sm"
+      >
+        プライバシーポリシーを読む
+      </button>
+    </div>
     <div class="long-copy-text px-reg text-lg leading-7 text-center">
-      <p class="mt-16 text-balance">
+      <p class="mt-reg text-balance">
         担当者がすぐにお答えできない場合があります。お急ぎの方はお電話にてお問合せ下さいませ。
       </p>
       <p>以下の項目に必要事項をご記入の上、ご送信ください。</p>
@@ -23,5 +42,6 @@
       />
     </div>
     <ContactForm />
+    <PolicyModal :show="showPolicy" @close="showPolicy = false" />
   </main>
 </template>

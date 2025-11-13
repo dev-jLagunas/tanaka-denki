@@ -30,7 +30,7 @@ onUnmounted(() => {
     <button
       v-show="showBtn"
       @click="scrollTop"
-      class="fixed bottom-20 right-6 z-50 bg-brand-blue/75 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-brand-blue hover:cursor-pointer md:bottom-10 lg:right-10"
+      class="fixed bottom-20 right-6 z-40 bg-brand-blue/75 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-brand-blue hover:cursor-pointer md:bottom-10 lg:right-10"
     >
       ↑
     </button>
