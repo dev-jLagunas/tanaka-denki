@@ -1,6 +1,4 @@
 <script setup lang="ts">
-console.log("SUPABASE?", useNuxtApp().$supabase);
-
 const email = ref("");
 const password = ref("");
 const errorMessage = ref("");
@@ -20,7 +18,7 @@ const handleLogin = async () => {
   if (error) {
     errorMessage.value = "ログインに失敗しました。";
   } else {
-    await navigateTo("/admin"); // protected page later
+    await navigateTo("/admin");
   }
 
   isLoading.value = false;
