@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://tanaka-denki.netlify.app/og/tdss-og.png",
+          content: "https://i.imgur.com/3SpljoQ.png",
         },
 
         // Twitter (optional)
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://tanaka-denki.netlify.app/og/tdss-og.png",
+          content: "https://i.imgur.com/3SpljoQ.png",
         },
       ],
       link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
