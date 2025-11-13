@@ -1,7 +1,7 @@
 <script setup lang="tx"></script>
 
 <template>
-  <section class="lg:grid lg:grid-cols-2 lg:items-center">
+  <section class="lg:grid lg:grid-cols-2 lg:items-center" data-aos="fade-up">
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="募集要項"

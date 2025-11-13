@@ -12,7 +12,7 @@ watch(showPolicy, (isOpen) => {
 </script>
 
 <template>
-  <main>
+  <main data-aos="fade-up">
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="メールフォームからのお問合せ"

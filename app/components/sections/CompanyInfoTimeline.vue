@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-8">
+  <section class="mt-8" data-aos="fade-up">
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="沿革"

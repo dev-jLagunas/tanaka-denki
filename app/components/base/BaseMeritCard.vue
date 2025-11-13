@@ -15,6 +15,7 @@ const props = defineProps({
 <template>
   <article
     class="border-2 border-brand-blue px-reg py-lg mx-reg rounded-sm mt-reg"
+    data-aos="fade-up"
   >
     <div class="flex-row-between">
       <p class="bg-brand-blue text-primary-white w-fit px-6 py-1 rounded-sm">

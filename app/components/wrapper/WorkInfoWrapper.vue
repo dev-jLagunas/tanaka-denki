@@ -51,6 +51,7 @@
           'images/work/work-info-img-3b.webp',
           'images/work/work-info-img-3c.webp',
         ]"
+        data-aos="fade-in"
       />
       <BaseInfoCard
         bgColor="bg-lightest-blue"

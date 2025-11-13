@@ -11,6 +11,7 @@ const props = defineProps({
 <template>
   <article
     class="border-2 border-brand-blue w-[90%] mx-auto rounded-sm p-reg space-y-4 h-full relative max-w-[450px]"
+    data-aos="fade-up"
   >
     <figure class="absolute top-4 right-2">
       <img src="/images/logo-only.png" alt="" class="h-10 md:h-6" />

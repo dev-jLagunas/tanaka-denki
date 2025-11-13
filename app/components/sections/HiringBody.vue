@@ -1,7 +1,10 @@
 <script setup lang="tx"></script>
 
 <template>
-  <section class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-reg">
+  <section
+    class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-reg"
+    data-aos="fade-up"
+  >
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="求める人物像"

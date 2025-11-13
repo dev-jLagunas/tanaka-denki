@@ -1,7 +1,10 @@
 <script setup></script>
 
 <template>
-  <article class="rounded-sm w-[90%] mx-auto bg-brand-blue pb-reg shadow-lg">
+  <article
+    class="rounded-sm w-[90%] mx-auto bg-brand-blue pb-reg shadow-lg"
+    data-aos="fade-up"
+  >
     <figure class="">
       <img
         src="/images/blog/blog-img-1.jpg"

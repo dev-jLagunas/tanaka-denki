@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section data-aos="fade-up">
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="資格"
