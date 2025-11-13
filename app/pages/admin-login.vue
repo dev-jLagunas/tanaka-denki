@@ -28,11 +28,13 @@ const handleLogin = async () => {
 </script>
 
 <template>
-  <main class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="w-full max-w-md bg-white shadow-md rounded-md p-6">
-      <h1 class="text-xl font-semibold mb-4 text-center">管理者ログイン</h1>
+  <main class="min-h-screen flex items-center justify-center bg-primary-white">
+    <div class="max-w-md bg-white shadow-md rounded-md p-6 w-[90%] mx-auto">
+      <h1 class="text-xl text-primary-dark font-semibold mb-4 text-center">
+        管理者ログイン
+      </h1>
 
-      <form @submit.prevent="handleLogin" class="space-y-4">
+      <form @submit.prevent="handleLogin" class="space-y-4 text-primary-dark">
         <div>
           <label class="block text-sm mb-1" for="email">メールアドレス</label>
           <input
