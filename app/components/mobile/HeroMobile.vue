@@ -77,12 +77,12 @@ import { Autoplay, Pagination } from "swiper/modules";
             <p
               class="font-semibold text-4xl sm:text-5xl tracking-widest text-primary-white text-center mb-8"
             >
-              着実 丁寧
+              着実 <span class="text-brand-red">丁寧</span>
             </p>
             <p
               class="font-semibold text-4xl sm:text-5xl tracking-widest text-primary-white text-center"
             >
-              誠実 安全
+              <span class="text-brand-red">誠実</span> 安全
             </p>
             <button class="red-cta-btn hover-shadow">お問い合わせ</button>
           </div>

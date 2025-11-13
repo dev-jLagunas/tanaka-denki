@@ -120,7 +120,7 @@ body {
 
 /* Desktop Footer */
 .desktop-footer {
-  @apply bg-brand-blue text-primary-white py-10 font-sans text-sm rounded-sm;
+  @apply bg-brand-blue text-primary-white py-10 font-sans text-sm 2xl:rounded-sm;
 }
 
 /* Mobile Hero Component */

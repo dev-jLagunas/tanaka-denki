@@ -17,7 +17,7 @@ const props = defineProps({
   <header
     :id="sectionId"
     :class="`${bgColor} ${topMargin}}`"
-    class="flex-row-center my-8 py-2 rounded-sm md:w-1/2 gap-8"
+    class="flex-row-center my-8 py-2 md:rounded-sm md:w-1/2 gap-8"
   >
     <h2 class="text-xl font-medium tracking-widest" :class="`${color}`">
       {{ title }}
