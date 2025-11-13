@@ -52,7 +52,7 @@ export default defineNuxtConfig({
           content: "https://i.imgur.com/3SpljoQ.png",
         },
 
-        // Twitter (optional)
+        // Twitter
         { name: "twitter:card", content: "summary_large_image" },
         {
           name: "twitter:title",
@@ -71,7 +71,10 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
     },
   },
-  modules: ["@nuxt/icon", "@nuxtjs/google-fonts"],
+  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/supabase"],
+  supabase: {
+    redirect: false,
+  },
   icon: {
     mode: "css",
     cssLayer: "base",
@@ -88,4 +91,10 @@ export default defineNuxtConfig({
     { path: "~/components", pathPrefix: false },
     { path: "~/app/components", pathPrefix: false },
   ],
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.SUPABASE_URL as string,
+      supabaseAnonKey: process.env.SUPABASE_KEY as string,
+    },
+  },
 });

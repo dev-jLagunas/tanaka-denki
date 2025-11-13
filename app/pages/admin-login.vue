@@ -1,29 +1,29 @@
 <script setup lang="ts">
+console.log("SUPABASE?", useNuxtApp().$supabase);
+
 const email = ref("");
 const password = ref("");
-const isLoading = ref(false);
 const errorMessage = ref("");
+const isLoading = ref(false);
+
+const supabase = useSupabaseClient();
 
 const handleLogin = async () => {
   errorMessage.value = "";
   isLoading.value = true;
 
-  try {
-    // TODO: replace with Supabase/Firebase auth
-    console.log("Login attempt:", {
-      email: email.value,
-      password: password.value,
-    });
+  const { error } = await supabase.auth.signInWithPassword({
+    email: email.value,
+    password: password.value,
+  });
 
-    // Example placeholder:
-    // await authClient.signInWithPassword({ email: email.value, password: password.value });
-
-    // On success, you’ll redirect to /admin after wiring real auth
-  } catch (err) {
-    errorMessage.value = "ログインに失敗しました。もう一度お試しください。";
-  } finally {
-    isLoading.value = false;
+  if (error) {
+    errorMessage.value = "ログインに失敗しました。";
+  } else {
+    await navigateTo("/admin"); // protected page later
   }
+
+  isLoading.value = false;
 };
 </script>
 
