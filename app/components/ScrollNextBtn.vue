@@ -14,7 +14,7 @@ const scrollToNext = () => {
   const target = document.getElementById(props.nextId);
   if (!target) return;
 
-  const offset = -60;
+  const offset = -80;
   const y = target.getBoundingClientRect().top + window.scrollY + offset;
 
   window.scrollTo({

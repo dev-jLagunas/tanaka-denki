@@ -38,6 +38,8 @@ body {
 /********************************************
         Reusable Custom Tailwind Classes
 ********************************************/
+
+/* Flex */
 @utility flex-row-between {
   @apply flex flex-row justify-between items-center;
 }
@@ -68,6 +70,12 @@ body {
   @apply flex flex-col justify-start items-center;
 }
 
+/* Grid */
+@utility two-grid-center {
+  @apply grid grid-cols-2 items-center;
+}
+
+/* Hover */
 @utility hover-animation {
   @apply transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:opacity-90;
 }
@@ -99,6 +107,12 @@ body {
 /********************************************
         Custom Classes
 ********************************************/
+
+/* Back Top Btn */
+.back-top-btn {
+  @apply fixed bottom-20 right-6 z-40 bg-brand-blue/75 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-brand-blue hover:cursor-pointer md:bottom-10 lg:right-10;
+}
+
 /* Mobile Side Bar */
 .mobile-sidebar {
   @apply fixed inset-0 z-50 bg-brand-blue w-[80%];

@@ -21,8 +21,10 @@ const route = useRoute();
         />
       </NuxtLink>
 
-      <button class="hover-animation" @click="open = !open">
-        <Icon name="mdi:menu" size="55" class="text-brand-blue" />
+      <button @click="open = !open" class="relative hover:opacity-90">
+        <div class="center" :class="{ open }">
+          <div></div>
+        </div>
       </button>
     </div>
 
@@ -96,4 +98,36 @@ const route = useRoute();
   </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+.center {
+  width: 50px;
+  cursor: pointer;
+}
+
+.center::before,
+.center::after,
+.center div {
+  background: #004898;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+/* Remove hover logic entirely — now controlled by Vue */
+.center.open::before {
+  transform: translateY(12px) rotate(135deg);
+  background: #ea5350; /* red when open */
+}
+
+.center.open::after {
+  transform: translateY(-12px) rotate(-135deg);
+  background: #ea5350;
+}
+
+.center.open div {
+  transform: scale(0);
+}
+</style>
