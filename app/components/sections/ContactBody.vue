@@ -33,7 +33,7 @@ watch(showPolicy, (isOpen) => {
       <p class="mt-reg text-balance">
         担当者がすぐにお答えできない場合があります。お急ぎの方はお電話にてお問合せ下さいませ。
       </p>
-      <p>以下の項目に必要事項をご記入の上、ご送信ください。</p>
+      <p class="">以下の項目に必要事項をご記入の上、ご送信ください。</p>
       <p class="text-brand-red text-sm text-center">(＊は必須項目です)。</p>
       <img
         src="/images/logo-only.png"
@@ -41,7 +41,7 @@ watch(showPolicy, (isOpen) => {
         class="h-20 mx-auto my-lg"
       />
     </div>
-    <ContactForm />
+    <ContactForm id="contact-form" />
     <PolicyModal :show="showPolicy" @close="showPolicy = false" />
   </main>
 </template>

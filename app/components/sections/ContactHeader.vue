@@ -1,4 +1,16 @@
-<script setup></script>
+<script setup>
+const scrollToId = (id, offset = -100) => {
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  const y = target.getBoundingClientRect().top + window.scrollY + offset;
+
+  window.scrollTo({
+    top: y,
+    behavior: "smooth",
+  });
+};
+</script>
 
 <template>
   <section class="md:grid md:grid-cols-2 md:items-center">
@@ -8,18 +20,30 @@
       class="h-52 mx-auto pr-10 md:hidden"
     />
     <div
-      class="long-copy-text text-lg text-center space-y-sm px-reg md:space-y-reg md:text-2xl lg:text-3xl lg:h-full lg:content-center"
+      class="long-copy-text text-lg text-center space-y-sm px-reg md:space-y-reg md:text-2xl lg:h-full lg:content-center"
     >
       <p>弊社へのお問合せ・お見積は、</p>
-      <p>お電話 <span class="font-bold text-brand-blue">076-272-8492</span></p>
+      <p class="flex-row-center">
+        お電話
+        <a href="tel:0762728492" class="text-brand-blue font-bold pl-sm">
+          076-272-8492</a
+        >
+      </p>
       <p>又は</p>
-      <p class="font-bold text-brand-blue">メールフォーム</p>
+      <p
+        class="font-bold text-brand-blue cursor-pointer"
+        @click="scrollToId('contact-form')"
+      >
+        メールフォーム
+      </p>
+
       <p>よりお問合せいただけます</p>
       <p class="text-brand-red text-sm">
         なお、売込み・営業目的でのお問合せはご遠慮ください。
       </p>
+
       <div
-        class="long-copy-text text-center px-reg text-lg space-y-sm leading-7 md:text-2xl"
+        class="long-copy-text text-center px-reg text-lg space-y-sm leading-7 md:text-xl"
       >
         <Icon name="mdi:phone" size="40" class="text-brand-blue -mb-1 mt-lg" />
 

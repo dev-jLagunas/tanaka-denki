@@ -10,16 +10,11 @@
       topMargin="mt-10"
       class="lg:hidden"
     />
-    <!-- <ScrollNextBtn
-      nextId="hiring-points"
-      label="求める人物像へスクロール"
-      class="mb-lg lg:hidden"
-    /> -->
 
     <img
       src="/images/hiring-img-2.jpg"
       alt=""
-      class="-mt-reg w-[90%] mx-auto rounded-sm object-cover h-full lg:hidden"
+      class="w-[90%] mx-auto rounded-sm object-cover h-full lg:hidden"
     />
     <ul
       class="space-y-reg mt-lg px-sm border-2 border-brand-blue py-reg mx-sm rounded-sm lg:border-0 long-copy-text lg:border-r-2 lg:border-brand-red/20"
@@ -150,11 +145,7 @@
           </p>
         </div>
       </li>
-      <li><button class="red-cta-btn">お問い合わせ</button></li>
     </ul>
-
-    <button class="red-cta-btn mx-reg lg:hidden">お問い合わせ</button>
-
     <figure class="h-full flex-col-center">
       <img
         src="/images/logo-only.png"

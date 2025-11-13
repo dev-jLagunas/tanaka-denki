@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="mb-20">
     <HeroMobile class="md:hidden" />
     <HeroDesktop class="hidden md:block" />
     <WorkInfoWrapper id="main-work-info" />

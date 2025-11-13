@@ -90,7 +90,7 @@ body {
 
 /* Lines */
 @utility red-underline {
-  @apply h-0.5 w-1/3 bg-brand-red/50 mx-auto mt-sm;
+  @apply h-0.5 w-1/3 bg-brand-red/50  mt-sm;
 }
 
 @utility light-underline {
@@ -126,11 +126,6 @@ body {
   @apply fixed bottom-20 right-6 z-40 bg-brand-blue/75 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-brand-blue hover:cursor-pointer md:bottom-10 lg:right-10;
 }
 
-/* Scroll To Next Btn */
-.scroll-next-btn {
-  @apply flex items-center gap-2 text-brand-blue/75 hover:text-brand-blue hover:cursor-pointer transition ml-auto mb-4 text-sm pr-8;
-}
-
 /* Policy Modal */
 .modal-wrapper {
   @apply fixed inset-0 bg-black/80 flex items-center justify-center z-50;
@@ -142,6 +137,11 @@ body {
 
 .policy-close-btn {
   @apply absolute top-sm right-reg text-brand-red font-bold text-2xl hover-shadow hover:cursor-pointer md:top-12 md:right-lg;
+}
+
+/* Hiring Header */
+.hiring-header-copy-wrapper {
+  @apply long-copy-text w-[90%] mx-auto mt-reg md:text-xl  lg:pr-lg lg:w-full lg:mx-reg lg:border-r-2 lg:border-brand-red/20;
 }
 
 /* Mobile Side Bar */

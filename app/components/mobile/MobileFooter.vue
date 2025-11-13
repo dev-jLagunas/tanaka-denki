@@ -23,7 +23,7 @@ const route = useRoute();
       <!-- Access: Google Maps -->
       <li>
         <a
-          href="https://www.google.com/maps/place/"
+          href="https://www.google.com/maps/place/%EF%BC%88%E6%A0%AA%EF%BC%89%E7%94%B0%E4%B8%AD%E9%9B%BB%E6%B0%97%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/@36.515993,136.560615,15z/data=!4m6!3m5!1s0x5ff84bd76a123423:0xd59ffc76a848421a!8m2!3d36.5159588!4d136.5606577!16s%2Fg%2F11fjzwq077?hl=ja&entry=ttu&g_ep=EgoyMDI1MTExMC4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           class="flex-col-center hover-animation"
@@ -51,7 +51,7 @@ const route = useRoute();
 
       <!-- Phone -->
       <li>
-        <a href="tel:0000000000" class="flex-col-center hover-animation">
+        <a href="tel:0762728492" class="flex-col-center hover-animation">
           <Icon name="mdi:phone" size="30" />
           <span class="text-sm mt-1">電話</span>
         </a>
