@@ -1,10 +1,9 @@
 <template>
-  <section data-aos="fade-up">
+  <section data-aos="fade-up" id="certifications">
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="資格"
       icon="mdi:timeline"
-      sectionId="certifications"
       class="lg:hidden"
       id="certifications-mobile"
     />
@@ -14,8 +13,8 @@
       class="-mt-reg w-[90%] mx-auto rounded-sm h-[300px] object-cover object-center lg:w-full lg:pr-8"
     />
     <ScrollNextBtn
-      nextId="certifications"
-      label="資格へスクロール"
+      nextId="map"
+      label="地図へスクロール"
       class="mt-reg lg:hidden"
     />
     <ul

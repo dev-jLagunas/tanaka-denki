@@ -56,7 +56,7 @@
         <p
           class="bg-brand-blue py-1 text-primary-white w-24 text-center rounded-sm border-b pb-2 border-lightest-blue/20"
         >
-          ファクス
+          FAX
         </p>
         <p
           class="text-primary-dark tracking-wide text-balance text-lg border-b pb-2 border-lightest-blue/20 indent-4"

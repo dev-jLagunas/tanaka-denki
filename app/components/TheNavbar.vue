@@ -46,7 +46,7 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
-            class="pb-2"
+            class="pb-2 hover-blue"
           >
             ホーム
           </NuxtLink>
@@ -76,7 +76,7 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
-            class="pb-2"
+            class="pb-2 hover-blue"
           >
             会社案内
           </NuxtLink>
@@ -106,6 +106,7 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
+            class="hover-blue"
             >採用情報</NuxtLink
           >
         </li>
@@ -117,6 +118,7 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
+            class="hover-blue"
             >お知らせ</NuxtLink
           >
         </li>
@@ -128,6 +130,7 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
+            class="hover-blue"
             >お問合せ</NuxtLink
           >
         </li>
