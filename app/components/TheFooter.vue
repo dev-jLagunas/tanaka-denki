@@ -9,14 +9,18 @@ const route = useRoute();
     <!-- Desktop Footer -->
     <footer class="desktop-footer hidden md:block">
       <div>
-        <div class="flex-row-between w-full px-reg">
+        <div class="flex-row-between w-full px-reg relative">
           <address class="not-italic space-y-1">
             <p>〒 924-0031　石川県白山市村井東 2-4-3</p>
             <p>TEL：076-272-8492</p>
             <p>FAX：076-272-8493</p>
             <p>営業時間／8：30〜17：00</p>
           </address>
-
+          <NuxtLink
+            to="/admin-login"
+            class="absolute bottom-1 right-12 lg:right-16"
+            >ログイン</NuxtLink
+          >
           <ul class="flex-row-evenly w-full">
             <li>
               <NuxtLink

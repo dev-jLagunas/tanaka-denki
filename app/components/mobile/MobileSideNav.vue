@@ -28,7 +28,7 @@ function go(path: string) {
             @click="go('/')"
             to="/"
             :class="
-              route.path === '/' ? 'text-brand-red' : 'text-primary-white'
+              route.path === '/' ? 'text-lightest-blue' : 'text-primary-white'
             "
           >
             ホーム
@@ -53,7 +53,7 @@ function go(path: string) {
             @click="go('/company-info')"
             :class="
               route.path === '/company-info'
-                ? 'text-brand-red'
+                ? 'text-lightest-blue'
                 : 'text-primary-white'
             "
           >
@@ -85,7 +85,7 @@ function go(path: string) {
             @click="go('/hiring-info')"
             :class="
               route.path === '/hiring-info'
-                ? 'text-brand-red'
+                ? 'text-lightest-blue'
                 : 'text-primary-white'
             "
           >
@@ -97,7 +97,9 @@ function go(path: string) {
             class="hover-blue"
             @click="go('/blog')"
             :class="
-              route.path === '/blog' ? 'text-brand-red' : 'text-primary-white'
+              route.path === '/blog'
+                ? 'text-lightest-blue'
+                : 'text-primary-white'
             "
           >
             お知らせ
@@ -109,7 +111,7 @@ function go(path: string) {
             @click="go('/contact')"
             :class="
               route.path === '/contact'
-                ? 'text-brand-red'
+                ? 'text-lightest-blue'
                 : 'text-primary-white'
             "
           >
@@ -120,6 +122,17 @@ function go(path: string) {
 
       <button class="mt-10 mx-auto hover-blue" @click="emit('close')">
         <Icon name="mdi:close" size="45" class="text-brand-red" />
+      </button>
+      <button
+        class="hover-blue long-copy-text mt-reg"
+        :class="
+          route.path === '/admin-login'
+            ? 'text-lightest-blue'
+            : 'text-primary-white'
+        "
+        @click="go('/admin-login')"
+      >
+        ログイン
       </button>
     </div>
   </Transition>
