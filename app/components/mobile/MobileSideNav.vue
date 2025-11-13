@@ -24,7 +24,7 @@ function go(path: string) {
       <ul class="mobile-sidebar-copy space-y-6">
         <li>
           <button
-            class="hover-animation"
+            class="hover-blue"
             @click="go('/')"
             to="/"
             :class="
@@ -35,12 +35,12 @@ function go(path: string) {
           </button>
           <ul class="mt-sm nested">
             <li>
-              <button class="hover-animation" @click="go('/#main-work-info')">
+              <button class="hover-blue" @click="go('/#main-work-info')">
                 事業案内
               </button>
             </li>
             <li>
-              <button class="hover-animation" @click="go('/#accomplishments')">
+              <button class="hover-blue" @click="go('/#accomplishments')">
                 施工実績
               </button>
             </li>
@@ -49,7 +49,7 @@ function go(path: string) {
 
         <li>
           <button
-            class="hover-animation"
+            class="hover-blue"
             @click="go('/company-info')"
             :class="
               route.path === '/company-info'
@@ -62,7 +62,7 @@ function go(path: string) {
           <ul class="mt-sm nested">
             <li>
               <button
-                class="hover-animation"
+                class="hover-blue"
                 @click="go('/company-info#timeline-nav-mobile')"
               >
                 沿革
@@ -70,7 +70,7 @@ function go(path: string) {
             </li>
             <li>
               <button
-                class="hover-animation"
+                class="hover-blue"
                 @click="go('/company-info#certifications-mobile')"
               >
                 資格
@@ -81,7 +81,7 @@ function go(path: string) {
 
         <li>
           <button
-            class="hover-animation"
+            class="hover-blue"
             @click="go('/hiring-info')"
             :class="
               route.path === '/hiring-info'
@@ -94,7 +94,7 @@ function go(path: string) {
         </li>
         <li>
           <button
-            class="hover-animation"
+            class="hover-blue"
             @click="go('/blog')"
             :class="
               route.path === '/blog' ? 'text-brand-red' : 'text-primary-white'
@@ -105,7 +105,7 @@ function go(path: string) {
         </li>
         <li>
           <button
-            class="hover-animation"
+            class="hover-blue"
             @click="go('/contact')"
             :class="
               route.path === '/contact'
@@ -118,7 +118,7 @@ function go(path: string) {
         </li>
       </ul>
 
-      <button class="mt-10 mx-auto hover-animation" @click="emit('close')">
+      <button class="mt-10 mx-auto hover-blue" @click="emit('close')">
         <Icon name="mdi:close" size="45" class="text-brand-red" />
       </button>
     </div>

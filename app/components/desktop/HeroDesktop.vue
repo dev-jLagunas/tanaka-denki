@@ -6,7 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 </script>
 
 <template>
-  <header class="max-w-[1300px] lg:mx-auto lg:my-14 lg:h-full">
+  <header class="max-w-[1400px] lg:mx-auto lg:my-14 lg:h-full">
     <Swiper
       :modules="[Autoplay, Pagination]"
       :loop="true"
@@ -15,7 +15,7 @@ import { Autoplay, Pagination } from "swiper/modules";
       class="w-full h-[500px] mt-lg"
     >
       <SwiperSlide>
-        <article class="hero-two-grid">
+        <article class="hero-two-grid lg:px-lg xl:px-0">
           <section class="content-center space-y-4 px-reg">
             <p class="hero-desktop-slide-heading text-brand-blue">
               電気保安法人として
@@ -43,7 +43,7 @@ import { Autoplay, Pagination } from "swiper/modules";
         </article>
       </SwiperSlide>
       <SwiperSlide>
-        <article class="hero-two-grid">
+        <article class="hero-two-grid lg:px-lg xl:px-0">
           <section class="content-center space-y-4 px-reg">
             <p class="hero-desktop-slide-heading text-brand-blue">
               開業以来、お客様に損はさせない仕事
@@ -68,7 +68,7 @@ import { Autoplay, Pagination } from "swiper/modules";
         </article>
       </SwiperSlide>
       <SwiperSlide>
-        <article class="hero-two-grid">
+        <article class="hero-two-grid lg:px-lg xl:px-0">
           <section class="content-center space-y-4 px-reg">
             <p class="hero-mobile-slide-heading text-brand-blue">経営理念</p>
 

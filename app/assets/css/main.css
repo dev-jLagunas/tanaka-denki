@@ -81,7 +81,7 @@ body {
 
 /* Hover */
 @utility hover-blue {
-  @apply hover:text-lightest-blue duration-100;
+  @apply hover:text-lightest-blue hover:cursor-pointer duration-100;
 }
 
 @utility hover-shadow {
