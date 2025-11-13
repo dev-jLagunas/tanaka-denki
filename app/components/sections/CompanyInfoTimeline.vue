@@ -6,6 +6,7 @@
       icon="mdi:timeline"
       sectionId="timeline"
       class="lg:hidden"
+      id="timeline-nav-mobile"
     />
     <img
       src="/images/timeline-img.jpg"

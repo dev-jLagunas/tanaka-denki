@@ -63,7 +63,7 @@ const route = useRoute();
             </NuxtLink>
             <NuxtLink
               to="/#accomplishments"
-              class="block px-4 py-1 text-sm hover:bg-gray-100 hover:text-brand-blue"
+              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
             >
               施工実績
             </NuxtLink>
@@ -88,16 +88,16 @@ const route = useRoute();
             class="nav-dropdown absolute -left-2 top-full mt-1 hidden group-hover:block bg-brand-blue text-primary-white shadow-lg rounded-md w-40 py-2 z-50"
           >
             <NuxtLink
-              to="/company-info#about"
+              to="/company-info#timeline-nav"
               class="block px-4 py-2 text-sm hover:bg-primary-white hover:text-brand-blue"
             >
-              私たちについて
+              沿革
             </NuxtLink>
             <NuxtLink
-              to="/company-info#vision"
-              class="block px-4 py-2 text-sm hover:bg-gray-100 hover:text-brand-blue"
+              to="/company-info#certifications-nav"
+              class="block px-4 py-2 text-sm hover:bg-primary-white hover:text-brand-blue"
             >
-              ビジョン・理念
+              資格
             </NuxtLink>
           </div>
         </li>

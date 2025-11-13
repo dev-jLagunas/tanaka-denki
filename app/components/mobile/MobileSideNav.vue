@@ -35,12 +35,12 @@ function go(path: string) {
           </button>
           <ul class="mt-sm nested">
             <li>
-              <button class="hover-animation" @click="go('/services')">
+              <button class="hover-animation" @click="go('/#main-work-info')">
                 事業案内
               </button>
             </li>
             <li>
-              <button class="hover-animation" @click="go('/results')">
+              <button class="hover-animation" @click="go('/#accomplishments')">
                 施工実績
               </button>
             </li>
@@ -61,12 +61,18 @@ function go(path: string) {
           </button>
           <ul class="mt-sm nested">
             <li>
-              <button class="hover-animation" @click="go('/history')">
+              <button
+                class="hover-animation"
+                @click="go('/company-info#timeline-nav-mobile')"
+              >
                 沿革
               </button>
             </li>
             <li>
-              <button class="hover-animation" @click="go('/license')">
+              <button
+                class="hover-animation"
+                @click="go('/company-info#certifications-mobile')"
+              >
                 資格
               </button>
             </li>

@@ -6,6 +6,7 @@
       icon="mdi:timeline"
       sectionId="certifications"
       class="lg:hidden"
+      id="certifications-mobile"
     />
     <img
       src="/images/certs-img.jpg"

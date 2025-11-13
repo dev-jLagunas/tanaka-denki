@@ -34,6 +34,7 @@
       title="沿革"
       icon="mdi:timeline"
       sectionId="timeline"
+      id="timeline-nav"
     />
     <div class="grid grid-cols-[25%_75%] mt-lg">
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
@@ -55,9 +56,10 @@
     </div>
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
-      title="沿革"
-      icon="mdi:timeline"
+      title="資格"
+      icon="mdi:license"
       sectionId="timeline"
+      id="certifications-nav"
     />
     <section class="grid grid-cols-[25%_75%] mt-lg">
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
