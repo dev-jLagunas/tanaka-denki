@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d .output/public"
+    "deploy": "netlify deploy --prod --dir=.output/public"
   },
   "dependencies": {
     "@nuxt/icon": "^2.1.0",
@@ -19,8 +19,5 @@
     "tailwindcss": "^4.1.17",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }

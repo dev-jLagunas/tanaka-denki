@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     preconnect: true,
   },
   components: [
-    { path: "~/components", pathPrefix: false }, // if you also use /components
-    { path: "~/app/components", pathPrefix: false }, // <-- add this
+    { path: "~/components", pathPrefix: false },
+    { path: "~/app/components", pathPrefix: false },
   ],
 });
