@@ -38,7 +38,7 @@ const route = useRoute();
         />
       </NuxtLink>
       <ul class="flex-row-evenly font-sans w-full">
-        <li>
+        <li class="group relative">
           <NuxtLink
             to="/"
             :class="
@@ -46,10 +46,31 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
-            >ホーム</NuxtLink
+            class="pb-2"
           >
+            ホーム
+          </NuxtLink>
+
+          <!-- Hover Dropdown -->
+          <div
+            class="nav-dropdown absolute -left-2 mt-1 top-full hidden group-hover:block bg-brand-blue shadow-lg text-primary-white rounded-md w-40 py-reg z-50"
+          >
+            <NuxtLink
+              to="/#main-work-info"
+              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
+            >
+              事業案内
+            </NuxtLink>
+            <NuxtLink
+              to="/#accomplishments"
+              class="block px-4 py-1 text-sm hover:bg-gray-100 hover:text-brand-blue"
+            >
+              施工実績
+            </NuxtLink>
+          </div>
         </li>
-        <li>
+
+        <li class="group relative">
           <NuxtLink
             to="/company-info"
             :class="
@@ -57,9 +78,30 @@ const route = useRoute();
                 ? 'text-brand-blue font-semibold'
                 : 'text-primary-dark'
             "
-            >会社案内</NuxtLink
+            class="pb-2"
           >
+            会社案内
+          </NuxtLink>
+
+          <!-- Hover Dropdown -->
+          <div
+            class="nav-dropdown absolute -left-2 top-full mt-1 hidden group-hover:block bg-brand-blue text-primary-white shadow-lg rounded-md w-40 py-2 z-50"
+          >
+            <NuxtLink
+              to="/company-info#about"
+              class="block px-4 py-2 text-sm hover:bg-primary-white hover:text-brand-blue"
+            >
+              私たちについて
+            </NuxtLink>
+            <NuxtLink
+              to="/company-info#vision"
+              class="block px-4 py-2 text-sm hover:bg-gray-100 hover:text-brand-blue"
+            >
+              ビジョン・理念
+            </NuxtLink>
+          </div>
         </li>
+
         <li>
           <NuxtLink
             to="/hiring-info"
@@ -116,10 +158,9 @@ const route = useRoute();
   transition: 0.4s;
 }
 
-/* Remove hover logic entirely — now controlled by Vue */
 .center.open::before {
   transform: translateY(12px) rotate(135deg);
-  background: #ea5350; /* red when open */
+  background: #ea5350;
 }
 
 .center.open::after {
@@ -129,5 +170,21 @@ const route = useRoute();
 
 .center.open div {
   transform: scale(0);
+}
+
+.nav-dropdown {
+  position: absolute;
+}
+
+.nav-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #004898; /* your brand-blue HEX */
 }
 </style>

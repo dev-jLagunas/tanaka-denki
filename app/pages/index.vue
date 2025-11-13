@@ -2,7 +2,7 @@
   <main>
     <HeroMobile class="md:hidden" />
     <HeroDesktop class="hidden md:block" />
-    <WorkInfoWrapper />
+    <WorkInfoWrapper id="main-work-info" />
     <BaseSectionHeader
       bgColor="bg-brand-blue"
       title="特記事項"
@@ -19,7 +19,7 @@
       <BaseMeritCard number="2" text="異常の早期発見による損失の縮減" />
       <BaseMeritCard number="3" text="メンテナンス不足による損失の縮減" />
     </section>
-    <AccompWrapper />
+    <AccompWrapper id="accomplishments" />
     <BlogWrapper />
   </main>
 </template>
