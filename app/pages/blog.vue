@@ -1,3 +1,10 @@
+<script setup>
+const { getEntries } = useContentful();
+const data = await getEntries();
+
+console.log(data);
+</script>
+
 <template>
   <main class="my-20">
     <BaseSectionHeader

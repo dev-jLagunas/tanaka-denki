@@ -95,6 +95,8 @@ export default defineNuxtConfig({
     public: {
       supabaseUrl: process.env.SUPABASE_URL as string,
       supabaseAnonKey: process.env.SUPABASE_KEY as string,
+      contentfulSpace: process.env.NUXT_PUBLIC_CONTENTFUL_SPACE,
+      contentfulToken: process.env.NUXT_PUBLIC_CONTENTFUL_TOKEN,
     },
   },
 });
