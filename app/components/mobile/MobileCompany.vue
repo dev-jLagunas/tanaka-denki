@@ -27,13 +27,19 @@
       <ScrollNextBtn nextId="timeline" label="沿革へスクロール" />
     </header>
 
-    <CompanyInfoTable />
-    <button class="red-cta-btn mb-reg ml-lg hover-shadow">お問い合わせ</button>
+    <CompanyInfoTable class="mb-reg" />
+    <NuxtLink to="/contact" class="red-cta-btn hover-shadow ml-reg"
+      >お問い合わせ</NuxtLink
+    >
 
-    <CompanyInfoTimeline id="timeline" />
-    <button class="red-cta-btn mb-reg ml-lg hover-shadow">お問い合わせ</button>
-    <CompanyInfoCerts />
-    <button class="red-cta-btn mb-reg ml-lg hover-shadow">お問い合わせ</button>
+    <CompanyInfoTimeline id="timeline" class="mb-lg" />
+    <NuxtLink to="/contact" class="red-cta-btn hover-shadow ml-reg"
+      >お問い合わせ</NuxtLink
+    >
+    <CompanyInfoCerts class="mb-lg" />
+    <NuxtLink to="/contact" class="red-cta-btn hover-shadow ml-reg"
+      >お問い合わせ</NuxtLink
+    >
     <CompanyInfoMap id="map" />
   </main>
 </template>

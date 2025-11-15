@@ -10,8 +10,9 @@
           />
         </figure>
         <div class="absolute bottom-0 right-5">
-          <button class="red-cta-btn mb-reg hover-shadow">お問い合わせ</button>
-          <ScrollNextBtn nextId="timeline" label="沿革へスクロール" />
+          <NuxtLink to="/contact" class="red-cta-btn mb-reg hover-shadow"
+            >お問い合わせ</NuxtLink
+          >
         </div>
       </aside>
       <section class="">
@@ -46,8 +47,9 @@
           />
         </figure>
         <div class="absolute bottom-0 right-5">
-          <button class="red-cta-btn mb-reg">お問い合わせ</button>
-          <ScrollNextBtn nextId="certifications" label="資格へスクロール" />
+          <NuxtLink to="/contact" class="red-cta-btn mb-reg hover-shadow"
+            >お問い合わせ</NuxtLink
+          >
         </div>
       </aside>
       <section>
@@ -71,8 +73,9 @@
           />
         </figure>
         <div class="absolute bottom-0 right-5">
-          <button class="red-cta-btn mb-reg">お問い合わせ</button>
-          <ScrollNextBtn nextId="certifications" label="資格へスクロール" />
+          <NuxtLink to="/contact" class="red-cta-btn mb-reg hover-shadow"
+            >お問い合わせ</NuxtLink
+          >
         </div>
       </aside>
       <section>
@@ -95,8 +98,9 @@
           />
         </figure>
         <div class="absolute bottom-0 right-5">
-          <button class="red-cta-btn mb-reg">お問い合わせ</button>
-          <ScrollNextBtn nextId="certifications" label="資格へスクロール" />
+          <NuxtLink to="/contact" class="red-cta-btn mb-reg hover-shadow"
+            >お問い合わせ</NuxtLink
+          >
         </div>
       </aside>
       <section>

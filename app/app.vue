@@ -23,6 +23,7 @@ onUnmounted(() => {
 <template>
   <div class="min-h-screen flex flex-col">
     <TheNavbar />
+
     <main class="grow">
       <NuxtPage />
     </main>

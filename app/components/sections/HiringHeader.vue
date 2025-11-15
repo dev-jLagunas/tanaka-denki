@@ -29,10 +29,12 @@
       </p>
       <div class="red-underline"></div>
 
-      <p class="mt-sm leading-7">
+      <p class="mt-sm leading-7 mb-lg">
         技術は日々進化していくので大変ですが、責任を持って仕事を任せる環境をあなたのためにご用意しています。
       </p>
-      <button class="red-cta-btn">お問い合わせ</button>
+      <NuxtLink to="/contact" class="red-cta-btn hover-shadow"
+        >お問い合わせ</NuxtLink
+      >
     </div>
 
     <img
