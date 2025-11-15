@@ -11,6 +11,7 @@
     "deploy": "netlify deploy --prod --dir=.output/public"
   },
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^17.1.6",
     "@nuxt/icon": "^2.1.0",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/supabase": "^2.0.1",

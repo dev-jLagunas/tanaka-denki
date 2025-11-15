@@ -1,26 +1,34 @@
-<script setup></script>
+<script setup>
+// Props
+const props = defineProps({
+  id: { type: String, required: true },
+  image: { type: String, required: true },
+  date: { type: String, required: true },
+  title: { type: String, required: true },
+  subtitle: { type: String, required: true },
+});
+</script>
 
 <template>
-  <article
-    class="rounded-sm w-[90%] mx-auto bg-brand-blue pb-reg shadow-lg"
-    data-aos="fade-up"
-  >
-    <figure class="">
-      <img
-        src="/images/blog/blog-img-1.jpg"
-        alt="blog image"
-        class="rounded-sm"
-      />
+  <article class="rounded-sm w-[90%] mx-auto bg-brand-blue pb-reg shadow-lg">
+    <figure>
+      <img :src="image" alt="blog image" class="rounded-sm" />
     </figure>
+
     <p class="text-lightest-blue text-sm tracking-widest my-sm pl-reg">
-      2023年10月30日
+      {{ date }}
     </p>
+
     <div class="text-center text-primary-white">
-      <h3 class="tracking-wide text-xl">事務所が移転しました。</h3>
-      <p class="text-lightest-blue">事務所移転のお知らせです</p>
-      <button class="px-3 bg-primary-white text-primary-dark mt-sm rounded-sm">
+      <h3 class="tracking-wide text-xl">{{ title }}</h3>
+      <p class="text-lightest-blue">{{ subtitle }}</p>
+
+      <NuxtLink
+        :to="`/blog/${id}`"
+        class="px-3 bg-primary-white text-primary-dark mt-sm rounded-sm inline-block"
+      >
         Read More
-      </button>
+      </NuxtLink>
     </div>
   </article>
 </template>
