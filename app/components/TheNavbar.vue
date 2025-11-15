@@ -84,14 +84,26 @@ const route = useRoute();
           <!-- Hover Dropdown -->
           <div class="nav-dropdown hidden group-hover:block hover-dropdown">
             <NuxtLink
-              to="/company-info#timeline-nav"
-              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
+              to="/company-info#timeline-desktop-nav"
+              class="px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue hidden lg:block"
             >
               沿革
             </NuxtLink>
             <NuxtLink
-              to="/company-info#certifications-nav"
-              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue"
+              to="/company-info#timeline-nav"
+              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue lg:hidden"
+            >
+              沿革
+            </NuxtLink>
+            <NuxtLink
+              to="/company-info#certifications-nav-desktop"
+              class="hidden px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue lg:block"
+            >
+              資格
+            </NuxtLink>
+            <NuxtLink
+              to="/company-info#certifications-nav-mobile"
+              class="block px-4 py-1 text-sm hover:bg-primary-white hover:text-brand-blue lg:hidden"
             >
               資格
             </NuxtLink>

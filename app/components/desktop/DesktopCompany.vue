@@ -35,7 +35,7 @@
       title="沿革"
       icon="mdi:timeline"
       sectionId="timeline"
-      id="timeline-nav"
+      id="timeline-desktop-nav"
     />
     <div class="grid grid-cols-[25%_75%] mt-lg">
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
@@ -61,7 +61,7 @@
       title="資格"
       icon="mdi:license"
       sectionId="timeline"
-      id="certifications-nav"
+      id="certifications-nav-desktop"
     />
     <section class="grid grid-cols-[25%_75%] mt-lg">
       <aside class="relative border-r-2 border-brand-red/50 mr-8">

@@ -32,11 +32,11 @@
       >お問い合わせ</NuxtLink
     >
 
-    <CompanyInfoTimeline id="timeline" class="mb-lg" />
+    <CompanyInfoTimeline id="timeline-nav" class="mb-lg" />
     <NuxtLink to="/contact" class="red-cta-btn hover-shadow ml-reg"
       >お問い合わせ</NuxtLink
     >
-    <CompanyInfoCerts class="mb-lg" />
+    <CompanyInfoCerts class="mb-lg" id="certifications-nav-mobile" />
     <NuxtLink to="/contact" class="red-cta-btn hover-shadow ml-reg"
       >お問い合わせ</NuxtLink
     >
