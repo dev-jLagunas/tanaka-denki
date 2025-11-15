@@ -43,10 +43,11 @@ const formatted = latestThree.map((post) => {
       class="mt-20"
     />
 
-    <div class="space-y-lg sm:two-grid-upsize lg:space-y-0">
+    <div class="space-y-lg sm:two-grid-upsize md:space-y-0">
       <BaseBlogCard
         v-for="post in formatted"
         :key="post.id"
+        :id="post.id"
         :image="post.image"
         :date="post.date"
         :title="post.title"

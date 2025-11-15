@@ -33,7 +33,7 @@ const formatted = posts.map((post) => {
       icon="mdi:info"
       sectionId="company-information"
     />
-    <section class="space-y-lg sm:two-grid-center lg:grid-cols-3 lg:space-y-0">
+    <section class="space-y-lg sm:two-grid-center lg:grid-cols-3 sm:space-y-0">
       <BaseBlogCard
         v-for="post in formatted"
         :key="post.id"

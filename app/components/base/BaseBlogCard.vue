@@ -7,28 +7,33 @@ const props = defineProps({
   title: { type: String, required: true },
   subtitle: { type: String, required: true },
 });
+
+function formatDate(isoString) {
+  return isoString.split("T")[0];
+}
 </script>
 
 <template>
-  <article class="rounded-sm w-[90%] mx-auto bg-brand-blue pb-reg shadow-lg">
-    <figure>
-      <img :src="image" alt="blog image" class="rounded-sm" />
+  <article
+    class="rounded-sm mx-auto bg-brand-blue pb-reg shadow-lg h-full w-[90%]"
+  >
+    <figure class="h-[300px]">
+      <img
+        :src="image"
+        alt="blog image"
+        class="object-cover h-full w-full rounded-t-sm"
+      />
     </figure>
 
-    <p class="text-lightest-blue text-sm tracking-widest my-sm pl-reg">
-      {{ date }}
+    <p class="text-lightest-blue text-xs tracking-widest my-sm pl-reg">
+      {{ formatDate(date) }}
     </p>
 
-    <div class="text-center text-primary-white">
+    <div class="px-reg text-primary-white">
       <h3 class="tracking-wide text-xl">{{ title }}</h3>
-      <p class="text-lightest-blue">{{ subtitle }}</p>
+      <p class="text-lightest-blue mb-reg">{{ subtitle }}</p>
 
-      <NuxtLink
-        :to="`/blog/${id}`"
-        class="px-3 bg-primary-white text-primary-dark mt-sm rounded-sm inline-block"
-      >
-        Read More
-      </NuxtLink>
+      <NuxtLink :to="`/blog/${id}`" class="red-cta-btn"> 続きを読む </NuxtLink>
     </div>
   </article>
 </template>
