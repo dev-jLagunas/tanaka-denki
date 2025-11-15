@@ -35,13 +35,30 @@ if (fields.blogMainImage?.sys?.id) {
 </script>
 
 <template>
-  <main class="max-w-3xl mx-auto my-20 px-4">
-    <h1>{{ fields.blogHeading }}</h1>
-    <p class="text-gray-400">{{ fields.blogSubheading }}</p>
-    <p class="text-gray-500 text-sm">{{ fields.blogDate }}</p>
+  <main class="mx-auto my-20 lg:w-full">
+    <BaseSectionHeader
+      bgColor="bg-brand-blue"
+      title="ブログ記事"
+      icon="mdi:blog"
+      sectionId="blog-contents"
+    />
+    <section
+      class="px-reg long-copy-text text-primary-dark space-y-sm pb-lg light-underline lg:grid lg:grid-cols-2 lg:items-center lg:gap-lg"
+    >
+      <img
+        v-if="bodyImage"
+        :src="bodyImage"
+        class="w-full rounded-md my-8 md:max-h-[400px] object-cover"
+      />
+      <div>
+        <p class="text-sm text-slate-400 -mb-1">{{ fields.blogDate }}</p>
 
-    <img v-if="bodyImage" :src="bodyImage" class="w-full rounded-md my-8" />
-
-    <div class="prose max-w-none" v-html="htmlBody"></div>
+        <h1 class="mb-sm text-lg font-bold lg:text-xl">
+          {{ fields.blogHeading }}
+        </h1>
+        <!-- Rich Text Content -->
+        <div class="prose max-w-none lg:text-xl" v-html="htmlBody"></div>
+      </div>
+    </section>
   </main>
 </template>
