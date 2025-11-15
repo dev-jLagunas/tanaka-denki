@@ -2,13 +2,6 @@
 import { ref } from "vue";
 
 const showPolicy = ref(false);
-
-// watch the modal state and toggle body scroll
-watch(showPolicy, (isOpen) => {
-  if (process.client) {
-    document.body.style.overflow = isOpen ? "hidden" : "";
-  }
-});
 </script>
 
 <template>

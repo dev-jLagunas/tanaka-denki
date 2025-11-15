@@ -18,9 +18,7 @@ const close = () => emits("close");
         color="text-primary-white"
       />
       <button @click="close" class="policy-close-btn">✕</button>
-      <main
-        class="text-primary-dark overflow-y-auto max-h-[70vh] long-copy-text"
-      >
+      <main class="text-primary-dark overflow-y-auto h-[70vh] long-copy-text">
         <h4>
           本ウェブサイトは、株式会社田中電気システムサービス（以下「当サイト」）のホームページです。
         </h4>
