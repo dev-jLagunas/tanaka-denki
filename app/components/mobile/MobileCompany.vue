@@ -35,9 +35,5 @@
     <CompanyInfoCerts />
     <button class="red-cta-btn mb-reg ml-lg hover-shadow">お問い合わせ</button>
     <CompanyInfoMap id="map" />
-    <div class="flex-row-center gap-lg">
-      <button class="red-cta-btn mb-reg hover-shadow">お問い合わせ</button>
-      <button class="text-brand-blue font-bold hover-animation">ホーム</button>
-    </div>
   </main>
 </template>

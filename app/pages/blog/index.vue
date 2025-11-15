@@ -46,5 +46,6 @@ const formatted = posts.map((post) => {
         :subtitle="post.subtitle"
       />
     </section>
+    <BusinessInfo />
   </main>
 </template>

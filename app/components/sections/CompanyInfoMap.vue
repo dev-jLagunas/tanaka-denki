@@ -21,9 +21,6 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <h3 class="long-copy-text text-xl my-reg text-center">
-      〒924-0031石川県白山市村井東2-4-3
-    </h3>
   </section>
 </template>
 

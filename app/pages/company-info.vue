@@ -7,5 +7,6 @@
     />
     <MobileCompany class="lg:hidden" />
     <DesktopCompany class="hidden lg:grid" />
+    <BusinessInfo />
   </main>
 </template>

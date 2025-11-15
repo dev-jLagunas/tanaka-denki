@@ -8,5 +8,6 @@
     />
     <HiringMobile class="lg:hidden" />
     <HiringDesktop class="hidden lg:block" />
+    <BusinessInfo />
   </main>
 </template>
