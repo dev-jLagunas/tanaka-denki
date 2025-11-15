@@ -54,5 +54,13 @@ const formatted = latestThree.map((post) => {
         :subtitle="post.subtitle"
       />
     </div>
+    <div class="text-end mt-lg pr-lg">
+      <NuxtLink
+        to="/blog"
+        class="border px-4 py-1 rounded-sm hover-shadow text-primary-dark items-end"
+      >
+        ブログ一覧を見る
+      </NuxtLink>
+    </div>
   </section>
 </template>

@@ -183,11 +183,11 @@ body {
 
 /* Mobile Hero Component */
 .hero-mobile-slide {
-  @apply bg-brand-blue/80 mt-20 rounded-sm mx-reg px-reg h-fit py-15 w-[90%] max-w-[450px] text-start space-y-2;
+  @apply bg-brand-blue/80 mt-20 rounded-sm mx-reg px-reg h-fit py-15 w-[90%] max-w-[450px] text-start space-y-4;
 }
 
 .hero-mobile-slide-heading {
-  @apply font-semibold text-3xl sm:text-4xl tracking-widest;
+  @apply font-semibold text-xl sm:text-4xl tracking-widest;
 }
 
 /* Desktop Hero Component */

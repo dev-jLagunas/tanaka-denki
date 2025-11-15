@@ -29,7 +29,9 @@ import { Autoplay, Pagination } from "swiper/modules";
             <p class="hero-desktop-slide-heading text-brand-blue">
               ぜひ、弊社にお任せください
             </p>
-            <button class="red-cta-btn hover-shadow">お問い合わせ</button>
+            <NuxtLink to="/contact" class="red-cta-btn hover-shadow"
+              >お問い合わせ</NuxtLink
+            >
           </section>
           <figure
             class="bg-[url('/images/hero/hero-slide-1.webp')] content-center rounded-sm mx-reg background-img-cover"
@@ -54,7 +56,9 @@ import { Autoplay, Pagination } from "swiper/modules";
             <p class="hero-desktop-slide-heading text-brand-blue">
               自分たちの価値を証明してきました
             </p>
-            <button class="red-cta-btn hover-shadow">お問い合わせ</button>
+            <NuxtLink to="/contact" class="red-cta-btn hover-shadow"
+              >お問い合わせ</NuxtLink
+            >
           </section>
           <figure
             class="bg-[url('/images/hero/hero-slide-2.webp')] content-center rounded-sm mx-reg background-img-cover"
@@ -69,8 +73,12 @@ import { Autoplay, Pagination } from "swiper/modules";
       </SwiperSlide>
       <SwiperSlide>
         <article class="hero-two-grid lg:px-lg xl:px-0">
-          <section class="content-center space-y-4 px-reg">
-            <p class="hero-mobile-slide-heading text-brand-blue">経営理念</p>
+          <section class="content-center space-y-6 px-reg">
+            <p
+              class="font-bold tracking-widest text-2xl lg:text-3xl text-brand-blue"
+            >
+              経営理念
+            </p>
 
             <p class="hero-desktop-special-text text-brand-blue text-center">
               着実 <span class="text-brand-red pl-lg">丁寧</span>
@@ -79,7 +87,9 @@ import { Autoplay, Pagination } from "swiper/modules";
               <span class="text-brand-red pr-lg">誠実</span> 安全
             </p>
 
-            <button class="red-cta-btn hover-shadow">お問い合わせ</button>
+            <NuxtLink to="/contact" class="red-cta-btn hover-shadow"
+              >お問い合わせ</NuxtLink
+            >
           </section>
           <figure
             class="bg-[url('/images/hero/hero-slide-3.jpg')] content-center rounded-sm mx-reg background-img-cover"

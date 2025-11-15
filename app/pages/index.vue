@@ -21,5 +21,6 @@
     </section>
     <AccompWrapper id="accomplishments" />
     <BlogWrapper />
+    <BusinessInfo />
   </main>
 </template>
