@@ -17,7 +17,7 @@
     <h3 class="long-copy-text px-reg mt-sm md:text-xl">
       お客様の諸課題をすべて解決いたします
     </h3>
-    <section class="space-y-lg mt-lg md:two-grid-upsize">
+    <section class="space-y-lg mt-lg md:two-grid-upsize md:space-y-0 md:gap-lg">
       <BaseInfoCard
         bgColor="bg-lightest-blue"
         number="1"
@@ -110,7 +110,7 @@
       sectionId="system-info"
     />
     <ScrollNextBtn nextId="tool-info" label="重機等一覧へスクロール" />
-    <section class="space-y-4 mt-lg md:two-grid-upsize">
+    <section class="space-y-4 mt-lg md:two-grid-upsize md:space-y-0 md:gap-lg">
       <BaseInfoCard
         bgColor="bg-light-red"
         number="10a"
@@ -138,7 +138,7 @@
     />
     <ScrollNextBtn nextId="customer-merits" label="特記事項へスクロール" />
 
-    <section class="space-y-4 mt-lg md:two-grid-upsize">
+    <section class="space-y-4 mt-lg md:two-grid-upsize md:space-y-0 md:gap-lg">
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11a"

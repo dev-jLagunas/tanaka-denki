@@ -57,7 +57,8 @@ if (fields.blogMainImage?.sys?.id) {
           {{ fields.blogHeading }}
         </h1>
         <!-- Rich Text Content -->
-        <div class="prose max-w-none lg:text-xl" v-html="htmlBody"></div>
+        <div class="prose max-w-none lg:text-xl mb-reg" v-html="htmlBody"></div>
+        <NuxtLink to="/blog" class="red-cta-btn">前のページに戻る</NuxtLink>
       </div>
     </section>
   </main>
