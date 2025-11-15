@@ -1,4 +1,37 @@
-<script setup></script>
+<script setup>
+const { getEntries } = useContentful();
+const data = await getEntries();
+
+// Filter only this content type
+const posts = data.items.filter(
+  (item) => item.sys.contentType.sys.id === "denkiBlogPost"
+);
+
+// Sort by date (descending)
+const sorted = posts.sort(
+  (a, b) => new Date(b.fields.blogDate) - new Date(a.fields.blogDate)
+);
+
+// Pick only 3
+const latestThree = sorted.slice(0, 3);
+
+// Extract assets
+const assets = data.includes.Asset;
+
+// Format for BlogCard
+const formatted = latestThree.map((post) => {
+  const imgId = post.fields.blogCardImage?.sys?.id;
+  const asset = assets.find((a) => a.sys.id === imgId);
+
+  return {
+    id: post.sys.id,
+    title: post.fields.blogHeading,
+    subtitle: post.fields.blogSubheading,
+    date: post.fields.blogDate,
+    image: asset ? `https:${asset.fields.file.url}` : "/images/default.jpg",
+  };
+});
+</script>
 
 <template>
   <section>
@@ -9,10 +42,16 @@
       sectionId="blog-section"
       class="mt-20"
     />
+
     <div class="space-y-lg sm:two-grid-upsize lg:space-y-0">
-      <BaseBlogCard />
-      <BaseBlogCard />
-      <BaseBlogCard />
+      <BaseBlogCard
+        v-for="post in formatted"
+        :key="post.id"
+        :image="post.image"
+        :date="post.date"
+        :title="post.title"
+        :subtitle="post.subtitle"
+      />
     </div>
   </section>
 </template>
