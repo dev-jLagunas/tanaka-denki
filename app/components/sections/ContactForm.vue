@@ -1,7 +1,31 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+
+const contactForm = ref(null);
+
+onMounted(() => {
+  if (!contactForm.value) return;
+
+  const fields = contactForm.value.querySelectorAll(
+    "input[required], textarea[required]"
+  );
+
+  fields.forEach((field) => {
+    field.addEventListener("invalid", (e) => {
+      const target = e.target;
+      target.setCustomValidity("この項目は必須です");
+    });
+
+    field.addEventListener("input", (e) => {
+      e.target.setCustomValidity("");
+    });
+  });
+});
+</script>
 
 <template>
   <form
+    ref="contactForm"
     name="contact"
     method="POST"
     data-netlify="true"
@@ -57,6 +81,8 @@
         type="text"
         id="company"
         name="法人名"
+        oninvalid="this.setCustomValidity('この項目は必須です')"
+        oninput="this.setCustomValidity('')"
         placeholder="例）株式会社田中電気システムサービス"
         autocomplete="organization"
         class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
@@ -126,3 +152,9 @@
     <button type="submit" class="red-cta-btn hover:cursor-pointer">送信</button>
   </form>
 </template>
+
+<style scoped>
+input:invalid {
+  border-color: red;
+}
+</style>
