@@ -1,12 +1,35 @@
-<script setup></script>
+<script setup>
+function validateBeforeSubmit(e) {
+  const form = e.target;
+
+  if (!form.checkValidity()) {
+    e.preventDefault();
+    form.reportValidity();
+  }
+}
+</script>
 
 <template>
+  <!-- Hidden Netlify build-time form -->
+  <form name="contact" data-netlify="true" hidden>
+    <input type="text" name="name" />
+    <input type="text" name="furigana" />
+    <input type="text" name="company" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="text" name="postal" />
+    <textarea name="message"></textarea>
+    <input type="hidden" name="form-name" value="contact" />
+  </form>
+
   <form
     name="contact"
     method="POST"
     data-netlify="true"
+    data-netlify-honeypot="bot-field"
     action="/success"
     netlify
+    @submit="validateBeforeSubmit"
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
     <noscript>
@@ -16,6 +39,7 @@
     <!-- Required for Netlify -->
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="redirect" value="/success" />
+    <input type="hidden" name="bot-field" />
 
     <!-- Honeypot (spam prevention) -->
     <div data-netlify-honeypot="bot-field" class="hidden">
