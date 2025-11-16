@@ -8,7 +8,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  ssr: false,
+  ssr: true,
+  routeRules: {
+    "/**": { prerender: true },
+  },
   app: {
     baseURL: "/",
     buildAssetsDir: "assets",

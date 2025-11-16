@@ -9,6 +9,10 @@
     novalidate
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
+    <noscript>
+      <input type="hidden" name="form-name" value="contact" />
+    </noscript>
+
     <!-- Required for Netlify -->
     <input type="hidden" name="form-name" value="contact" />
 
