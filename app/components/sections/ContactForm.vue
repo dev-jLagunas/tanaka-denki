@@ -1,12 +1,48 @@
 <script setup>
-function validateBeforeSubmit(e) {
-  const form = e.target;
+import { ref, computed } from "vue";
 
-  if (!form.checkValidity()) {
+const formData = ref({
+  name: "",
+  furigana: "",
+  company: "",
+  email: "",
+  phone: "",
+  postal: "",
+  message: "",
+});
+
+// Hard validation — cannot be bypassed by Netlify
+function validateBeforeSubmit(e) {
+  const f = formData.value;
+
+  const missing =
+    !f.name.trim() ||
+    !f.furigana.trim() ||
+    !f.email.trim() ||
+    !f.phone.trim() ||
+    !f.postal.trim() ||
+    !f.message.trim();
+
+  if (missing) {
     e.preventDefault();
-    form.reportValidity();
+    alert("未入力の項目があります。全ての必須項目をご入力ください。");
+    return false;
   }
+
+  return true;
 }
+
+const isValid = computed(() => {
+  const f = formData.value;
+  return (
+    f.name.trim() !== "" &&
+    f.furigana.trim() !== "" &&
+    f.email.trim() !== "" &&
+    f.phone.trim() !== "" &&
+    f.postal.trim() !== "" &&
+    f.message.trim() !== ""
+  );
+});
 </script>
 
 <template>
@@ -32,16 +68,11 @@ function validateBeforeSubmit(e) {
     @submit="validateBeforeSubmit"
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
-    <noscript>
-      <input type="hidden" name="form-name" value="contact" />
-    </noscript>
-
-    <!-- Required for Netlify -->
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="redirect" value="/success" />
     <input type="hidden" name="bot-field" />
 
-    <!-- Honeypot (spam prevention) -->
+    <!-- Honeypot -->
     <div data-netlify-honeypot="bot-field" class="hidden">
       <input name="bot-field" />
     </div>
@@ -51,6 +82,7 @@ function validateBeforeSubmit(e) {
       <div class="form-group flex flex-col-start-start">
         <label for="name" class="mb-sm text-base">* お名前</label>
         <input
+          v-model="formData.name"
           type="text"
           id="name"
           name="name"
@@ -59,13 +91,13 @@ function validateBeforeSubmit(e) {
           autocomplete="name"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
-        <span class="error-message" aria-live="polite"></span>
       </div>
 
       <!-- Furigana -->
       <div class="form-group flex flex-col-start-start">
         <label for="furigana" class="mb-sm text-base">* ふりがな</label>
         <input
+          v-model="formData.furigana"
           type="text"
           id="furigana"
           name="furigana"
@@ -75,7 +107,6 @@ function validateBeforeSubmit(e) {
           title="ひらがなでご入力ください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
-        <span class="error-message" aria-live="polite"></span>
       </div>
     </section>
 
@@ -83,6 +114,7 @@ function validateBeforeSubmit(e) {
     <div class="form-group flex flex-col-start-start">
       <label for="company" class="mb-sm text-base">法人名</label>
       <input
+        v-model="formData.company"
         type="text"
         id="company"
         name="company"
@@ -96,6 +128,7 @@ function validateBeforeSubmit(e) {
     <div class="form-group flex flex-col-start-start">
       <label for="email" class="mb-sm text-base">* メールアドレス</label>
       <input
+        v-model="formData.email"
         type="email"
         id="email"
         name="email"
@@ -104,7 +137,6 @@ function validateBeforeSubmit(e) {
         autocomplete="email"
         class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
       />
-      <span class="error-message" aria-live="polite"></span>
     </div>
 
     <!-- Phone & Postal -->
@@ -112,6 +144,7 @@ function validateBeforeSubmit(e) {
       <div class="form-group flex flex-col-start-start">
         <label for="phone" class="mb-sm text-base">* 電話番号</label>
         <input
+          v-model="formData.phone"
           type="tel"
           id="phone"
           name="phone"
@@ -121,12 +154,12 @@ function validateBeforeSubmit(e) {
           title="半角数字またはハイフンをご使用ください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
-        <span class="error-message" aria-live="polite"></span>
       </div>
 
       <div class="form-group flex flex-col-start-start">
         <label for="postal" class="mb-sm text-base">* 郵便番号</label>
         <input
+          v-model="formData.postal"
           type="text"
           id="postal"
           name="postal"
@@ -136,18 +169,16 @@ function validateBeforeSubmit(e) {
           title="例：123-4567 の形式で入力してください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
-        <span class="error-message" aria-live="polite"></span>
       </div>
     </div>
 
-    <p class="-mb-2 text-base">* 問合せ内容</p>
-
     <!-- Message -->
+    <p class="-mb-2 text-base">* 問合せ内容</p>
     <div
       class="border-2 bg-primary-white rounded-sm mt-reg flex flex-col-start-start"
     >
-      <label for="message" class="text-primary-dark hidden">* 問合せ内容</label>
       <textarea
+        v-model="formData.message"
         id="message"
         name="message"
         placeholder="お問合せ内容をご記入ください。"
@@ -155,12 +186,14 @@ function validateBeforeSubmit(e) {
         required
         class="placeholder-primary-dark/40 w-full pl-sm text-primary-dark min-h-[300px]"
       ></textarea>
-      <span class="error-message" aria-live="polite"></span>
     </div>
 
-    <!-- Submit -->
-    <div class="form-submit">
-      <button type="submit" class="red-cta-btn">送信</button>
-    </div>
+    <button
+      type="submit"
+      class="red-cta-btn disabled:opacity-40 disabled:cursor-not-allowed"
+      :disabled="!isValid"
+    >
+      送信
+    </button>
   </form>
 </template>
