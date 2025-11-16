@@ -8,10 +8,12 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  ssr: true,
-  routeRules: {
-    "/**": { prerender: true },
+  ssr: false,
+  nitro: {
+    preset: "netlify",
   },
+  routeRules:
+    process.env.NODE_ENV === "production" ? { "/**": { prerender: true } } : {},
   app: {
     baseURL: "/",
     buildAssetsDir: "assets",
