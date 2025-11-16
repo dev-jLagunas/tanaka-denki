@@ -1,103 +1,19 @@
-<script setup>
-import { ref, computed } from "vue";
-import { useRouter } from "#imports";
-
-const router = useRouter();
-
-const formData = ref({
-  name: "",
-  furigana: "",
-  company: "",
-  email: "",
-  phone: "",
-  postal: "",
-  message: "",
-});
-
-// Hard stop validation (client-side)
-function validate() {
-  const f = formData.value;
-  return (
-    f.name.trim() &&
-    f.furigana.trim() &&
-    f.email.trim() &&
-    f.phone.trim() &&
-    f.postal.trim() &&
-    f.message.trim()
-  );
-}
-
-// Netlify-required AJAX submission
-async function handleSubmit(e) {
-  e.preventDefault();
-
-  // Final hard validation before POST
-  if (!validate()) {
-    alert("未入力の項目があります。全ての必須項目をご入力ください。");
-    return;
-  }
-
-  const form = e.target;
-  const payload = new FormData(form);
-
-  try {
-    await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(payload).toString(),
-    });
-
-    router.push("/success");
-  } catch (err) {
-    console.error(err);
-    alert("送信中にエラーが発生しました。");
-  }
-}
-
-const isValid = computed(() => validate());
-</script>
+<script setup></script>
 
 <template>
-  <!-- Hidden Netlify build-time form (must stay exactly like this) -->
-  <form name="contact" data-netlify="true" hidden>
-    <input type="text" name="name" />
-    <input type="text" name="furigana" />
-    <input type="text" name="company" />
-    <input type="email" name="email" />
-    <input type="tel" name="phone" />
-    <input type="text" name="postal" />
-    <textarea name="message"></textarea>
-    <input type="hidden" name="form-name" value="contact" />
-  </form>
-
-  <!-- Visible, user-facing form -->
   <form
-    name="contact"
+    action="https://formspree.io/f/mvgdbrop"
     method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    netlify
-    @submit="handleSubmit"
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
-    <!-- Required Netlify hidden fields -->
-    <input type="hidden" name="form-name" value="contact" />
-    <input type="hidden" name="bot-field" />
-
-    <!-- Honeypot -->
-    <div data-netlify-honeypot="bot-field" class="hidden">
-      <input name="bot-field" />
-    </div>
-
     <!-- Name -->
     <section class="md:grid md:grid-cols-2 md:gap-lg">
       <div class="form-group flex flex-col-start-start">
         <label for="name" class="mb-sm text-base">* お名前</label>
         <input
-          v-model="formData.name"
           type="text"
           id="name"
-          name="name"
+          name="お名前"
           placeholder="例） 山田 太郎"
           required
           autocomplete="name"
@@ -109,13 +25,11 @@ const isValid = computed(() => validate());
       <div class="form-group flex flex-col-start-start">
         <label for="furigana" class="mb-sm text-base">* ふりがな</label>
         <input
-          v-model="formData.furigana"
           type="text"
           id="furigana"
-          name="furigana"
+          name="ふりがな"
           placeholder="例） やまだ たろう"
           required
-          pattern="^[ぁ-んー\\s]+$"
           title="ひらがなでご入力ください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
@@ -126,10 +40,9 @@ const isValid = computed(() => validate());
     <div class="form-group flex flex-col-start-start">
       <label for="company" class="mb-sm text-base">法人名</label>
       <input
-        v-model="formData.company"
         type="text"
         id="company"
-        name="company"
+        name="法人名"
         placeholder="例）株式会社田中電気システムサービス"
         autocomplete="organization"
         class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
@@ -140,10 +53,9 @@ const isValid = computed(() => validate());
     <div class="form-group flex flex-col-start-start">
       <label for="email" class="mb-sm text-base">* メールアドレス</label>
       <input
-        v-model="formData.email"
         type="email"
         id="email"
-        name="email"
+        name="メールアドレス"
         placeholder="例）example@example.com"
         required
         autocomplete="email"
@@ -156,10 +68,9 @@ const isValid = computed(() => validate());
       <div class="form-group flex flex-col-start-start">
         <label for="phone" class="mb-sm text-base">* 電話番号</label>
         <input
-          v-model="formData.phone"
           type="tel"
           id="phone"
-          name="phone"
+          name="電話番号"
           placeholder="例）076-272-8492"
           required
           pattern="^[0-9０-９\\-]+$"
@@ -171,13 +82,11 @@ const isValid = computed(() => validate());
       <div class="form-group flex flex-col-start-start">
         <label for="postal" class="mb-sm text-base">* 郵便番号</label>
         <input
-          v-model="formData.postal"
           type="text"
           id="postal"
-          name="postal"
+          name="郵便番号"
           placeholder="例）924-0031"
           required
-          pattern="^\\d{3}-\\d{4}$"
           title="例：123-4567 の形式で入力してください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
@@ -190,9 +99,8 @@ const isValid = computed(() => validate());
       class="border-2 bg-primary-white rounded-sm mt-reg flex flex-col-start-start"
     >
       <textarea
-        v-model="formData.message"
         id="message"
-        name="message"
+        name="お問い合わせ内容"
         placeholder="お問合せ内容をご記入ください。"
         rows="6"
         required
@@ -200,13 +108,16 @@ const isValid = computed(() => validate());
       ></textarea>
     </div>
 
+    <!-- Hidden Formspree params -->
+    <input
+      type="hidden"
+      name="_subject"
+      value="新しいお問い合わせが届きました"
+    />
+    <input type="hidden" name="_language" value="ja" />
+    <input type="hidden" name="_redirect" value="/success" />
+
     <!-- Submit -->
-    <button
-      type="submit"
-      class="red-cta-btn disabled:opacity-40 disabled:cursor-not-allowed"
-      :disabled="!isValid"
-    >
-      送信
-    </button>
+    <button type="submit" class="red-cta-btn hover:cursor-pointer">送信</button>
   </form>
 </template>
