@@ -2,11 +2,21 @@
 
 <template>
   <form
-    action="/send"
+    name="contact"
     method="POST"
+    data-netlify="true"
+    netlify
     novalidate
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
+    <!-- Required for Netlify -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <!-- Honeypot (spam prevention) -->
+    <div data-netlify-honeypot="bot-field" class="hidden">
+      <input name="bot-field" />
+    </div>
+
     <!-- Name -->
     <section class="md:grid md:grid-cols-2 md:gap-lg">
       <div class="form-group flex flex-col-start-start">
@@ -39,6 +49,7 @@
         <span class="error-message" aria-live="polite"></span>
       </div>
     </section>
+
     <!-- Company Name -->
     <div class="form-group flex flex-col-start-start">
       <label for="company" class="mb-sm text-base">法人名</label>
@@ -99,7 +110,9 @@
         <span class="error-message" aria-live="polite"></span>
       </div>
     </div>
+
     <p class="-mb-2 text-base">* 問合せ内容</p>
+
     <!-- Message -->
     <div
       class="border-2 bg-primary-white rounded-sm mt-reg flex flex-col-start-start"
