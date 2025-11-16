@@ -1,5 +1,8 @@
 <script setup>
 import { ref, computed } from "vue";
+import { useRouter } from "#imports";
+
+const router = useRouter();
 
 const formData = ref({
   name: "",
@@ -11,42 +14,51 @@ const formData = ref({
   message: "",
 });
 
-// Hard validation — cannot be bypassed by Netlify
-function validateBeforeSubmit(e) {
-  const f = formData.value;
-
-  const missing =
-    !f.name.trim() ||
-    !f.furigana.trim() ||
-    !f.email.trim() ||
-    !f.phone.trim() ||
-    !f.postal.trim() ||
-    !f.message.trim();
-
-  if (missing) {
-    e.preventDefault();
-    alert("未入力の項目があります。全ての必須項目をご入力ください。");
-    return false;
-  }
-
-  return true;
-}
-
-const isValid = computed(() => {
+// Hard stop validation (client-side)
+function validate() {
   const f = formData.value;
   return (
-    f.name.trim() !== "" &&
-    f.furigana.trim() !== "" &&
-    f.email.trim() !== "" &&
-    f.phone.trim() !== "" &&
-    f.postal.trim() !== "" &&
-    f.message.trim() !== ""
+    f.name.trim() &&
+    f.furigana.trim() &&
+    f.email.trim() &&
+    f.phone.trim() &&
+    f.postal.trim() &&
+    f.message.trim()
   );
-});
+}
+
+// Netlify-required AJAX submission
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  // Final hard validation before POST
+  if (!validate()) {
+    alert("未入力の項目があります。全ての必須項目をご入力ください。");
+    return;
+  }
+
+  const form = e.target;
+  const payload = new FormData(form);
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(payload).toString(),
+    });
+
+    router.push("/success");
+  } catch (err) {
+    console.error(err);
+    alert("送信中にエラーが発生しました。");
+  }
+}
+
+const isValid = computed(() => validate());
 </script>
 
 <template>
-  <!-- Hidden Netlify build-time form -->
+  <!-- Hidden Netlify build-time form (must stay exactly like this) -->
   <form name="contact" data-netlify="true" hidden>
     <input type="text" name="name" />
     <input type="text" name="furigana" />
@@ -58,18 +70,18 @@ const isValid = computed(() => {
     <input type="hidden" name="form-name" value="contact" />
   </form>
 
+  <!-- Visible, user-facing form -->
   <form
     name="contact"
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    action="/success"
     netlify
-    @submit="validateBeforeSubmit"
+    @submit="handleSubmit"
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
+    <!-- Required Netlify hidden fields -->
     <input type="hidden" name="form-name" value="contact" />
-    <input type="hidden" name="redirect" value="/success" />
     <input type="hidden" name="bot-field" />
 
     <!-- Honeypot -->
@@ -103,7 +115,7 @@ const isValid = computed(() => {
           name="furigana"
           placeholder="例） やまだ たろう"
           required
-          pattern="^[ぁ-んー\s]+$"
+          pattern="^[ぁ-んー\\s]+$"
           title="ひらがなでご入力ください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
@@ -150,7 +162,7 @@ const isValid = computed(() => {
           name="phone"
           placeholder="例）076-272-8492"
           required
-          pattern="^[0-9０-９\-]+$"
+          pattern="^[0-9０-９\\-]+$"
           title="半角数字またはハイフンをご使用ください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
@@ -165,7 +177,7 @@ const isValid = computed(() => {
           name="postal"
           placeholder="例）924-0031"
           required
-          pattern="^\d{3}-\d{4}$"
+          pattern="^\\d{3}-\\d{4}$"
           title="例：123-4567 の形式で入力してください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
@@ -188,6 +200,7 @@ const isValid = computed(() => {
       ></textarea>
     </div>
 
+    <!-- Submit -->
     <button
       type="submit"
       class="red-cta-btn disabled:opacity-40 disabled:cursor-not-allowed"
