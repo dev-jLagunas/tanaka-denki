@@ -2,10 +2,24 @@
 
 <template>
   <form
-    action="https://formspree.io/f/mvgdbrop"
+    name="contact"
     method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/success"
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
+    <!-- Netlify required hidden field -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <!-- Honeypot (spam prevention) -->
+    <p class="hidden">
+      <label>
+        こちらの項目は空のままにしてください
+        <input name="bot-field" />
+      </label>
+    </p>
+
     <!-- Name -->
     <section class="md:grid md:grid-cols-2 md:gap-lg">
       <div class="form-group flex flex-col-start-start">
@@ -73,7 +87,7 @@
           name="電話番号"
           placeholder="例）076-272-8492"
           required
-          pattern="^[0-9０-９\\-]+$"
+          pattern="^[0-9０-９\-]+$"
           title="半角数字またはハイフンをご使用ください"
           class="bg-primary-white w-full rounded-sm py-1 placeholder-primary-dark/40 px-reg text-primary-dark"
         />
@@ -107,15 +121,6 @@
         class="placeholder-primary-dark/40 w-full pl-sm text-primary-dark min-h-[300px]"
       ></textarea>
     </div>
-
-    <!-- Hidden Formspree params -->
-    <input
-      type="hidden"
-      name="_subject"
-      value="新しいお問い合わせが届きました"
-    />
-    <input type="hidden" name="_language" value="ja" />
-    <input type="hidden" name="_redirect" value="/success" />
 
     <!-- Submit -->
     <button type="submit" class="red-cta-btn hover:cursor-pointer">送信</button>

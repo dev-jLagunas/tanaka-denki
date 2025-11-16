@@ -12,8 +12,10 @@ export default defineNuxtConfig({
   nitro: {
     preset: "netlify",
   },
-  routeRules:
-    process.env.NODE_ENV === "production" ? { "/**": { prerender: true } } : {},
+  routeRules: {
+    "/**": { prerender: true },
+    "/contact": { prerender: false },
+  },
   app: {
     baseURL: "/",
     buildAssetsDir: "assets",
