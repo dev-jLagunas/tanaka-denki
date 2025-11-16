@@ -1,7 +1,7 @@
 <template>
   <section class="">
     <BaseSectionHeader
-      bgColor="bg-brand-blue"
+      bgColor="bg-brand-red"
       title="事業案内"
       icon="mdi:company"
       sectionId="work-info"
