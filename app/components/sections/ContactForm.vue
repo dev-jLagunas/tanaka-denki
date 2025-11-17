@@ -51,7 +51,7 @@ onMounted(() => {
         <input
           type="text"
           id="name"
-          name="お名前"
+          name="name"
           placeholder="例） 山田 太郎"
           required
           autocomplete="name"
@@ -65,7 +65,7 @@ onMounted(() => {
         <input
           type="text"
           id="furigana"
-          name="ふりがな"
+          name="furigana"
           placeholder="例） やまだ たろう"
           required
           title="ひらがなでご入力ください"
@@ -80,7 +80,7 @@ onMounted(() => {
       <input
         type="text"
         id="company"
-        name="法人名"
+        name="company"
         oninvalid="this.setCustomValidity('この項目は必須です')"
         oninput="this.setCustomValidity('')"
         placeholder="例）株式会社田中電気システムサービス"
@@ -95,7 +95,7 @@ onMounted(() => {
       <input
         type="email"
         id="email"
-        name="メールアドレス"
+        name="email"
         placeholder="例）example@example.com"
         required
         autocomplete="email"
@@ -110,7 +110,7 @@ onMounted(() => {
         <input
           type="tel"
           id="phone"
-          name="電話番号"
+          name="phone"
           placeholder="例）076-272-8492"
           required
           pattern="^[0-9０-９\-]+$"
@@ -124,7 +124,7 @@ onMounted(() => {
         <input
           type="text"
           id="postal"
-          name="郵便番号"
+          name="posta"
           placeholder="例）924-0031"
           required
           title="例：123-4567 の形式で入力してください"
@@ -140,7 +140,7 @@ onMounted(() => {
     >
       <textarea
         id="message"
-        name="お問い合わせ内容"
+        name="message"
         placeholder="お問合せ内容をご記入ください。"
         rows="6"
         required
