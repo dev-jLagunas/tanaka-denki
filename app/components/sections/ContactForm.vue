@@ -36,6 +36,7 @@ onMounted(() => {
     <!-- Netlify required hidden field -->
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="redirect" value="/success" />
+    <input type="hidden" name="no-spam" value="true" />
 
     <!-- Honeypot (spam prevention) -->
     <p class="hidden">
@@ -124,7 +125,7 @@ onMounted(() => {
         <input
           type="text"
           id="postal"
-          name="posta"
+          name="postal"
           placeholder="例）924-0031"
           required
           title="例：123-4567 の形式で入力してください"
