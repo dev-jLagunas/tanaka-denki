@@ -212,3 +212,19 @@ body {
 .work-info-card-subheading {
   @apply text-primary-dark font-bold tracking-widest my-4 text-xl w-full text-center md:text-start;
 }
+
+.blog-body p {
+  margin: 0.75rem 0;
+  line-height: 1.75;
+}
+
+.blog-body ul,
+.blog-body ol {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.blog-body li + li {
+  margin-top: 0.25rem;
+}

@@ -48,7 +48,7 @@ if (fields.blogMainImage?.sys?.id) {
       <img
         v-if="bodyImage"
         :src="bodyImage"
-        class="w-full rounded-md my-8 md:max-h-[400px] object-cover"
+        class="w-auto rounded-md shadow-md my-8 mx-auto max-h-[600px] md:object-contain"
       />
       <div>
         <p class="text-sm text-slate-400 -mb-1">{{ fields.blogDate }}</p>
@@ -57,7 +57,7 @@ if (fields.blogMainImage?.sys?.id) {
           {{ fields.blogHeading }}
         </h1>
         <!-- Rich Text Content -->
-        <div class="prose max-w-none lg:text-xl mb-reg" v-html="htmlBody"></div>
+        <div class="mb-reg prose max-w-none blog-body" v-html="htmlBody"></div>
         <NuxtLink to="/blog" class="red-cta-btn">前のページに戻る</NuxtLink>
       </div>
     </section>

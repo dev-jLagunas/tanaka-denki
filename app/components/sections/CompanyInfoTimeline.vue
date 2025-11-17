@@ -14,7 +14,7 @@
       class="-mt-reg w-[90%] mx-auto rounded-sm h-[300px] object-cover object-top lg:w-full lg:pr-8"
     />
     <ScrollNextBtn
-      nextId="certifications"
+      nextId="certifications-nav-mobile"
       label="資格へスクロール"
       class="mt-reg lg:hidden"
     />

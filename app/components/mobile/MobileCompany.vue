@@ -24,7 +24,7 @@
       >
         さらに、自家用電気設備（受変電設備の保守管理をお引き受けします。　
       </h3>
-      <ScrollNextBtn nextId="timeline" label="沿革へスクロール" />
+      <ScrollNextBtn nextId="timeline-nav-mobile" label="沿革へスクロール" />
     </header>
 
     <CompanyInfoTable class="mb-reg" />

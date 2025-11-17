@@ -15,7 +15,7 @@ function formatDate(isoString) {
 
 <template>
   <article
-    class="rounded-sm mx-auto bg-brand-blue pb-reg shadow-lg h-full w-[90%]"
+    class="rounded-sm mx-auto bg-brand-blue pb-reg shadow-lg h-full w-[90%] grid grid-cols-1"
   >
     <figure class="h-[300px]">
       <img
@@ -25,11 +25,10 @@ function formatDate(isoString) {
       />
     </figure>
 
-    <p class="text-lightest-blue text-xs tracking-widest my-sm pl-reg">
-      {{ formatDate(date) }}
-    </p>
-
     <div class="px-reg text-primary-white">
+      <p class="text-lightest-blue text-xs tracking-widest my-sm">
+        {{ formatDate(date) }}
+      </p>
       <h3 class="tracking-wide text-xl">{{ title }}</h3>
       <p class="text-lightest-blue mb-reg">{{ subtitle }}</p>
 
