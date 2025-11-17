@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from "swiper/modules";
     <Swiper
       :modules="[Autoplay, Pagination]"
       :loop="true"
-      :autoplay="{ delay: 4000 }"
+      :autoplay="{ delay: 4500 }"
       :pagination="true"
       class="w-full h-[500px] mt-lg"
     >
