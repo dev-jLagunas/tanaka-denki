@@ -30,16 +30,16 @@ onMounted(() => {
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    action="/success"
+    action="/pages/success"
     class="border-2 bg-brand-blue text-primary-white h-full py-10 w-[90%] mx-auto px-reg long-copy-text text-lg space-y-sm rounded-md md:w-[80%] max-w-[1200px]"
   >
     <!-- Netlify required hidden field -->
     <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="redirect" value="/success" />
 
     <!-- Honeypot (spam prevention) -->
     <p class="hidden">
       <label>
-        こちらの項目は空のままにしてください
         <input name="bot-field" />
       </label>
     </p>

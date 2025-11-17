@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/**": { prerender: true },
+    "/success": { prerender: true },
   },
   app: {
     baseURL: "/",

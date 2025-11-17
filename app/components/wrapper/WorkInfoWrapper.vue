@@ -12,10 +12,10 @@
     />
 
     <h3 class="long-copy-text px-reg md:text-xl">
-      自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください
+      自家用電気設備のあらゆる疑問点や不安なことを弊社にご相談してください。
     </h3>
     <h3 class="long-copy-text px-reg mt-sm md:text-xl">
-      お客様の諸課題をすべて解決いたします
+      お客様の諸課題をすべて解決いたします。
     </h3>
     <section class="space-y-lg mt-lg md:two-grid-upsize md:space-y-0 md:gap-lg">
       <BaseInfoCard
@@ -40,7 +40,7 @@
         bgColor="bg-lightest-blue"
         number="3"
         subheading="モニタリングによる不具合の早期発見"
-        longCopy="(例)パワーコンディショナーの直流地絡（重故障)。 モニタリングにより、早期の原因把握と故障復旧を図ります"
+        longCopy="(例)パワーコンディショナーの直流地絡（重故障)。 モニタリングにより、早期の原因把握と故障復旧を図ります。"
         :slideCopy="[
           '系統・PC監視画面表示警報・状態リスト',
           'PCS画面表示故障停止',
@@ -89,7 +89,7 @@
         bgColor="bg-lightest-blue"
         number="8"
         subheading="除雪作業"
-        longCopy="作業目的積雪荷重によるパネル倒壊を防止すると共に、パネル上の積雪を落下させて発電可能にするため除雪します。 "
+        longCopy="作業目的: 積雪荷重によるパネル倒壊を防止すると共に、パネル上の積雪を落下させて発電可能にするため除雪します。 "
         :slideCopy="[
           '当社所有重機等④ロータリー式除雪車×４台⑤大型除雪機×４台⑥ホイールローダー×２台',
         ]"
@@ -99,7 +99,7 @@
         bgColor="bg-lightest-blue"
         number="9"
         subheading="ドローンによる点検"
-        longCopy="使用目的機能性の高い赤外線カメラが搭載されたドローンにより、上空より肉眼で確認できない異常（ホットスポット等）を正確に感知し、発電効率の低下を早期に発見します。"
+        longCopy="使用目的: 機能性の高い赤外線カメラが搭載されたドローンにより、上空より肉眼で確認できない異常（ホットスポット等）を正確に感知し、発電効率の低下を早期に発見します。"
         :images="['images/work/work-info-img-9.webp']"
       />
     </section>
@@ -154,25 +154,25 @@
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11c"
-        subheading="自走式草刈機"
+        subheading="ラジコン操縦草刈機"
         :images="['images/work/work-info-img-11c.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11d"
-        subheading="自走式草刈機"
+        subheading="ロータリー式除雪車"
         :images="['images/work/work-info-img-11d.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11e"
-        subheading="自走式草刈機"
+        subheading="大型除雪機"
         :images="['images/work/work-info-img-11e.webp']"
       />
       <BaseInfoCard
         bgColor="bg-light-green"
         number="11f"
-        subheading="自走式草刈機"
+        subheading="ホイールローダー(コマツWA40)"
         :images="['images/work/work-info-img-11f.webp']"
       />
     </section>

@@ -70,7 +70,7 @@ const props = defineProps({
           </figure>
           <p
             v-if="slideCopy[i]"
-            class="absolute bg-brand-blue/90 text-primary-white py-2 bottom-0 z-10 w-full text-center text-sm"
+            class="absolute bg-brand-blue/90 text-primary-white py-2 bottom-0 z-10 w-full text-center text-sm text-balance"
           >
             {{ slideCopy[i] }}
           </p>
