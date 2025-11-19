@@ -13,6 +13,7 @@
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^17.1.6",
     "@nuxt/icon": "^2.1.0",
+    "@nuxt/scripts": "^0.13.0",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/supabase": "^2.0.1",
     "@tailwindcss/vite": "^4.1.17",

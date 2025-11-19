@@ -78,7 +78,19 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
     },
   },
-  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/supabase"],
+  modules: [
+    "@nuxt/icon",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/supabase",
+    "@nuxt/scripts",
+  ],
+  scripts: {
+    registry: {
+      googleAnalytics: {
+        id: "G-R26X812NKP",
+      },
+    },
+  },
   supabase: {
     redirect: false,
   },
