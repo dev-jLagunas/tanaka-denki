@@ -10,12 +10,40 @@
       topMargin="mt-10"
       class="lg:hidden"
     />
-
+    <h3 class="long-copy-text px-reg mb-2 md:text-xl lg:text-2xl lg:hidden">
+      当社のスタッフは経験豊富な層が多く、若手からベテランまでバランスよく在籍しています。年代の偏りが少なく、相談しやすい職場環境が特徴です。
+    </h3>
     <img
-      src="/images/hiring-img-2.jpg"
+      src="/images/hiring-img-2.png"
       alt=""
       class="w-[90%] mx-auto rounded-sm object-cover h-full lg:hidden"
     />
+    <div
+      class="text-primary-dark grid grid-cols-2 mt-4 place-items-center lg:hidden"
+    >
+      <article>
+        <h5 class="font-bold text-lg">年代別割合</h5>
+        <p>全従業員含む</p>
+        <ul class="mt-2">
+          <li><Icon name="mdi:chevron-right" size="12" />40代：4 名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />50代：3 名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />30代：3 名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />60代：3 名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />70代：2 名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />20代：3 名</li>
+        </ul>
+      </article>
+      <article>
+        <h5 class="font-bold text-lg">経験年数別割合</h5>
+
+        <ul class="mt-2">
+          <li><Icon name="mdi:chevron-right" size="12" />入社0〜3年： 9名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />入社4〜6年： 1名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />入社7年以上：2名</li>
+        </ul>
+      </article>
+    </div>
+
     <ul
       class="space-y-reg mt-lg px-sm border-2 border-brand-blue py-reg mx-sm rounded-sm lg:border-0 long-copy-text lg:border-r-2 lg:border-brand-red/20"
     >
@@ -150,13 +178,43 @@
       <img
         src="/images/logo-only.png"
         alt="company logo"
-        class="h-16 mx-auto my-lg hidden lg:grid"
+        class="h-10 mx-auto my-lg hidden lg:grid"
       />
+      <h3
+        class="long-copy-text px-reg mb-12 hidden lg:text-lg lg:text-center lg:block"
+      >
+        当社のスタッフは経験豊富な層が多く、若手からベテランまでバランスよく在籍しています。年代の偏りが少なく、相談しやすい職場環境が特徴です。
+      </h3>
       <img
-        src="/images/hiring-img-2.jpg"
+        src="/images/hiring-img-2.png"
         alt=""
         class="hidden lg:grid -mt-reg w-[90%] mx-auto rounded-sm max-h-[350px] object-cover"
       />
+      <div
+        class="text-primary-dark lg:grid grid-cols-2 mt-4 place-items-center hidden lg:w-full"
+      >
+        <article>
+          <h5 class="font-bold text-lg">年代別割合</h5>
+          <p>全従業員含む</p>
+          <ul class="mt-2">
+            <li><Icon name="mdi:chevron-right" size="12" />40代：4 名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />50代：3 名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />30代：3 名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />60代：3 名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />70代：2 名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />20代：3 名</li>
+          </ul>
+        </article>
+        <article>
+          <h5 class="font-bold text-lg">経験年数別割合</h5>
+
+          <ul class="mt-2">
+            <li><Icon name="mdi:chevron-right" size="12" />入社0〜3年： 9名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />入社4〜6年： 1名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />入社7年以上：2名</li>
+          </ul>
+        </article>
+      </div>
     </figure>
   </section>
 </template>

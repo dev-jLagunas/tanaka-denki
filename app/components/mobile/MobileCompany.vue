@@ -23,7 +23,7 @@
       >
         自家用電気設備・受変電設備の保守・点検も、専門技術でしっかりと対応いたします。　
       </h3>
-      <ScrollNextBtn nextId="timeline" label="沿革へスクロール" />
+      <ScrollNextBtn nextId="area-nav" label="対応エリアへスクロール" />
     </header>
 
     <CompanyInfoTable class="mb-reg" />

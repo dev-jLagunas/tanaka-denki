@@ -49,6 +49,7 @@ const route = useRoute();
             class="pb-2 hover-blue"
           >
             ホーム
+            <Icon name="mdi:chevron-down" size="16" class="absolute bottom-0" />
           </NuxtLink>
 
           <!-- Hover Dropdown -->
@@ -79,6 +80,7 @@ const route = useRoute();
             class="pb-2 hover-blue"
           >
             会社案内
+            <Icon name="mdi:chevron-down" size="16" class="absolute bottom-0" />
           </NuxtLink>
 
           <!-- Hover Dropdown -->

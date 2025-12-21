@@ -100,7 +100,7 @@
           </span>
           <span class="">1級電気工事施工管理技士</span>
         </span>
-        <span class="font-bold text-primary-dark">1名</span>
+        <span class="font-bold text-primary-dark">1 名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red/50 ml-9"></div>
 

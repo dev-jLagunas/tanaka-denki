@@ -63,9 +63,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
             <p class="hero-mobile-slide-heading text-primary-white">
               自分たちの価値を証明してきました
             </p>
-            <NuxtLink to="/contact" class="red-cta-btn hover-shadow"
-              >お問い合わせ</NuxtLink
-            >
           </div>
         </article>
       </SwiperSlide>
@@ -90,9 +87,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
             >
               <span class="text-brand-red">誠実</span> 安全
             </p>
-            <NuxtLink to="/contact" class="red-cta-btn hover-shadow"
-              >お問い合わせ</NuxtLink
-            >
           </div>
         </article>
       </SwiperSlide>
