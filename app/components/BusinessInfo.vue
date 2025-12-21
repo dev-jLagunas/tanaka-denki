@@ -22,6 +22,7 @@
     <li class="text-center">
       <Icon name="mdi:phone" size="28" class="text-slate-700" />
       <p>TEL <span class="font-bold">076-272-8492</span></p>
+      <p>受付時間 9:00-17:00</p>
     </li>
 
     <!-- Fax -->
@@ -30,8 +31,13 @@
       <p>FAX <span class="font-bold">076-272-8493</span></p>
     </li>
 
-    <li class="md:col-span-2 mx-auto">
-      <img src="/images/logo-only.png" alt="company logo" class="h-20 mt-lg" />
+    <li class="md:col-span-2 mx-auto place-content-center text-center">
+      <img
+        src="/images/logo-only.png"
+        alt="company logo"
+        class="h-20 mt-lg mx-auto"
+      />
+      <p class="text-brand-blue">株式会社田中電気システムサービス</p>
     </li>
   </ul>
 </template>

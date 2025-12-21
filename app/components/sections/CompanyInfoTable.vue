@@ -37,7 +37,7 @@
         <p
           class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 indent-4"
         >
-          〒924-0031石川県白山市村井東2-4-3
+          〒924-0031 石川県白山市村井東 2-4-3
         </p>
       </li>
       <li class="md:flex md:justify-start md:items-center md:gap-2">
@@ -70,13 +70,16 @@
         >
           事業内容
         </p>
-        <p
+        <ul
           class="text-primary-dark tracking-wide text-balance text-lg border-b pb-2 border-lightest-blue/20 indent-4 md:mt-sm md:indent-0"
         >
-          電気事業法による自家用電気設備の保安管理業務
-          太陽光発電システム保守点検・整備 環境機器販売及びメンテナンス
-          省エネ等コンサルティング事業 発電所内の除草・除雪作業
-        </p>
+          <li>電気事業法による自家用電気設備の保安管理業務</li>
+
+          <li>太陽光発電システム保守点検</li>
+          <li>整備 環境機器販売及びメンテナンス</li>
+          <li>省エネ等コンサルティング事業</li>
+          <li>発電所内の除草・除雪作業</li>
+        </ul>
       </li>
     </ul>
   </div>

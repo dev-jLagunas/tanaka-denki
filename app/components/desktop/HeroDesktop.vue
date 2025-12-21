@@ -2,16 +2,18 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 </script>
 
 <template>
   <header class="max-w-[1400px] lg:mx-auto lg:my-14 lg:h-full">
     <Swiper
-      :modules="[Autoplay, Pagination]"
+      :modules="[Autoplay, Pagination, Navigation]"
       :loop="true"
-      :autoplay="{ delay: 4500 }"
+      :autoplay="{ delay: 9000 }"
       :pagination="true"
+      :navigation="true"
       class="w-full h-[500px] mt-lg"
     >
       <SwiperSlide>
@@ -62,14 +64,8 @@ import { Autoplay, Pagination } from "swiper/modules";
             >
           </section>
           <figure
-            class="bg-[url('/images/hero/hero-slide-2.webp')] content-center rounded-sm mx-reg background-img-cover"
-          >
-            <img
-              src="/images/logo-only.png"
-              alt="company logo"
-              class="h-16 mx-auto"
-            />
-          </figure>
+            class="bg-[url('/images/hero/hero-slide-2.jpg')] content-center rounded-sm mx-reg background-img-cover"
+          ></figure>
         </article>
       </SwiperSlide>
       <SwiperSlide>
@@ -94,13 +90,7 @@ import { Autoplay, Pagination } from "swiper/modules";
           </section>
           <figure
             class="bg-[url('/images/hero/hero-slide-3.jpg')] content-center rounded-sm mx-reg background-img-cover"
-          >
-            <img
-              src="/images/logo-only.png"
-              alt="company logo"
-              class="h-16 mx-auto"
-            />
-          </figure>
+          ></figure>
         </article>
       </SwiperSlide>
     </Swiper>

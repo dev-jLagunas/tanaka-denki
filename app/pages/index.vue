@@ -12,7 +12,9 @@
     />
     <ScrollNextBtn nextId="achievements" label="施工実績へスクロール" />
     <section>
-      <h3 class="long-copy-text px-reg md:leading-9 text-xl">
+      <h3
+        class="long-copy-text px-reg md:leading-9 text-xl md:text-3xl md:mb-8"
+      >
         お客様のメリット
       </h3>
       <BaseMeritCard number="1" text="一体的保守管理による経費節減" />

@@ -10,7 +10,7 @@
       class="lg:hidden"
     />
 
-    <div class="w-[90%] mx-auto rounded-sm shadow-md lg:w-full">
+    <div class="w-[90%] mx-auto rounded-sm shadow-md mb-4 lg:w-full">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.5815018644585!2d136.55808277626008!3d36.51596308366977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff84bd76a123423%3A0xd59ffc76a848421a!2z77yI5qCq77yJ55Sw5Lit6Zu75rCX44K344K544OG44Og44K144O844OT44K5!5e0!3m2!1sen!2sjp!4v1762910135814!5m2!1sen!2sjp"
         width="100%"

@@ -8,7 +8,7 @@ body {
   background-color: hsl(60, 20%, 95%);
   max-width: 1500px;
   margin-inline: auto;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 /********************************************
@@ -20,8 +20,9 @@ body {
   --color-brand-blue: #004898;
   --color-brand-red: #ea5350;
   --color-brand-green: #6cbb5a;
+  --color-orange: #feb05d;
   /* neutral colors */
-  --color-primary-white: #f5f5f0;
+  --color-primary-white: #f5f5f5;
   --color-primary-dark: #222222;
   --color-lightest-blue: #6691c1;
   --color-light-red: #f5a9a8;
@@ -206,7 +207,7 @@ body {
 /* Work Info Component */
 
 .work-info-card-number {
-  @apply h-8 w-8 rounded-sm bg-primary-white/85 flex-row-center text-brand-blue font-bold;
+  @apply h-8 w-8 rounded-sm bg-primary-white/85 flex-row-center mb-2 text-brand-blue font-bold;
 }
 
 .work-info-card-subheading {
@@ -227,4 +228,18 @@ body {
 
 .blog-body li + li {
   margin-top: 0.25rem;
+}
+
+/* Swiper navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  /* color alone won’t work */
+  --swiper-navigation-color: #f5f5f5; /* Tailwind red-500 */
+}
+
+/* If using direct SVG fill: */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #f5f5f5; /* fallback if using default icons */
+  fill: #f5f5f5; /* this actually colors the SVG */
 }

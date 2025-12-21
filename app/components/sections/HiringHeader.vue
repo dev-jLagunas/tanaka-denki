@@ -10,7 +10,7 @@
       />
 
       <img
-        src="/images/hiring-img-1.jpg"
+        src="/images/hiring-photo.png"
         alt=""
         class="w-[90%] mx-auto rounded-sm max-h-[350px] object-cover"
       />
@@ -38,7 +38,7 @@
     </div>
 
     <img
-      src="/images/hiring-img-1.jpg"
+      src="/images/hiring-photo.png"
       alt=""
       class="hidden -mt-reg w-[90%] mx-auto rounded-sm max-h-[350px] object-cover lg:grid"
     />

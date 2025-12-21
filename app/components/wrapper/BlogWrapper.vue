@@ -59,7 +59,7 @@ const formatted = latestThree.map((post) => {
         to="/blog"
         class="border px-4 py-1 rounded-sm hover-shadow text-primary-dark items-end"
       >
-        ブログ一覧を見る
+        お知らせ一覧を見る
       </NuxtLink>
     </div>
   </section>

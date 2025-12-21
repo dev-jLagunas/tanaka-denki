@@ -45,7 +45,7 @@ const props = defineProps({
     data-aos="fade-up"
   >
     <div class="py-reg content-center">
-      <header class="flex-row-center gap-reg px-sm">
+      <header class="gap-reg px-sm">
         <p class="work-info-card-number">{{ number }}</p>
         <h3 class="card-heading-text text-balance">
           {{ subheading }}
@@ -65,7 +65,7 @@ const props = defineProps({
         :navigation="true"
       >
         <SwiperSlide v-for="(src, i) in images" :key="i" class="relative">
-          <figure class="md:h-[350px] lg:h-[300px]">
+          <figure class="h-[350px] lg:h-[300px]">
             <img :src="src" class="h-full w-full object-cover rounded-sm" />
           </figure>
           <p
@@ -79,7 +79,7 @@ const props = defineProps({
     </div>
 
     <!-- If only one image → normal figure -->
-    <figure v-else class="w-auto sm:h-[350px] lg:h-[300px]">
+    <figure v-else class="w-auto h-[350px] lg:h-[300px]">
       <img
         :src="images[0]"
         class="h-full w-full object-cover object-center rounded-sm"

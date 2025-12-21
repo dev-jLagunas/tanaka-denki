@@ -75,15 +75,22 @@ export default defineNuxtConfig({
           content: "https://i.imgur.com/3SpljoQ.png",
         },
       ],
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/png", href: "/favicon.ico" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap",
+        },
+      ],
     },
   },
-  modules: [
-    "@nuxt/icon",
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/supabase",
-    "@nuxt/scripts",
-  ],
+  modules: ["@nuxt/icon", , "@nuxtjs/supabase", "@nuxt/scripts"],
   scripts: {
     registry: {
       googleAnalytics: {
@@ -97,14 +104,6 @@ export default defineNuxtConfig({
   icon: {
     mode: "css",
     cssLayer: "base",
-  },
-  googleFonts: {
-    families: {
-      "Noto Sans JP": true,
-      "Shippori Mincho": true,
-    },
-    display: "swap",
-    preconnect: true,
   },
   components: [
     { path: "~/components", pathPrefix: false },

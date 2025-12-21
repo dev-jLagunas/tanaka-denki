@@ -2,16 +2,18 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 </script>
 
 <template>
   <header class="mt-16">
     <Swiper
-      :modules="[Autoplay, Pagination]"
+      :modules="[Autoplay, Pagination, Navigation]"
       :loop="true"
-      :autoplay="{ delay: 4500 }"
+      :autoplay="{ delay: 9000 }"
       :pagination="true"
+      :navigation="true"
       class="w-full h-[650px] mt-reg"
     >
       <SwiperSlide>
@@ -44,7 +46,7 @@ import { Autoplay, Pagination } from "swiper/modules";
       </SwiperSlide>
       <SwiperSlide>
         <article
-          class="bg-[url('/images/hero/hero-slide-2.webp')] background-img-cover flex-col-start-center"
+          class="bg-[url('/images/hero/hero-slide-2.jpg')] background-img-cover flex-col-start-center"
         >
           <div class="hero-mobile-slide">
             <img
@@ -97,3 +99,5 @@ import { Autoplay, Pagination } from "swiper/modules";
     </Swiper>
   </header>
 </template>
+
+<style scoped></style>

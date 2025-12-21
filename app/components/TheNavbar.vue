@@ -7,7 +7,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <nav>
+  <nav class="sticky z-50 top-0 bg-primary-white">
     <!-- Mobile Side Panel -->
     <MobileSideNav :open="open" @close="open = false" />
 
@@ -29,7 +29,7 @@ const route = useRoute();
     </div>
 
     <!-- Desktop Navbar -->
-    <div class="hidden md:flex md:px-reg md:mt-lg lg:text-lg">
+    <div class="hidden md:flex md:py-4 md:px-reg lg:text-lg">
       <NuxtLink to="/">
         <img
           src="/images/logo-text.png"

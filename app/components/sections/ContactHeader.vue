@@ -52,7 +52,7 @@ const scrollToId = (id, offset = -100) => {
         </p>
 
         <p class="font-bold">
-          営業時間 <span class="text-brand-blue">8:30-17:00</span>
+          受付時間 <span class="text-brand-blue">9:00-17:00</span>
         </p>
       </div>
     </div>
