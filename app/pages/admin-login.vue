@@ -4,24 +4,32 @@ const password = ref("");
 const errorMessage = ref("");
 const isLoading = ref(false);
 
-const supabase = useSupabaseClient();
+const config = useRuntimeConfig();
 
 const handleLogin = async () => {
   errorMessage.value = "";
   isLoading.value = true;
 
-  const { error } = await supabase.auth.signInWithPassword({
-    email: email.value,
-    password: password.value,
-  });
+  const allowedEmail = config.public.adminEmail;
+  const allowedPassword = config.public.adminPassword;
 
-  if (error) {
-    errorMessage.value = "ログインに失敗しました。";
-  } else {
+  if (
+    email.value.trim() === String(allowedEmail).trim() &&
+    password.value.trim() === String(allowedPassword).trim()
+  ) {
+    localStorage.setItem("admin-auth", "true");
     await navigateTo("/admin");
+  } else {
+    errorMessage.value = "ログインに失敗しました。";
   }
-
   isLoading.value = false;
+
+  console.log(
+    `"${email.value}"`,
+    `"${password.value}"`,
+    `"${allowedEmail}"`,
+    `"${allowedPassword}"`
+  );
 };
 </script>
 
@@ -34,9 +42,8 @@ const handleLogin = async () => {
 
       <form @submit.prevent="handleLogin" class="space-y-4 text-primary-dark">
         <div>
-          <label class="block text-sm mb-1" for="email">メールアドレス</label>
+          <label class="block text-sm mb-1">メールアドレス</label>
           <input
-            id="email"
             v-model="email"
             type="email"
             required
@@ -45,9 +52,8 @@ const handleLogin = async () => {
         </div>
 
         <div>
-          <label class="block text-sm mb-1" for="password">パスワード</label>
+          <label class="block text-sm mb-1">パスワード</label>
           <input
-            id="password"
             v-model="password"
             type="password"
             required
@@ -62,7 +68,7 @@ const handleLogin = async () => {
         <button
           type="submit"
           :disabled="isLoading"
-          class="w-full py-2 rounded text-primary-white bg-brand-blue disabled:opacity-60 text-sm"
+          class="w-full py-2 rounded bg-brand-blue text-primary-white text-sm disabled:opacity-60"
         >
           {{ isLoading ? "ログイン中..." : "ログイン" }}
         </button>

@@ -1,9 +1,11 @@
 export default defineNuxtRouteMiddleware((to) => {
-  const user = useSupabaseUser();
-
   if (to.path === "/admin-login") return;
 
-  if (to.path.startsWith("/admin") && !user.value) {
+  const isAuthed = process.client
+    ? localStorage.getItem("admin-auth") === "true"
+    : false;
+
+  if (to.path.startsWith("/admin") && !isAuthed) {
     return navigateTo("/admin-login");
   }
 });

@@ -90,16 +90,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/icon", , "@nuxtjs/supabase", "@nuxt/scripts"],
+  modules: ["@nuxt/icon", "@nuxt/scripts"],
   scripts: {
     registry: {
       googleAnalytics: {
         id: "G-R26X812NKP",
       },
     },
-  },
-  supabase: {
-    redirect: false,
   },
   icon: {
     mode: "css",
@@ -111,8 +108,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      supabaseUrl: process.env.SUPABASE_URL as string,
-      supabaseAnonKey: process.env.SUPABASE_KEY as string,
+      adminEmail: process.env.NUXT_PUBLIC_ADMIN_EMAIL,
+      adminPassword: process.env.NUXT_PUBLIC_ADMIN_PASSWORD,
       contentfulSpace: process.env.NUXT_PUBLIC_CONTENTFUL_SPACE,
       contentfulToken: process.env.NUXT_PUBLIC_CONTENTFUL_TOKEN,
     },

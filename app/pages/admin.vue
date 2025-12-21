@@ -17,21 +17,5 @@
         </p>
       </a>
     </div>
-
-    <!-- Future Admin Settings -->
-    <section class="bg-gray-100 rounded-md p-6 shadow">
-      <h3 class="text-xl font-semibold mb-3">Website Settings</h3>
-      <p class="text-gray-600">Dummy section for future settings...</p>
-    </section>
-
-    <section class="bg-gray-100 rounded-md p-6 shadow">
-      <h3 class="text-xl font-semibold mb-3">Update Contact Info</h3>
-      <p class="text-gray-600">Dummy inputs will go here later...</p>
-    </section>
-
-    <section class="bg-gray-100 rounded-md p-6 shadow">
-      <h3 class="text-xl font-semibold mb-3">Manage Images</h3>
-      <p class="text-gray-600">More settings coming soon...</p>
-    </section>
   </main>
 </template>
