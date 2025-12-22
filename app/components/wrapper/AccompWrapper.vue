@@ -21,20 +21,43 @@
       <BaseAchieveCard
         location="石川県かほく市"
         name="松浜太陽光発電所"
+        locationLabel="所在地"
+        nameLabel="発電所名"
+        wattsLabel="発電容量"
         watts="500"
         :img="'images/pastwork/past-work-img-1.jpg'"
       />
       <BaseAchieveCard
         location="富山県小矢部市"
         name="水島第一太陽光発電所"
+        locationLabel="所在地"
+        nameLabel="発電所名"
+        wattsLabel="発電容量"
         watts="300"
         :img="'images/pastwork/past-work-img-2.jpg'"
       />
       <BaseAchieveCard
         location="富山県小矢部市"
         name="水島第二太陽光発電所"
+        locationLabel="所在地"
+        nameLabel="発電所名"
+        wattsLabel="発電容量"
         watts="480"
         :img="'images/pastwork/past-work-img-3.jpg'"
+      />
+      <BaseAchieveCard
+        location="デマンド工事"
+        name="デマンド制御|ピークカット"
+        locationLabel="施工種別"
+        nameLabel="内容"
+        :img="'images/pastwork/past-work-img-4.png'"
+      />
+      <BaseAchieveCard
+        location="デマンド工事"
+        name="パネル交換・補修→発電効率の回復"
+        locationLabel="施工種別"
+        nameLabel="内容"
+        :img="'images/pastwork/past-work-img-5.png'"
       />
     </div>
   </section>

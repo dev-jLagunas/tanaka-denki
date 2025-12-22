@@ -80,7 +80,7 @@
         <p
           class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
-          第二種電気工事士、普通自動車免許必須第3種電気主任技術者優遇
+          第二種電気工事士、普通自動車免許必須、第3種電気主任技術者優遇
         </p>
       </li>
       <li class="md:flex md:justify-start md:items-center md:gap-2">
@@ -116,7 +116,7 @@
         <p
           class="text-primary-dark tracking-wide text-lg border-b pb-2 border-lightest-blue/20 mt-1"
         >
-          週休2日制土曜日、日曜日、祝日、年末年始
+          週休二日制（土日祝）、夏季休暇、年末年始
         </p>
       </li>
       <li class="md:flex md:justify-start md:items-center md:gap-2">
@@ -196,13 +196,14 @@
         <article>
           <h5 class="font-bold text-lg">年代別割合</h5>
           <p>全従業員含む</p>
-          <ul class="mt-2">
+          <ul class="mt-2 md:grid md:grid-cols-2 md:gap-1">
+            <li><Icon name="mdi:chevron-right" size="12" />20代：3 名</li>
+            <li><Icon name="mdi:chevron-right" size="12" />30代：3 名</li>
             <li><Icon name="mdi:chevron-right" size="12" />40代：4 名</li>
             <li><Icon name="mdi:chevron-right" size="12" />50代：3 名</li>
-            <li><Icon name="mdi:chevron-right" size="12" />30代：3 名</li>
+
             <li><Icon name="mdi:chevron-right" size="12" />60代：3 名</li>
             <li><Icon name="mdi:chevron-right" size="12" />70代：2 名</li>
-            <li><Icon name="mdi:chevron-right" size="12" />20代：3 名</li>
           </ul>
         </article>
         <article>

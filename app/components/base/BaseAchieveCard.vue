@@ -1,10 +1,16 @@
 <script setup>
 //  Props
-const props = defineProps({
+defineProps({
   location: { type: String, required: true },
+  locationLabel: { type: String, default: "所在地" },
+
   name: { type: String, required: true },
-  watts: { type: String, required: true },
-  img: { type: String, requird: true },
+  nameLabel: { type: String, default: "発電所名" },
+
+  watts: { type: String, required: false },
+  wattsLabel: { type: String, default: "発電容量" },
+
+  img: { type: String, required: true },
 });
 </script>
 
@@ -17,19 +23,21 @@ const props = defineProps({
       <img src="/images/logo-only.png" alt="" class="h-10 md:h-6" />
     </figure>
     <div class="space-y-1">
-      <p class="blue-bg-wrapper">所在地</p>
+      <p class="blue-bg-wrapper">{{ locationLabel }}</p>
       <h4 class="font-bold text-primary-dark tracking-wider text-2xl">
         {{ location }}
       </h4>
     </div>
+
     <div class="space-y-1">
-      <p class="blue-bg-wrapper">発電所名</p>
+      <p class="blue-bg-wrapper">{{ nameLabel }}</p>
       <h4 class="font-bold text-primary-dark tracking-wider text-2xl">
         {{ name }}
       </h4>
     </div>
-    <div class="space-y-1">
-      <p class="blue-bg-wrapper">発電容量</p>
+
+    <div v-if="watts" class="space-y-1">
+      <p class="blue-bg-wrapper">{{ wattsLabel }}</p>
       <h4 class="font-bold text-primary-dark tracking-wider text-2xl">
         {{ watts }}kW
       </h4>

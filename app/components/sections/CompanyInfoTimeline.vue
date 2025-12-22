@@ -40,7 +40,7 @@
 
         <p class="text-sm text-primary-dark">2017年11月17日</p>
         <p class="font-bold text-lg text-primary-dark">
-          株式会社田中電気システムサービスが設立される。
+          株式会社田中電気システムサービスと合併する。
         </p>
         <div class="border-brand-red/50 w-1/3 mt-2 border"></div>
       </li>
@@ -51,7 +51,7 @@
         ></span>
         <p class="text-sm text-primary-dark">2023年04月01日</p>
         <p class="font-bold text-lg text-primary-dark">
-          株式会社田中電気システムサービスが電気保安法人になる。
+          電気保安法人に認定される。
         </p>
         <div class="border-brand-red/50 w-1/3 mt-2 border"></div>
       </li>

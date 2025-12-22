@@ -77,7 +77,7 @@ body {
 }
 
 @utility two-grid-upsize {
-  @apply grid grid-cols-2 items-center md:gap-reg md:mx-reg xl:grid-cols-3;
+  @apply md:grid md:grid-cols-2 items-center md:gap-reg md:mx-reg;
 }
 
 /* Hover */

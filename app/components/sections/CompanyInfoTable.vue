@@ -73,8 +73,7 @@
         <ul
           class="text-primary-dark tracking-wide text-balance text-lg border-b flex flex-col items-start pb-2 border-lightest-blue/20 indent-4 md:mt-sm md:indent-0"
         >
-          <li class="">電気事業法による自家用</li>
-          <li>電気設備の保安管理業務</li>
+          <li class="">電気事業法による自家用電気設備の保安管理業務</li>
           <li>太陽光発電システム保守点検</li>
           <li>整備 環境機器販売及びメンテナンス</li>
           <li>省エネ等コンサルティング事業</li>

@@ -12,11 +12,15 @@
     />
     <ScrollNextBtn nextId="timeline-nav-mobile" label="沿革へスクロール" />
     <h3
-      class="text-xl text-primary-dark tracking-wider mt-lg px-sm text-center"
+      class="text-xl text-primary-dark tracking-wider mt-lg px-sm text-center md:text-2xl"
     >
       北陸三県が現在の対応エリアとなります。
     </h3>
-    <img src="/images/company-info-area-img.png" alt="" class="-mt-reg" />
+    <img
+      src="/images/company-info-area-img.png"
+      alt=""
+      class="-mt-reg max-w-140 mx-auto"
+    />
   </section>
 </template>
 

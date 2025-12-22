@@ -34,7 +34,7 @@
       <BaseInfoCard
         bgColor="bg-orange"
         number="2"
-        subheading="パネル・パワーコンディショナー等の修復"
+        subheading="パワーコンディショナー・パネル等の修復"
         longCopy="焼損コネクタの撤去、新コネクタの取付け、配線接続により故障復旧を図ります。"
         :slideCopy="['(例)焼損コネクタの修復']"
         :images="[
@@ -66,7 +66,7 @@
         number="5"
         subheading="パネル簡易診断"
         longCopy="太陽光パネル計測器のソラメンテ等を用いてストリングや、パネルの異常を迅速に数値化し、発電トラブルを未然に防ぎます。"
-        :images="['images/work/work-info-img-5.png']"
+        :images="['images/work/work-info-img-5.jpg']"
       />
       <BaseInfoCard
         bgColor="bg-orange"
@@ -79,7 +79,7 @@
         bgColor="bg-orange"
         number="7"
         subheading="除草作業"
-        longCopy="長した雑草の影による発電量の低下を防止すると共に、つる植物の巻付きによるケーブルの損傷を防止するため除草します。"
+        longCopy="成長した雑草の影による発電量の低下を防止すると共に、つる植物の巻付きによるケーブルの損傷を防止するため除草します。"
         :slideCopy="[
           '当社所有重機等①乗用草刈機×６台②自走式草刈機×７台③ラジコン操縦草刈機×２台運搬車（除雪兼用×５台',
         ]"
@@ -122,14 +122,14 @@
         bgColor="bg-light-red"
         number="2"
         subheading="停電・無停電点検"
-        :slideCopy="['', '熱画像診断', '', '', '低圧絶縁診断']"
+        :slideCopy="['高圧絶縁診断', '熱画像診断', '', '', '低圧絶縁診断']"
         longCopy="お客様の契約内容に応じて、年1回程で停電・無停電点検を実施し、電気設備の安全と安定稼働を確保します。点検日は24時間何時でもお客様のご要望にお応えしております。"
         :images="[
-          'images/work/work-info-img-10b.png',
-          'images/work/work-info-img-10b2.png',
-          'images/work/work-info-img-10b3.png',
-          'images/work/work-info-img-10b4.png',
-          'images/work/work-info-img-10b5.png',
+          'images/work/work-info-img-10b.jpg',
+          'images/work/work-info-img-10b2.jpg',
+          'images/work/work-info-img-10b3.jpg',
+          'images/work/work-info-img-10b4.jpg',
+          'images/work/work-info-img-10b5.jpg',
         ]"
       />
       <BaseInfoCard
@@ -163,7 +163,7 @@
         number="6"
         subheading="受電・負荷・発電設備の点検"
         longCopy="高圧受電設備、配電盤、負荷設備、発電設備などの点検を行い、異常や劣化を早期に発見。"
-        :images="['images/work/work-info-img-10.webp']"
+        :images="['images/work/work-info-img-10.jpg']"
       />
     </section>
     <BaseSectionHeader
