@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="mt-8" data-aos="fade-up">
+  <section class="my-8" data-aos="fade-up">
     <BaseSectionHeader
       bgColor="bg-lightest-blue"
       title="対応エリア"
@@ -19,7 +19,7 @@
     <img
       src="/images/company-info-area-img.png"
       alt=""
-      class="-mt-reg max-w-140 mx-auto"
+      class="-mt-reg mx-auto md:w-1/2"
     />
   </section>
 </template>
