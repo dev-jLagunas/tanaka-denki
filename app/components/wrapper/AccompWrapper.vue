@@ -53,7 +53,7 @@
         :img="'images/pastwork/past-work-img-4.png'"
       />
       <BaseAchieveCard
-        location="デマンド工事"
+        location="パネルの修繕工事"
         name="パネル交換・補修→発電効率の回復"
         locationLabel="施工種別"
         nameLabel="内容"
