@@ -149,6 +149,8 @@
           'images/work/work-info-new-img-2a.png',
           'images/work/work-info-new-img-2b.png',
           'images/work/work-info-new-img-2c.png',
+          'images/work/work-info-new-img-2d.jpg',
+          'images/work/work-info-new-img-2e.jpg',
         ]"
       />
       <BaseInfoCard
@@ -207,7 +209,7 @@
         bgColor="bg-light-green"
         number="5"
         subheading="ロータリー式除雪車"
-        longCopy="×4台"
+        longCopy="×2台"
         :images="['images/work/work-info-img-11d.png']"
       />
       <BaseInfoCard
@@ -221,7 +223,7 @@
         bgColor="bg-light-green"
         number="7"
         longCopy="×2台"
-        subheading="ホイールローダー(コマツWA40)"
+        subheading="ホイールローダー"
         :images="['images/work/work-info-img-11f.png']"
       />
     </section>

@@ -19,27 +19,18 @@
       class="w-[90%] mx-auto rounded-sm object-cover h-full lg:hidden"
     />
     <div
-      class="text-primary-dark grid grid-cols-2 mt-4 place-items-center lg:hidden"
+      class="text-primary-dark grid grid-cols-1 mt-4 place-items-center lg:hidden"
     >
-      <article>
-        <h5 class="font-bold text-lg">年代別割合</h5>
+      <article class="text-center">
+        <h5 class="font-bold text-xl text-center">年代別割合</h5>
         <p>全従業員含む</p>
-        <ul class="mt-2">
+        <ul class="mt-2 grid grid-cols-2 space-y-2 gap-1">
+          <li><Icon name="mdi:chevron-right" size="12" />20代：3 名</li>
+          <li><Icon name="mdi:chevron-right" size="12" />30代：3 名</li>
           <li><Icon name="mdi:chevron-right" size="12" />40代：4 名</li>
           <li><Icon name="mdi:chevron-right" size="12" />50代：3 名</li>
-          <li><Icon name="mdi:chevron-right" size="12" />30代：3 名</li>
           <li><Icon name="mdi:chevron-right" size="12" />60代：3 名</li>
           <li><Icon name="mdi:chevron-right" size="12" />70代：2 名</li>
-          <li><Icon name="mdi:chevron-right" size="12" />20代：3 名</li>
-        </ul>
-      </article>
-      <article>
-        <h5 class="font-bold text-lg">経験年数別割合</h5>
-
-        <ul class="mt-2">
-          <li><Icon name="mdi:chevron-right" size="12" />入社0〜3年： 9名</li>
-          <li><Icon name="mdi:chevron-right" size="12" />入社4〜6年： 1名</li>
-          <li><Icon name="mdi:chevron-right" size="12" />入社7年以上：2名</li>
         </ul>
       </article>
     </div>
@@ -204,15 +195,6 @@
 
             <li><Icon name="mdi:chevron-right" size="12" />60代：3 名</li>
             <li><Icon name="mdi:chevron-right" size="12" />70代：2 名</li>
-          </ul>
-        </article>
-        <article>
-          <h5 class="font-bold text-lg">経験年数別割合</h5>
-
-          <ul class="mt-2">
-            <li><Icon name="mdi:chevron-right" size="12" />入社0〜3年： 9名</li>
-            <li><Icon name="mdi:chevron-right" size="12" />入社4〜6年： 1名</li>
-            <li><Icon name="mdi:chevron-right" size="12" />入社7年以上：2名</li>
           </ul>
         </article>
       </div>
