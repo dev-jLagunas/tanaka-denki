@@ -179,7 +179,7 @@
       <img
         src="/images/hiring-img-2.png"
         alt=""
-        class="hidden lg:grid -mt-reg w-[90%] mx-auto rounded-sm max-h-[350px] object-cover"
+        class="hidden lg:grid -mt-reg w-[90%] mx-auto rounded-sm max-h-[450px] object-cover"
       />
       <div
         class="text-primary-dark lg:grid grid-cols-2 mt-4 place-items-center hidden lg:w-full"
