@@ -1,4 +1,15 @@
 <script setup>
+useHead({
+  title: "(株)田中電気システムサービス｜お知らせ",
+  meta: [
+    {
+      name: "description",
+      content:
+        "株式会社田中電気システムサービスからのお知らせ。点検対応や業務に関する最新情報を掲載しています。",
+    },
+  ],
+});
+
 const { getEntries } = useContentful();
 const data = await getEntries();
 

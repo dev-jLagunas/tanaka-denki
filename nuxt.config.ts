@@ -30,7 +30,8 @@ export default defineNuxtConfig({
         lang: "ja",
       },
 
-      title: "株式会社田中電気システムサービス | 太陽光設備の点検・保守",
+      title:
+        "(株)田中電気システムサービス|太陽光発電と需要設備の点検・メンテナンス",
 
       meta: [
         // Basic
@@ -39,20 +40,21 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "石川県を中心に太陽光設備の点検・保守・修理を行う株式会社田中電気システムサービス。法人・公共施設向けに、安全性と信頼を重視したメンテナンスを提供します。",
+            "石川県白山市の株式会社田中電気システムサービスは、太陽光発電と需要設備のシステム点検・メンテナンス・施工まで一貫して頼める技術会社です。",
         },
 
-        // Open Graph (global default)
+        // Open Graph
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "ja_JP" },
         {
           property: "og:title",
-          content: "株式会社田中電気システムサービス | 太陽光設備の点検・保守",
+          content:
+            "(株)田中電気システムサービス|太陽光発電と需要設備の点検・メンテナンス",
         },
         {
           property: "og:description",
           content:
-            "石川県を中心に太陽光設備の点検・保守・修理を行う技術会社。法人・公共施設向けに信頼性の高いサービスを提供します。",
+            "石川県白山市の株式会社田中電気システムサービスは、太陽光発電と需要設備のシステム点検・メンテナンス・施工まで一貫して頼める技術会社です。",
         },
         {
           property: "og:site_name",
@@ -67,16 +69,17 @@ export default defineNuxtConfig({
           content: "https://i.imgur.com/3SpljoQ.png",
         },
 
-        // Twitter (global default)
+        // Twitter
         { name: "twitter:card", content: "summary_large_image" },
         {
           name: "twitter:title",
-          content: "株式会社田中電気システムサービス | 太陽光設備の点検・保守",
+          content:
+            "(株)田中電気システムサービス|太陽光発電と需要設備の点検・メンテナンス",
         },
         {
           name: "twitter:description",
           content:
-            "石川県を中心に太陽光設備の点検・保守・修理を行う技術会社。法人・公共施設向け対応。",
+            "石川県白山市の株式会社田中電気システムサービスは、太陽光発電と需要設備のシステム点検・メンテナンス・施工まで一貫して頼める技術会社です。",
         },
         {
           name: "twitter:image",
