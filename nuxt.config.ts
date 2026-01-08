@@ -18,6 +18,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/**": { prerender: true },
+    "/blog/**": { ssr: true },
     "/success": { prerender: true },
   },
 
