@@ -7,7 +7,7 @@ onMounted(() => {
   if (!contactForm.value) return;
 
   const fields = contactForm.value.querySelectorAll(
-    "input[required], textarea[required]"
+    "input[required], textarea[required]",
   );
 
   fields.forEach((field) => {
@@ -36,6 +36,11 @@ onMounted(() => {
     <!-- Netlify required hidden field -->
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="redirect" value="/success" />
+    <input
+      type="hidden"
+      name="subject"
+      value="お問い合わせ｜株式会社田中電気システムサービス"
+    />
     <input type="hidden" name="no-spam" value="true" />
 
     <!-- Honeypot (spam prevention) -->
