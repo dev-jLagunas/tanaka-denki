@@ -66,7 +66,13 @@ const props = defineProps({
       >
         <SwiperSlide v-for="(src, i) in images" :key="i" class="relative">
           <figure class="h-[350px] lg:h-[300px]">
-            <img :src="src" class="h-full w-full object-cover rounded-sm" />
+            <img
+              :src="src"
+              :alt="imgAlt || subheading"
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover rounded-sm"
+            />
           </figure>
           <p
             v-if="slideCopy[i]"
@@ -82,6 +88,9 @@ const props = defineProps({
     <figure v-else class="w-auto h-[350px] lg:h-[300px]">
       <img
         :src="images[0]"
+        :alt="imgAlt || subheading"
+        loading="lazy"
+        decoding="async"
         class="h-full w-full object-cover object-center rounded-sm"
       />
     </figure>

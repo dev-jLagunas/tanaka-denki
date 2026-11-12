@@ -405,6 +405,7 @@ import { Navigation, Pagination } from "swiper/modules";
                   playsinline
                   preload="metadata"
                   class="h-full w-full object-cover rounded-sm"
+                  loading="lazy"
                 />
               </figure>
             </SwiperSlide>
@@ -412,6 +413,7 @@ import { Navigation, Pagination } from "swiper/modules";
               <figure class="h-[300px] sm:h-[350px] lg:h-[340px]">
                 <img
                   src="/images/work/work-info-snow-5.webp"
+                  loading="lazy"
                   alt="雪上バイク"
                   class="h-full w-full object-cover object-center rounded-sm"
                 />

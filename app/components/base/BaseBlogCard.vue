@@ -20,8 +20,9 @@ function formatDate(isoString) {
     <figure class="h-[300px]">
       <img
         :src="image"
-        alt="blog image"
+        :alt="title"
         class="object-cover h-full w-full rounded-t-sm"
+        loading="lazy"
       />
     </figure>
 
