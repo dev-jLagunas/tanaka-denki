@@ -30,7 +30,7 @@
           </span>
           <span class="">第２種電気主任技術者</span>
         </span>
-        <span class="font-bold text-primary-dark">2 名</span>
+        <span class="font-bold text-primary-dark">3 名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red/50 ml-9"></div>
 
@@ -44,7 +44,7 @@
           </span>
           <span class="">第３種電気主任技術者</span>
         </span>
-        <span class="font-bold text-primary-dark">5 名</span>
+        <span class="font-bold text-primary-dark">6 名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red/50 ml-9"></div>
 
@@ -58,7 +58,7 @@
           </span>
           <span class="">エネルギー管理士</span>
         </span>
-        <span class="font-bold text-primary-dark">2 名</span>
+        <span class="font-bold text-primary-dark">3 名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red/50 ml-9"></div>
 
@@ -72,7 +72,7 @@
           </span>
           <span class="">第一種電気工事士</span>
         </span>
-        <span class="font-bold text-primary-dark">10 名</span>
+        <span class="font-bold text-primary-dark">4 名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red/50 ml-9"></div>
 
@@ -86,7 +86,7 @@
           </span>
           <span class="">第二種電気工事士</span>
         </span>
-        <span class="font-bold text-primary-dark">12 名</span>
+        <span class="font-bold text-primary-dark">9 名</span>
       </li>
       <div class="h-0.5 w-1/3 bg-brand-red/50 ml-9"></div>
 
