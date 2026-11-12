@@ -19,7 +19,7 @@
       class="lg:hidden"
     />
     <img
-      src="/images/logo-only.png"
+      src="/images/logo-only.webp"
       alt="company logo"
       class="h-16 mx-auto my-lg lg:hidden"
     />
@@ -28,7 +28,7 @@
     >
       <li>
         <img
-          src="/images/logo-only.png"
+          src="/images/logo-only.webp"
           alt="company logo"
           class="h-16 mx-auto my-lg hidden lg:grid"
         />

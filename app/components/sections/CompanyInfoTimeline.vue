@@ -9,7 +9,7 @@
       id="timeline-nav-mobile"
     />
     <img
-      src="/images/company-info-img.png"
+      src="/images/company-info-img.webp"
       alt=""
       class="-mt-reg w-[90%] mx-auto rounded-sm h-[300px] object-cover object-center lg:w-full lg:pr-8"
     />

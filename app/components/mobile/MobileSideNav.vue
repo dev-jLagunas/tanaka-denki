@@ -19,7 +19,7 @@ function go(path: string) {
     leave-active-class="slide-out-left"
   >
     <div v-if="open" class="mobile-sidebar slide-in-left flex-col-center">
-      <img src="/images/logo-white.png" class="w-auto h-32" />
+      <img src="/images/logo-white.webp" class="w-auto h-32" />
 
       <ul class="mobile-sidebar-copy space-y-6">
         <li>

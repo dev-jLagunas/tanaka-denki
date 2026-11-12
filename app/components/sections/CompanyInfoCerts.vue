@@ -8,7 +8,7 @@
       id="certifications-mobile"
     />
     <img
-      src="/images/corporate-photo.jpg"
+      src="/images/corporate-photo.webp"
       alt=""
       class="-mt-reg w-[90%] mx-auto rounded-sm object-cover object-center lg:w-full lg:pr-8"
     />

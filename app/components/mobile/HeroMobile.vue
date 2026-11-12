@@ -22,7 +22,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
         >
           <div class="hero-mobile-slide">
             <img
-              src="/images/logo-only.png"
+              src="/images/logo-only.webp"
               alt="company logo"
               class="h-10 mx-auto"
             />
@@ -46,11 +46,11 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
       </SwiperSlide>
       <SwiperSlide>
         <article
-          class="bg-[url('/images/hero/hero-slide-2.jpg')] background-img-cover flex-col-start-center"
+          class="bg-[url('/images/hero/hero-slide-2.webp')] background-img-cover flex-col-start-center"
         >
           <div class="hero-mobile-slide">
             <img
-              src="/images/logo-only.png"
+              src="/images/logo-only.webp"
               alt="company logo"
               class="h-10 mx-auto"
             />
@@ -68,11 +68,11 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
       </SwiperSlide>
       <SwiperSlide>
         <article
-          class="bg-[url('/images/hero/hero-slide-3.jpg')] background-img-cover flex-col-start-center"
+          class="bg-[url('/images/hero/hero-slide-3.webp')] background-img-cover flex-col-start-center"
         >
           <div class="hero-mobile-slide">
             <img
-              src="/images/logo-only.png"
+              src="/images/logo-only.webp"
               alt="company logo"
               class="h-10 mx-auto"
             />

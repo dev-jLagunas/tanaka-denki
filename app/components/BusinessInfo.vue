@@ -33,7 +33,7 @@
 
     <li class="md:col-span-2 mx-auto place-content-center text-center">
       <img
-        src="/images/logo-only.png"
+        src="/images/logo-only.webp"
         alt="company logo"
         class="h-20 mt-lg mx-auto"
       />

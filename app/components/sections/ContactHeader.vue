@@ -15,7 +15,7 @@ const scrollToId = (id, offset = -100) => {
 <template>
   <section class="md:grid md:grid-cols-2 md:items-center">
     <img
-      src="/images/tanaka-character.png"
+      src="/images/tanaka-character.webp"
       alt="tanaka worker character"
       class="h-52 mx-auto pr-10 md:hidden"
     />
@@ -58,7 +58,7 @@ const scrollToId = (id, offset = -100) => {
     </div>
 
     <img
-      src="/images/tanaka-character.png"
+      src="/images/tanaka-character.webp"
       alt="tanaka worker character"
       class="h-full max-h-[500px] w-auto object-cover mx-auto pr-10 hidden md:grid"
     />

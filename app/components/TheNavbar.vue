@@ -15,7 +15,7 @@ const route = useRoute();
     <div class="mobile-navbar-header">
       <NuxtLink to="/">
         <img
-          src="/images/logo-text.png"
+          src="/images/logo-text.webp"
           alt="company logo"
           class="w-[95%] h-auto max-w-[325px]"
         />
@@ -32,7 +32,7 @@ const route = useRoute();
     <div class="hidden md:flex md:py-4 md:px-reg lg:text-lg">
       <NuxtLink to="/">
         <img
-          src="/images/logo-text.png"
+          src="/images/logo-text.webp"
           alt="company logo"
           class="w-auto max-w-xs"
         />

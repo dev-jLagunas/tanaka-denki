@@ -2,13 +2,13 @@
   <main class="">
     <header>
       <img
-        src="/images/info-img.png"
+        src="/images/info-img.webp"
         alt=""
         class="-mt-reg w-[90%] mx-auto rounded-sm h-[300px] object-cover object-bottom lg:w-full lg:pr-8"
       />
       <figure>
         <img
-          src="/images/logo-only.png"
+          src="/images/logo-only.webp"
           alt="company logo"
           class="h-20 mx-auto mt-lg"
         />

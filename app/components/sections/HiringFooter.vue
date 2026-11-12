@@ -14,7 +14,7 @@
       当社のスタッフは経験豊富な層が多く、若手からベテランまでバランスよく在籍しています。年代の偏りが少なく、相談しやすい職場環境が特徴です。
     </h3>
     <img
-      src="/images/hiring-img-2.png"
+      src="/images/hiring-img-2.webp"
       alt=""
       class="w-[90%] mx-auto rounded-sm object-cover h-full lg:hidden"
     />
@@ -167,7 +167,7 @@
     </ul>
     <figure class="h-full flex-col-center">
       <img
-        src="/images/logo-only.png"
+        src="/images/logo-only.webp"
         alt="company logo"
         class="h-10 mx-auto my-lg hidden lg:grid"
       />
@@ -177,7 +177,7 @@
         当社のスタッフは経験豊富な層が多く、若手からベテランまでバランスよく在籍しています。年代の偏りが少なく、相談しやすい職場環境が特徴です。
       </h3>
       <img
-        src="/images/hiring-img-2.png"
+        src="/images/hiring-img-2.webp"
         alt=""
         class="hidden lg:grid -mt-reg w-[90%] mx-auto rounded-sm max-h-[450px] object-cover"
       />

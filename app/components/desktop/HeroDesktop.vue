@@ -40,7 +40,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
             class="bg-[url('/images/hero/hero-slide-1.webp')] flex-col-center rounded-sm mx-reg background-img-cover"
           >
             <img
-              src="/images/logo-only.png"
+              src="/images/logo-only.webp"
               alt="company logo"
               class="h-16 mx-auto"
             />
@@ -61,7 +61,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
             </p>
           </section>
           <figure
-            class="bg-[url('/images/hero/hero-slide-2.jpg')] content-center rounded-sm mx-reg background-img-cover"
+            class="bg-[url('/images/hero/hero-slide-2.webp')] content-center rounded-sm mx-reg background-img-cover"
           ></figure>
         </article>
       </SwiperSlide>
@@ -82,7 +82,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
             </p>
           </section>
           <figure
-            class="bg-[url('/images/hero/hero-slide-3.jpg')] content-center rounded-sm mx-reg background-img-cover"
+            class="bg-[url('/images/hero/hero-slide-3.webp')] content-center rounded-sm mx-reg background-img-cover"
           ></figure>
         </article>
       </SwiperSlide>

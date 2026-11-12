@@ -20,7 +20,7 @@ defineProps({
     data-aos="fade-up"
   >
     <figure class="absolute top-4 right-2">
-      <img src="/images/logo-only.png" alt="" class="h-10 md:h-6" />
+      <img src="/images/logo-only.webp" alt="" class="h-10 md:h-6" />
     </figure>
     <div class="space-y-1">
       <p class="blue-bg-wrapper">{{ locationLabel }}</p>

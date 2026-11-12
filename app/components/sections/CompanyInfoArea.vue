@@ -17,7 +17,7 @@
       北陸三県が現在の対応エリアとなります。
     </h3>
     <img
-      src="/images/company-info-area-img.png"
+      src="/images/company-info-area-img.webp"
       alt=""
       class="-mt-reg mx-auto md:w-1/2"
     />

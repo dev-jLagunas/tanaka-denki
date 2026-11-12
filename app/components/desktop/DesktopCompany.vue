@@ -4,7 +4,7 @@
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
         <figure>
           <img
-            src="/images/logo-only.png"
+            src="/images/logo-only.webp"
             alt="company logo"
             class="h-20 mx-auto"
           />
@@ -17,7 +17,7 @@
       </aside>
       <section class="">
         <img
-          src="/images/info-img.png"
+          src="/images/info-img.webp"
           alt=""
           class="-mt-reg w-[90%] mx-auto rounded-sm h-[300px] object-cover object-top lg:w-full lg:pr-8"
         />
@@ -41,7 +41,7 @@
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
         <figure>
           <img
-            src="/images/logo-only.png"
+            src="/images/logo-only.webp"
             alt="company logo"
             class="h-20 mx-auto"
           />
@@ -62,7 +62,7 @@
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
         <figure>
           <img
-            src="/images/logo-only.png"
+            src="/images/logo-only.webp"
             alt="company logo"
             class="h-20 mx-auto"
           />
@@ -83,7 +83,7 @@
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
         <figure>
           <img
-            src="/images/logo-only.png"
+            src="/images/logo-only.webp"
             alt="company logo"
             class="h-20 mx-auto"
           />
@@ -103,7 +103,7 @@
       <aside class="relative border-r-2 border-brand-red/50 mr-8">
         <figure>
           <img
-            src="/images/logo-only.png"
+            src="/images/logo-only.webp"
             alt="company logo"
             class="h-20 mx-auto"
           />

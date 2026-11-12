@@ -25,7 +25,7 @@
         nameLabel="発電所名"
         wattsLabel="発電容量"
         watts="500"
-        :img="'images/pastwork/past-work-img-1.jpg'"
+        :img="'images/pastwork/past-work-img-1.webp'"
       />
       <BaseAchieveCard
         location="富山県小矢部市"
@@ -34,7 +34,7 @@
         nameLabel="発電所名"
         wattsLabel="発電容量"
         watts="300"
-        :img="'images/pastwork/past-work-img-2.jpg'"
+        :img="'images/pastwork/past-work-img-2.webp'"
       />
       <BaseAchieveCard
         location="富山県小矢部市"
@@ -43,21 +43,21 @@
         nameLabel="発電所名"
         wattsLabel="発電容量"
         watts="480"
-        :img="'images/pastwork/past-work-img-3.jpg'"
+        :img="'images/pastwork/past-work-img-3.webp'"
       />
       <BaseAchieveCard
         location="デマンド工事"
         name="デマンド制御|ピークカット"
         locationLabel="施工種別"
         nameLabel="内容"
-        :img="'images/pastwork/past-work-img-4.png'"
+        :img="'images/pastwork/past-work-img-4.webp'"
       />
       <BaseAchieveCard
         location="パネルの修繕工事"
         name="パネル交換・補修→発電効率の回復"
         locationLabel="施工種別"
         nameLabel="内容"
-        :img="'images/pastwork/past-work-img-5.png'"
+        :img="'images/pastwork/past-work-img-5.webp'"
       />
     </div>
   </section>

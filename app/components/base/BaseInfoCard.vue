@@ -29,7 +29,7 @@ const props = defineProps({
   },
   images: {
     type: Array,
-    required: true, // ['/img1.jpg', '/img2.jpg', ...]
+    required: true, // ['/img1.webp', '/img2.webp', ...]
   },
   imgAlt: {
     type: String,

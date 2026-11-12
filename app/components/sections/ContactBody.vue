@@ -29,7 +29,7 @@ const showPolicy = ref(false);
       <p class="">以下の項目に必要事項をご記入の上、ご送信ください。</p>
       <p class="text-brand-red text-sm text-center">(＊は必須項目です)。</p>
       <img
-        src="/images/logo-only.png"
+        src="/images/logo-only.webp"
         alt="company logo"
         class="h-20 mx-auto my-lg"
       />

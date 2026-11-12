@@ -4,12 +4,12 @@ const data = await getEntries();
 
 // Filter only this content type
 const posts = data.items.filter(
-  (item) => item.sys.contentType.sys.id === "denkiBlogPost"
+  (item) => item.sys.contentType.sys.id === "denkiBlogPost",
 );
 
 // Sort by date (descending)
 const sorted = posts.sort(
-  (a, b) => new Date(b.fields.blogDate) - new Date(a.fields.blogDate)
+  (a, b) => new Date(b.fields.blogDate) - new Date(a.fields.blogDate),
 );
 
 // Pick only 3
@@ -28,7 +28,7 @@ const formatted = latestThree.map((post) => {
     title: post.fields.blogHeading,
     subtitle: post.fields.blogSubheading,
     date: post.fields.blogDate,
-    image: asset ? `https:${asset.fields.file.url}` : "/images/default.jpg",
+    image: asset ? `https:${asset.fields.file.url}` : "/images/default.webp",
   };
 });
 </script>

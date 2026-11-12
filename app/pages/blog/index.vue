@@ -15,7 +15,7 @@ const data = await getEntries();
 
 // Filter for your content type
 const posts = data.items.filter(
-  (item) => item.sys.contentType.sys.id === "denkiBlogPost"
+  (item) => item.sys.contentType.sys.id === "denkiBlogPost",
 );
 
 // Extract assets (images)
@@ -31,7 +31,7 @@ const formatted = posts.map((post) => {
     title: post.fields.blogHeading,
     subtitle: post.fields.blogSubheading,
     date: post.fields.blogDate,
-    image: asset ? `https:${asset.fields.file.url}` : "/images/default.jpg",
+    image: asset ? `https:${asset.fields.file.url}` : "/images/default.webp",
   };
 });
 </script>
