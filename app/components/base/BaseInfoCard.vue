@@ -44,7 +44,7 @@ const props = defineProps({
     class="w-[90%] mx-auto rounded-sm md:h-[350px] md:grid md:grid-cols-2 lg:h-[300px] md:w-full"
     data-aos="fade-up"
   >
-    <div class="py-reg content-center">
+    <div class="py-reg content-center shadow-sm">
       <header class="gap-reg px-sm">
         <p class="work-info-card-number">{{ number }}</p>
         <h3 class="card-heading-text text-balance">

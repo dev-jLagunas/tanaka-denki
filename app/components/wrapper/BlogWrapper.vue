@@ -13,7 +13,7 @@ const sorted = posts.sort(
 );
 
 // Pick only 3
-const latestThree = sorted.slice(0, 3);
+const latestThree = sorted.slice(0, 4);
 
 // Extract assets
 const assets = data.includes.Asset;

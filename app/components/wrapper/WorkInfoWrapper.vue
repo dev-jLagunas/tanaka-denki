@@ -38,7 +38,7 @@ import { Navigation, Pagination } from "swiper/modules";
       icon="mdi:solar-panel"
       sectionId="work-info"
     />
-    <section class="space-y-lg md:two-grid-upsize md:space-y-0 md:gap-lg">
+    <section class="space-y-lg md:two-grid-upsize md:space-y-0 md:gap-lg mb-24">
       <BaseInfoCard
         bgColor="bg-orange"
         number="1"
@@ -128,8 +128,11 @@ import { Navigation, Pagination } from "swiper/modules";
       icon="mdi:gear"
       sectionId="system-info"
     />
-    <ScrollNextBtn nextId="tool-info" label="重機等一覧へスクロール" />
-    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg">
+    <ScrollNextBtn
+      nextId="battery-info"
+      label="系統用蓄電所の管理へスクロール"
+    />
+    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg mb-24">
       <BaseInfoCard
         bgColor="bg-light-red"
         number="1"
@@ -197,8 +200,11 @@ import { Navigation, Pagination } from "swiper/modules";
       icon="mdi:battery-charging"
       sectionId="battery-info"
     />
-    <ScrollNextBtn nextId="tool-info" label="重機等一覧へスクロール" />
-    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg">
+    <ScrollNextBtn
+      nextId="tool-info"
+      label="除草作業を支える重機へスクロール"
+    />
+    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg mb-24">
       <BaseInfoCard
         bgColor="bg-blue-1"
         number="1"
@@ -227,7 +233,7 @@ import { Navigation, Pagination } from "swiper/modules";
     <!-- =================================================================== -->
     <BaseSectionHeader
       bgColor="bg-brand-green"
-      title="重機等一覧"
+      title="除草作業を支える重機"
       icon="mdi:tractor"
       sectionId="tool-info"
     />
@@ -235,7 +241,7 @@ import { Navigation, Pagination } from "swiper/modules";
       nextId="snow-info"
       label="除雪作業を支える重機へスクロール"
     />
-    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg">
+    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg mb-24">
       <BaseInfoCard
         bgColor="bg-light-green"
         number="1"
@@ -290,7 +296,7 @@ import { Navigation, Pagination } from "swiper/modules";
       sectionId="snow-info"
     />
     <ScrollNextBtn nextId="customer-merits" label="特記事項へスクロール" />
-    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg">
+    <section class="space-y-4 md:two-grid-upsize md:space-y-0 md:gap-lg mb-24">
       <BaseInfoCard
         bgColor="bg-blue-2"
         number="1"
